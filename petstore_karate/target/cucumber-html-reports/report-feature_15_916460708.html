@@ -42,7 +42,7 @@ $(document).ready(function() {
 
 
   
-<title>Cucumber Reports  - Feature: karate/request/create.feature</title>
+<title>Cucumber Reports  - Feature: src/test/resources/Karate/request/post.feature</title>
 
 </head>
 <body>
@@ -127,7 +127,7 @@ $(document).ready(function() {
 
         <tbody>
         <tr>
-          <td class="tagname">karate/request/create.feature</td>
+          <td class="tagname">src/test/resources/Karate/request/post.feature</td>
           <td      class="passed"    >6</td>
           <td >0</td>
           <td >0</td>
@@ -139,7 +139,7 @@ $(document).ready(function() {
           <td >0</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="1752353900">1.752</td>
+          <td class="duration" data-value="1082173600">1.082</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -174,15 +174,15 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">Feature</span>
-  <span class="name">karate/request/create.feature</span>
+  <span class="name">src/test/resources/Karate/request/post.feature</span>
   
 
   </div>
 
-        <div class="description indention">Service POST
-As QA Automation
-  I want to create a client
-  To validate the status code and response.</div>
+        <div class="description indention">Service client POST
+As QA automation
+  I want to create a pet
+  To validate the status code and id</div>
 
         <div class="elements inner-level">
                       
@@ -270,7 +270,7 @@ As QA Automation
   </div>
 
   
-  <span class="lead-duration duration">1.752</span>
+  <span class="lead-duration duration">1.082</span>
 
 
     <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
@@ -309,9 +309,9 @@ As QA Automation
         
 <div class="brief passed">
   <span class="keyword indention">*</span>
-  <span class="name">def requestCreate = {&quot;id&quot;: '#(userId)',&quot;username&quot;: '#(username)',&quot;firstName&quot;: '#(firstName)', &quot;lastName&quot;: '#(lastName)',&quot;email&quot;: '#(email)', &quot;password&quot;: '#(password)',&quot;phone&quot;: '#(phone)', &quot;userStatus&quot;: '#(userStatus)'}</span>
+  <span class="name">def CreatePet = {&quot;id&quot;: '#(id)',&quot;category&quot;: {&quot;id&quot;: 1,&quot;name&quot;: '#(nameCategory)'},&quot;name&quot;: &quot;doggie&quot;,&quot;photoUrls&quot;: [&quot;string&quot;],&quot;tags&quot;: [{&quot;id&quot;: 1,&quot;name&quot;: '#(tagsName)'}],&quot;status&quot;: &quot;available&quot;}</span>
   
-  <span class="lead-duration duration">0.044</span>
+  <span class="lead-duration duration">0.010</span>
 
 </div>
 
@@ -334,9 +334,9 @@ As QA Automation
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
-  <span class="name">path 'user'</span>
+  <span class="name">path 'pet'</span>
   
-  <span class="lead-duration duration">0.004</span>
+  <span class="lead-duration duration">0.003</span>
 
 </div>
 
@@ -359,7 +359,7 @@ As QA Automation
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">request requestCreate</span>
+  <span class="name">request CreatePet</span>
   
   <span class="lead-duration duration">0.000</span>
 
@@ -384,9 +384,9 @@ As QA Automation
         
 <div class="brief passed">
   <span class="keyword indention">When</span>
-  <span class="name">method post</span>
+  <span class="name">method POST</span>
   
-  <span class="lead-duration duration">1.704</span>
+  <span class="lead-duration duration">1.068</span>
 
 </div>
 
@@ -403,27 +403,27 @@ As QA Automation
           <a>Doc string</a>
       </div>
       <div id="msg-5" class="collapse collapsable-details">
-        <pre>15:02:37.485 request:
-1 &gt; POST https://petstore.swagger.io/v2/user
+        <pre>17:43:30.130 request:
+1 &gt; POST https://petstore.swagger.io/v2/pet
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
-1 &gt; Content-Length: 199
+1 &gt; Content-Length: 152
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Host: petstore.swagger.io
-1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
-{&quot;id&quot;:-56908596,&quot;username&quot;:&quot;UserTest&quot;,&quot;firstName&quot;:&quot;UserTest&quot;,&quot;lastName&quot;:&quot;amet et nulla&quot;,&quot;email&quot;:&quot;exercitation laboris&quot;,&quot;password&quot;:&quot;ut voluptate&quot;,&quot;phone&quot;:&quot;pariatur consectetur&quot;,&quot;userStatus&quot;:-45381913}
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_333)
+{&quot;id&quot;:2,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;#(nameCategory)&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;#(tagsName)&quot;}],&quot;status&quot;:&quot;available&quot;}
 
-15:02:38.329 response time in milliseconds: 835,89
+17:43:30.763 response time in milliseconds: 630.02
 1 &lt; 200
 1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json
-1 &lt; Date: Sun, 28 Aug 2022 20:02:37 GMT
+1 &lt; Date: Sat, 20 Aug 2022 23:43:31 GMT
 1 &lt; Server: Jetty(9.2.9.v20150224)
 1 &lt; Transfer-Encoding: chunked
-{&quot;code&quot;:200,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;9222968140497207255&quot;}</pre>
+{&quot;id&quot;:2,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;#(nameCategory)&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;#(tagsName)&quot;}],&quot;status&quot;:&quot;available&quot;}</pre>
       </div>
     </div>
   </div>

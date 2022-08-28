@@ -42,7 +42,7 @@ $(document).ready(function() {
 
 
   
-<title>Cucumber Reports  - Feature: karate/request/get.feature</title>
+<title>Cucumber Reports  - Feature: karate/request/Karate.request/pet/put.feature</title>
 
 </head>
 <body>
@@ -127,10 +127,10 @@ $(document).ready(function() {
 
         <tbody>
         <tr>
-          <td class="tagname">karate/request/get.feature</td>
-          <td      class="passed"    >16</td>
+          <td class="tagname">karate/request/Karate.request/pet/put.feature</td>
+          <td      class="passed"    >17</td>
           <td      class="failed"    >1</td>
-          <td     class="skipped"   >6</td>
+          <td     class="skipped"   >5</td>
           <td >0</td>
           <td >0</td>
           <td class="total">23</td>
@@ -139,7 +139,7 @@ $(document).ready(function() {
           <td  class="failed"    >1</td>
           <td class="total">4</td>
 
-          <td class="duration" data-value="1190440000">1.190</td>
+          <td class="duration" data-value="1199103700">1.199</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -174,15 +174,15 @@ $(document).ready(function() {
         
 <div class="brief failed">
   <span class="keyword indention">Feature</span>
-  <span class="name">karate/request/get.feature</span>
+  <span class="name">karate/request/Karate.request/pet/put.feature</span>
   
 
   </div>
 
-        <div class="description indention">Service client GET
-As AQ Automation
-  I want to Find a Pet by its ID
-  to validate the status code and response</div>
+        <div class="description indention">Service client PUT
+As QA automation
+  I want to Update an Existing Pet
+  To validate the status code and response</div>
 
         <div class="elements inner-level">
                       
@@ -270,14 +270,14 @@ As AQ Automation
   </div>
 
   
-  <span class="lead-duration duration">0.004</span>
+  <span class="lead-duration duration">0.056</span>
 
 
     <span data-toggle="collapse" class=" collapsable-control" data-target="#element-3">
     
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Check the service GET</span>
+  <span class="name">check the service PUT (UpdatePet) To see if status code is 200.</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -307,11 +307,36 @@ As AQ Automation
   <div id="steps-4" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def requestPut = {&quot;id&quot;: &quot;#(id)&quot;, &quot;category&quot;: {&quot;id&quot;: &quot;#(idCategory)&quot;, &quot;name&quot;: &quot;#(nameCategory)&quot;},&quot;name&quot;: &quot;#(name)&quot;,&quot;photoUrls&quot;: [&quot;#(photoUrls)&quot;],&quot;tags&quot;: [{&quot;id&quot;: &quot;#(idTags)&quot;,&quot;name&quot;: &quot;#(nameTags)&quot;}],&quot;status&quot;: &quot;#(status)&quot;}</span>
+  
+  <span class="lead-duration duration">0.045</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
 <div class="brief failed">
   <span class="keyword indention">*</span>
-  <span class="name">def responseGet = read('classpath:Karate/request/reponseGet.json)</span>
+  <span class="name">def responsePut = read('classpath:karate/request/responsePut.json')</span>
   
-  <span class="lead-duration duration">0.004</span>
+  <span class="lead-duration duration">0.010</span>
 
 </div>
 
@@ -325,10 +350,7 @@ As AQ Automation
           <a>com.intuit.karate.exception.KarateException:</a>
       </div>
       <div id="msg-5" class="collapse collapsable-details  in ">
-        <pre>com.intuit.karate.exception.KarateException: get.feature:12 - evaluation (js) failed: read('classpath:Karate/request/reponseGet.json), javax.script.ScriptException: &lt;eval&gt;:1:47 Missing close quote
-read('classpath:Karate/request/reponseGet.json)
-                                               ^ in &lt;eval&gt; at line number 1 at column number 47
-stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)</pre>
+        <pre>com.intuit.karate.exception.KarateException: put.feature:11 - could not find or read file: classpath:karate/request/responsePut.json</pre>
       </div>
     </div>
   </div>
@@ -348,7 +370,32 @@ stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptExceptio
         
 <div class="brief skipped">
   <span class="keyword indention">Given</span>
-  <span class="name">path 'pet', id</span>
+  <span class="name">path 'pet'</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">request requestPut</span>
   
   <span class="lead-duration duration">0.000</span>
 
@@ -373,7 +420,7 @@ stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptExceptio
         
 <div class="brief skipped">
   <span class="keyword indention">When</span>
-  <span class="name">method GET</span>
+  <span class="name">method put</span>
   
   <span class="lead-duration duration">0.000</span>
 
@@ -423,57 +470,7 @@ stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptExceptio
         
 <div class="brief skipped">
   <span class="keyword indention">And</span>
-  <span class="name">match response == responsesGet</span>
-  
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-        
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">assert response.support.text == &quot;To keep ReqRes free, contribuitions</span>
-  
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-        
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">assert response.data.email == email</span>
+  <span class="name">match response == responsePut</span>
   
   <span class="lead-duration duration">0.000</span>
 
@@ -588,14 +585,14 @@ stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptExceptio
   </div>
 
   
-  <span class="lead-duration duration">0.420</span>
+  <span class="lead-duration duration">0.395</span>
 
 
     <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-8">
     
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Find a pet by ID incorrect</span>
+  <span class="name">Update a pet with invalid category ID</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -627,7 +624,7 @@ stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptExceptio
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
-  <span class="name">path 'pet', id</span>
+  <span class="name">path 'pet'</span>
   
   <span class="lead-duration duration">0.000</span>
 
@@ -652,9 +649,9 @@ stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptExceptio
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">request &quot;@#$%&quot;</span>
+  <span class="name">request &quot;@$#%&amp;&quot;</span>
   
-  <span class="lead-duration duration">0.003</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -677,9 +674,9 @@ stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptExceptio
         
 <div class="brief passed">
   <span class="keyword indention">When</span>
-  <span class="name">method get</span>
+  <span class="name">method PUT</span>
   
-  <span class="lead-duration duration">0.417</span>
+  <span class="lead-duration duration">0.394</span>
 
 </div>
 
@@ -696,24 +693,27 @@ stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptExceptio
           <a>Doc string</a>
       </div>
       <div id="msg-10" class="collapse collapsable-details">
-        <pre>15:02:40.580 request:
-1 &gt; GET https://petstore.swagger.io/v2/pet/%22@%23$%25%22
+        <pre>18:39:59.986 request:
+1 &gt; PUT https://petstore.swagger.io/v2/pet
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 5
+1 &gt; Content-Type: text/plain; charset=UTF-8
 1 &gt; Host: petstore.swagger.io
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
+@$#%&amp;
 
-15:02:41.002 response time in milliseconds: 414,38
-1 &lt; 404
+18:40:00.375 response time in milliseconds: 389,24
+1 &lt; 415
 1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; Connection: keep-alive
-1 &lt; Content-Type: application/json
-1 &lt; Date: Sun, 28 Aug 2022 20:02:40 GMT
+1 &lt; Content-Length: 102
+1 &lt; Content-Type: application/xml
+1 &lt; Date: Sun, 28 Aug 2022 23:39:59 GMT
 1 &lt; Server: Jetty(9.2.9.v20150224)
-1 &lt; Transfer-Encoding: chunked
-{&quot;code&quot;:404,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;java.lang.NumberFormatException: For input string: \&quot;\&quot;@#$%\&quot;\&quot;&quot;}</pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;&lt;apiResponse&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;</pre>
       </div>
     </div>
   </div>
@@ -729,7 +729,7 @@ stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptExceptio
         
 <div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">status 404</span>
+  <span class="name">status 415</span>
   
   <span class="lead-duration duration">0.000</span>
 
@@ -844,14 +844,14 @@ stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptExceptio
   </div>
 
   
-  <span class="lead-duration duration">0.381</span>
+  <span class="lead-duration duration">0.382</span>
 
 
     <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
     
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Find a pet by ID incorrect</span>
+  <span class="name">Update a pet with invalid category ID</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -883,7 +883,7 @@ stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptExceptio
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
-  <span class="name">path 'pet', id</span>
+  <span class="name">path 'pet'</span>
   
   <span class="lead-duration duration">0.000</span>
 
@@ -908,9 +908,9 @@ stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptExceptio
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">request &quot;fish&quot;</span>
+  <span class="name">request &quot;squirtle&quot;</span>
   
-  <span class="lead-duration duration">0.003</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -933,9 +933,9 @@ stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptExceptio
         
 <div class="brief passed">
   <span class="keyword indention">When</span>
-  <span class="name">method get</span>
+  <span class="name">method PUT</span>
   
-  <span class="lead-duration duration">0.378</span>
+  <span class="lead-duration duration">0.381</span>
 
 </div>
 
@@ -952,24 +952,27 @@ stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptExceptio
           <a>Doc string</a>
       </div>
       <div id="msg-15" class="collapse collapsable-details">
-        <pre>15:02:41.018 request:
-1 &gt; GET https://petstore.swagger.io/v2/pet/%22fish%22
+        <pre>18:40:00.393 request:
+1 &gt; PUT https://petstore.swagger.io/v2/pet
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 8
+1 &gt; Content-Type: text/plain; charset=UTF-8
 1 &gt; Host: petstore.swagger.io
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
+squirtle
 
-15:02:41.393 response time in milliseconds: 374,46
-1 &lt; 404
+18:40:00.770 response time in milliseconds: 376,34
+1 &lt; 415
 1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; Connection: keep-alive
-1 &lt; Content-Type: application/json
-1 &lt; Date: Sun, 28 Aug 2022 20:02:40 GMT
+1 &lt; Content-Length: 102
+1 &lt; Content-Type: application/xml
+1 &lt; Date: Sun, 28 Aug 2022 23:39:59 GMT
 1 &lt; Server: Jetty(9.2.9.v20150224)
-1 &lt; Transfer-Encoding: chunked
-{&quot;code&quot;:404,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;java.lang.NumberFormatException: For input string: \&quot;\&quot;fish\&quot;\&quot;&quot;}</pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;&lt;apiResponse&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;</pre>
       </div>
     </div>
   </div>
@@ -985,7 +988,7 @@ stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptExceptio
         
 <div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">status 404</span>
+  <span class="name">status 415</span>
   
   <span class="lead-duration duration">0.000</span>
 
@@ -1100,14 +1103,14 @@ stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptExceptio
   </div>
 
   
-  <span class="lead-duration duration">0.383</span>
+  <span class="lead-duration duration">0.363</span>
 
 
     <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-18">
     
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Find a pet by ID incorrect</span>
+  <span class="name">Update a pet with invalid category ID</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -1139,7 +1142,7 @@ stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptExceptio
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
-  <span class="name">path 'pet', id</span>
+  <span class="name">path 'pet'</span>
   
   <span class="lead-duration duration">0.000</span>
 
@@ -1189,9 +1192,9 @@ stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptExceptio
         
 <div class="brief passed">
   <span class="keyword indention">When</span>
-  <span class="name">method get</span>
+  <span class="name">method PUT</span>
   
-  <span class="lead-duration duration">0.382</span>
+  <span class="lead-duration duration">0.363</span>
 
 </div>
 
@@ -1208,24 +1211,27 @@ stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptExceptio
           <a>Doc string</a>
       </div>
       <div id="msg-20" class="collapse collapsable-details">
-        <pre>15:02:41.409 request:
-1 &gt; GET https://petstore.swagger.io/v2/pet/123.123
+        <pre>18:40:00.792 request:
+1 &gt; PUT https://petstore.swagger.io/v2/pet
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 7
+1 &gt; Content-Type: text/plain; charset=UTF-8
 1 &gt; Host: petstore.swagger.io
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
+123.123
 
-15:02:41.784 response time in milliseconds: 379,23
-1 &lt; 404
+18:40:01.152 response time in milliseconds: 358,08
+1 &lt; 415
 1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; Connection: keep-alive
-1 &lt; Content-Type: application/json
-1 &lt; Date: Sun, 28 Aug 2022 20:02:41 GMT
+1 &lt; Content-Length: 102
+1 &lt; Content-Type: application/xml
+1 &lt; Date: Sun, 28 Aug 2022 23:40:00 GMT
 1 &lt; Server: Jetty(9.2.9.v20150224)
-1 &lt; Transfer-Encoding: chunked
-{&quot;code&quot;:404,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;java.lang.NumberFormatException: For input string: \&quot;123.123\&quot;&quot;}</pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;&lt;apiResponse&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;</pre>
       </div>
     </div>
   </div>
@@ -1241,7 +1247,7 @@ stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptExceptio
         
 <div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">status 404</span>
+  <span class="name">status 415</span>
   
   <span class="lead-duration duration">0.000</span>
 

@@ -1,4 +1,4 @@
-package User;
+package karate.request.user;
 
 import com.intuit.karate.junit5.Karate;
 
