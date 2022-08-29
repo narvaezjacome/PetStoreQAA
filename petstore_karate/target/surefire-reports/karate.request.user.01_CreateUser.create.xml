@@ -1,0 +1,54 @@
+<testsuite failures="2" name="karate/request/user/01_CreateUser/create.feature" skipped="0" tests="3" time="1.320798">
+  <testcase classname="karate.request.user.01_CreateUser.create" name="check the service POST Method" time="0.503242">
+    <system-out>* url url ................................................................. passed
+* def requestCreate = {"id": '#(userId)',"username": '#(username)',"firstName": '#(firstName)', "lastName": '#(lastName)',"email": '#(email)', "password": '#(password)',"phone": '#(phone)', "userStatus": '#(userStatus)'} . passed
+Given path 'user' ......................................................... passed
+And request requestCreate ................................................. passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="karate.request.user.01_CreateUser.create" name="Create with invalid username" time="0.413303">
+    <failure message="create.feature:25 - status code was: 405, expected: 200, response time: 403, url: https://petstore.swagger.io/v2/user, response: &lt;apiResponse&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;">* url url ................................................................. passed
+* def requestCreate = {"id": '#(userId)',"username": '#(username)',"firstName": '#(firstName)', "lastName": '#(lastName)',"email": '#(email)', "password": '#(password)',"phone": '#(phone)', "userStatus": '#(userStatus)'} . passed
+Given path 'user' ......................................................... passed
+And request requestCreate ................................................. passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+* url url ................................................................. passed
+Given path 'user' ......................................................... passed
+And request  97779898 ..................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: create.feature:25 - status code was: 405, expected: 200, response time: 403, url: https://petstore.swagger.io/v2/user, response: &lt;apiResponse&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;&#13;
+	at ✽.Then status 200 (create.feature:25)</failure>
+  </testcase>
+  <testcase classname="karate.request.user.01_CreateUser.create" name="Create with invalid username" time="0.404254">
+    <failure message="create.feature:25 - status code was: 405, expected: 200, response time: 394, url: https://petstore.swagger.io/v2/user, response: &lt;apiResponse&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;">* url url ................................................................. passed
+* def requestCreate = {"id": '#(userId)',"username": '#(username)',"firstName": '#(firstName)', "lastName": '#(lastName)',"email": '#(email)', "password": '#(password)',"phone": '#(phone)', "userStatus": '#(userStatus)'} . passed
+Given path 'user' ......................................................... passed
+And request requestCreate ................................................. passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+* url url ................................................................. passed
+Given path 'user' ......................................................... passed
+And request  97779898 ..................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: create.feature:25 - status code was: 405, expected: 200, response time: 403, url: https://petstore.swagger.io/v2/user, response: &lt;apiResponse&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;&#13;
+	at ✽.Then status 200 (create.feature:25)&#13;
+
+* url url ................................................................. passed
+Given path 'user' ......................................................... passed
+And request  ")(/(  " ..................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: create.feature:25 - status code was: 405, expected: 200, response time: 394, url: https://petstore.swagger.io/v2/user, response: &lt;apiResponse&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;&#13;
+	at ✽.Then status 200 (create.feature:25)</failure>
+  </testcase>
+</testsuite>

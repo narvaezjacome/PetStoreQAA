@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="visualization"></div>
+    <script>
+var groups = new vis.DataSet([{"id":1,"content":"ForkJoinPool-1-worker-1"}]);
+var items = new vis.DataSet([{"id":1,"group":1,"content":"post[1:12]","start":2604,"end":4887,"title":"post[1:12] 18:00:02.604-18:00:04.887 check the service POST"},{"id":2,"group":1,"content":"post[2.1:32]","start":4906,"end":5503,"title":"post[2.1:32] 18:00:04.906-18:00:05.503 Add a pet using a valid status"},{"id":3,"group":1,"content":"post[2.2:33]","start":5527,"end":5960,"title":"post[2.2:33] 18:00:05.527-18:00:05.960 Add a pet using a valid status"},{"id":4,"group":1,"content":"post[2.3:34]","start":5977,"end":6389,"title":"post[2.3:34] 18:00:05.977-18:00:06.389 Add a pet using a valid status"},{"id":5,"group":1,"content":"get[1:11]","start":6459,"end":6461,"title":"get[1:11] 18:00:06.459-18:00:06.461 Check the service GET"},{"id":6,"group":1,"content":"get[2.1:32]","start":6481,"end":6841,"title":"get[2.1:32] 18:00:06.481-18:00:06.841 Find a pet by ID incorrect"},{"id":7,"group":1,"content":"get[2.2:33]","start":6857,"end":7308,"title":"get[2.2:33] 18:00:06.857-18:00:07.308 Find a pet by ID incorrect"},{"id":8,"group":1,"content":"get[2.3:34]","start":7320,"end":7728,"title":"get[2.3:34] 18:00:07.320-18:00:07.728 Find a pet by ID incorrect"},{"id":9,"group":1,"content":"put[1:11]","start":7774,"end":8205,"title":"put[1:11] 18:00:07.774-18:00:08.205 check the service PUT (UpdatePet) To see if status code is 200."},{"id":10,"group":1,"content":"put[2.1:30]","start":8222,"end":8636,"title":"put[2.1:30] 18:00:08.222-18:00:08.636 Update a pet with invalid category ID"},{"id":11,"group":1,"content":"put[2.2:31]","start":8646,"end":9078,"title":"put[2.2:31] 18:00:08.646-18:00:09.078 Update a pet with invalid category ID"},{"id":12,"group":1,"content":"put[2.3:32]","start":9091,"end":9464,"title":"put[2.3:32] 18:00:09.091-18:00:09.464 Update a pet with invalid category ID"},{"id":13,"group":1,"content":"delete[1:11]","start":9513,"end":9881,"title":"delete[1:11] 18:00:09.513-18:00:09.881 Check the service DELETE"},{"id":14,"group":1,"content":"delete[2.1:28]","start":9894,"end":10284,"title":"delete[2.1:28] 18:00:09.894-18:00:10.284 DELETE a pet with values an id in the url"},{"id":15,"group":1,"content":"delete[2.2:29]","start":10296,"end":10664,"title":"delete[2.2:29] 18:00:10.296-18:00:10.664 DELETE a pet with values an id in the url"},{"id":16,"group":1,"content":"delete[2.3:30]","start":10675,"end":11064,"title":"delete[2.3:30] 18:00:10.675-18:00:11.064 DELETE a pet with values an id in the url"},{"id":17,"group":1,"content":"delete[2.4:31]","start":11080,"end":11508,"title":"delete[2.4:31] 18:00:11.080-18:00:11.508 DELETE a pet with values an id in the url"},{"id":18,"group":1,"content":"create[1:11]","start":11571,"end":12076,"title":"create[1:11] 18:00:11.571-18:00:12.076 check the service POST Method"},{"id":19,"group":1,"content":"create[2.1:29]","start":12084,"end":12499,"title":"create[2.1:29] 18:00:12.084-18:00:12.499 Create with invalid username"},{"id":20,"group":1,"content":"create[2.2:30]","start":12507,"end":12911,"title":"create[2.2:30] 18:00:12.507-18:00:12.911 Create with invalid username"},{"id":21,"group":1,"content":"login[1:11]","start":12961,"end":13437,"title":"login[1:11] 18:00:12.961-18:00:13.437 Login with valid data"},{"id":22,"group":1,"content":"login[2.1:25]","start":13448,"end":13811,"title":"login[2.1:25] 18:00:13.448-18:00:13.811 Login with invalid username"},{"id":23,"group":1,"content":"login[2.2:26]","start":13819,"end":14227,"title":"login[2.2:26] 18:00:13.819-18:00:14.227 Login with invalid username"}]);
+var container = document.getElementById('visualization');
+var timeline = new vis.Timeline(container);
+timeline.setOptions({ groupOrder: 'content' });
+timeline.setGroups(groups);
+timeline.setItems(items);
+</script>
+  </body>
+</html>

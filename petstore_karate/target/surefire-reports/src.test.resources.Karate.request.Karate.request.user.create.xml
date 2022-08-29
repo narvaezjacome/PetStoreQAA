@@ -1,0 +1,15 @@
+<testsuite failures="1" name="src/test/resources/Karate/request/Karate.request/user/create.feature" skipped="0" tests="1" time="2.145348">
+  <testcase classname="src.test.resources.Karate.request.Karate.request.user.create" name="check the service POST Method" time="2.145348">
+    <failure message="create.feature:17 - org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 2; El marcador en el documento que precede al elemento raíz debe tener el formato correcto.">* url url ................................................................. passed
+* def requestCreate = {"id": '#(userId)',"username": '#(username)',"firstName": '#(firstName)', "lastName": '#(lastName)',"email": '#(email)', "password": '#(password)',"phone": '#(phone)', "userStatus": '#(userStatus)'} . passed
+Given path 'user' ......................................................... passed
+And request requestCreate ................................................. passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match response == &lt;200&gt; ............................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: create.feature:17 - org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 2; El marcador en el documento que precede al elemento raíz debe tener el formato correcto.&#13;
+	at ✽.And match response == &lt;200&gt; (create.feature:17)</failure>
+  </testcase>
+</testsuite>

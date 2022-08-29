@@ -1,0 +1,97 @@
+<testsuite failures="1" name="karate/request/pet/04_DeletePet/delete.feature" skipped="0" tests="5" time="1.939194">
+  <testcase classname="karate.request.pet.04_DeletePet.delete" name="Check the service DELETE" time="0.367357">
+    <system-out>* url url ................................................................. passed
+Given path 'pet', id ...................................................... passed
+When method delete ........................................................ passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="karate.request.pet.04_DeletePet.delete" name="DELETE a pet with values an id in the url" time="0.389436">
+    <system-out>* url url ................................................................. passed
+Given path 'pet', id ...................................................... passed
+When method delete ........................................................ passed
+Then status 200 ........................................................... passed
+* url url ................................................................. passed
+Given path 'pet', 123.123 ................................................. passed
+When method DELETE ........................................................ passed
+Then status 404 ........................................................... passed
+And match response == {"code": "#number","type": "#string","message": "#string"} . passed</system-out>
+  </testcase>
+  <testcase classname="karate.request.pet.04_DeletePet.delete" name="DELETE a pet with values an id in the url" time="0.366882">
+    <failure message="delete.feature:23 - status code was: 404, expected: 415, response time: 358, url: https://petstore.swagger.io/v2/pet/camel, response: {&quot;code&quot;:404,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;java.lang.NumberFormatException: For input string: \&quot;camel\&quot;&quot;}">* url url ................................................................. passed
+Given path 'pet', id ...................................................... passed
+When method delete ........................................................ passed
+Then status 200 ........................................................... passed
+* url url ................................................................. passed
+Given path 'pet', 123.123 ................................................. passed
+When method DELETE ........................................................ passed
+Then status 404 ........................................................... passed
+And match response == {"code": "#number","type": "#string","message": "#string"} . passed
+* url url ................................................................. passed
+Given path 'pet', "camel" ................................................. passed
+When method DELETE ........................................................ passed
+Then status 415 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: delete.feature:23 - status code was: 404, expected: 415, response time: 358, url: https://petstore.swagger.io/v2/pet/camel, response: {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"camel\""}&#13;
+	at ✽.Then status 415 (delete.feature:23)&#13;
+
+And match response == {"code": "#number","type": "#string","message": "#string"} . skipped</failure>
+  </testcase>
+  <testcase classname="karate.request.pet.04_DeletePet.delete" name="DELETE a pet with values an id in the url" time="0.387467">
+    <system-out>* url url ................................................................. passed
+Given path 'pet', id ...................................................... passed
+When method delete ........................................................ passed
+Then status 200 ........................................................... passed
+* url url ................................................................. passed
+Given path 'pet', 123.123 ................................................. passed
+When method DELETE ........................................................ passed
+Then status 404 ........................................................... passed
+And match response == {"code": "#number","type": "#string","message": "#string"} . passed
+* url url ................................................................. passed
+Given path 'pet', "camel" ................................................. passed
+When method DELETE ........................................................ passed
+Then status 415 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: delete.feature:23 - status code was: 404, expected: 415, response time: 358, url: https://petstore.swagger.io/v2/pet/camel, response: {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"camel\""}&#13;
+	at ✽.Then status 415 (delete.feature:23)&#13;
+
+And match response == {"code": "#number","type": "#string","message": "#string"} . skipped
+* url url ................................................................. passed
+Given path 'pet',  ........................................................ passed
+When method DELETE ........................................................ passed
+Then status 405 ........................................................... passed
+And match response == &lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;&lt;apiResponse&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt; . passed</system-out>
+  </testcase>
+  <testcase classname="karate.request.pet.04_DeletePet.delete" name="DELETE a pet with values an id in the url" time="0.428053">
+    <system-out>* url url ................................................................. passed
+Given path 'pet', id ...................................................... passed
+When method delete ........................................................ passed
+Then status 200 ........................................................... passed
+* url url ................................................................. passed
+Given path 'pet', 123.123 ................................................. passed
+When method DELETE ........................................................ passed
+Then status 404 ........................................................... passed
+And match response == {"code": "#number","type": "#string","message": "#string"} . passed
+* url url ................................................................. passed
+Given path 'pet', "camel" ................................................. passed
+When method DELETE ........................................................ passed
+Then status 415 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: delete.feature:23 - status code was: 404, expected: 415, response time: 358, url: https://petstore.swagger.io/v2/pet/camel, response: {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"camel\""}&#13;
+	at ✽.Then status 415 (delete.feature:23)&#13;
+
+And match response == {"code": "#number","type": "#string","message": "#string"} . skipped
+* url url ................................................................. passed
+Given path 'pet',  ........................................................ passed
+When method DELETE ........................................................ passed
+Then status 405 ........................................................... passed
+And match response == &lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;&lt;apiResponse&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt; . passed
+* url url ................................................................. passed
+Given path 'pet', "@#$%&amp;" ................................................. passed
+When method DELETE ........................................................ passed
+Then status 404 ........................................................... passed
+And match response == {"code": "#number","type": "#string","message": "#string"} . passed</system-out>
+  </testcase>
+</testsuite>

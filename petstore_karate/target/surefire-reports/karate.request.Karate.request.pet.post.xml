@@ -1,0 +1,64 @@
+<testsuite failures="0" name="karate/request/Karate.request/pet/post.feature" skipped="0" tests="4" time="1.551843">
+  <testcase classname="karate.request.Karate.request.pet.post" name="check the service POST" time="0.439732">
+    <system-out>* url url ................................................................. passed
+* def CreatePet = {"id": '#(id)',"category": {"id": 1,"name": '#(nameCategory)'},"name": "doggie","photoUrls": ["string"],"tags": [{"id": 1,"name": '#(tagsName)'}],"status": "available"} . passed
+Given path 'pet' .......................................................... passed
+And request CreatePet ..................................................... passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="karate.request.Karate.request.pet.post" name="Add a pet using a valid status" time="0.382511">
+    <system-out>* url url ................................................................. passed
+* def CreatePet = {"id": '#(id)',"category": {"id": 1,"name": '#(nameCategory)'},"name": "doggie","photoUrls": ["string"],"tags": [{"id": 1,"name": '#(tagsName)'}],"status": "available"} . passed
+Given path 'pet' .......................................................... passed
+And request CreatePet ..................................................... passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... passed
+* url url ................................................................. passed
+Given path 'pet' .......................................................... passed
+And request "@$#%&amp;" ....................................................... passed
+When method post .......................................................... passed
+Then status 415 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="karate.request.Karate.request.pet.post" name="Add a pet using a valid status" time="0.394492">
+    <system-out>* url url ................................................................. passed
+* def CreatePet = {"id": '#(id)',"category": {"id": 1,"name": '#(nameCategory)'},"name": "doggie","photoUrls": ["string"],"tags": [{"id": 1,"name": '#(tagsName)'}],"status": "available"} . passed
+Given path 'pet' .......................................................... passed
+And request CreatePet ..................................................... passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... passed
+* url url ................................................................. passed
+Given path 'pet' .......................................................... passed
+And request "@$#%&amp;" ....................................................... passed
+When method post .......................................................... passed
+Then status 415 ........................................................... passed
+* url url ................................................................. passed
+Given path 'pet' .......................................................... passed
+And request "squirtle" .................................................... passed
+When method post .......................................................... passed
+Then status 415 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="karate.request.Karate.request.pet.post" name="Add a pet using a valid status" time="0.335108">
+    <system-out>* url url ................................................................. passed
+* def CreatePet = {"id": '#(id)',"category": {"id": 1,"name": '#(nameCategory)'},"name": "doggie","photoUrls": ["string"],"tags": [{"id": 1,"name": '#(tagsName)'}],"status": "available"} . passed
+Given path 'pet' .......................................................... passed
+And request CreatePet ..................................................... passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... passed
+* url url ................................................................. passed
+Given path 'pet' .......................................................... passed
+And request "@$#%&amp;" ....................................................... passed
+When method post .......................................................... passed
+Then status 415 ........................................................... passed
+* url url ................................................................. passed
+Given path 'pet' .......................................................... passed
+And request "squirtle" .................................................... passed
+When method post .......................................................... passed
+Then status 415 ........................................................... passed
+* url url ................................................................. passed
+Given path 'pet' .......................................................... passed
+And request 123.123 ....................................................... passed
+When method post .......................................................... passed
+Then status 415 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>

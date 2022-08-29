@@ -1,0 +1,92 @@
+<testsuite failures="1" name="karate/request/Karate.request/pet/put.feature" skipped="0" tests="4" time="1.264403">
+  <testcase classname="karate.request.Karate.request.pet.put" name="check the service PUT (UpdatePet) To see if status code is 200." time="0.046424">
+    <failure message="put.feature:11 - could not find or read file: classpath:karate/request/responsePut.json">* url url ................................................................. passed
+* def requestPut = {"id": "#(id)", "category": {"id": "#(idCategory)", "name": "#(nameCategory)"},"name": "#(name)","photoUrls": ["#(photoUrls)"],"tags": [{"id": "#(idTags)","name": "#(nameTags)"}],"status": "#(status)"} . passed
+* def responsePut = read('classpath:karate/request/responsePut.json') ..... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: put.feature:11 - could not find or read file: classpath:karate/request/responsePut.json&#13;
+	at ✽.* def responsePut = read('classpath:karate/request/responsePut.json') (put.feature:11)&#13;
+
+Given path 'pet' .......................................................... skipped
+And request requestPut .................................................... skipped
+When method put ........................................................... skipped
+Then status 200 ........................................................... skipped
+And match response == responsePut ......................................... skipped</failure>
+  </testcase>
+  <testcase classname="karate.request.Karate.request.pet.put" name="Update a pet with invalid category ID" time="0.432834">
+    <system-out>* url url ................................................................. passed
+* def requestPut = {"id": "#(id)", "category": {"id": "#(idCategory)", "name": "#(nameCategory)"},"name": "#(name)","photoUrls": ["#(photoUrls)"],"tags": [{"id": "#(idTags)","name": "#(nameTags)"}],"status": "#(status)"} . passed
+* def responsePut = read('classpath:karate/request/responsePut.json') ..... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: put.feature:11 - could not find or read file: classpath:karate/request/responsePut.json&#13;
+	at ✽.* def responsePut = read('classpath:karate/request/responsePut.json') (put.feature:11)&#13;
+
+Given path 'pet' .......................................................... skipped
+And request requestPut .................................................... skipped
+When method put ........................................................... skipped
+Then status 200 ........................................................... skipped
+And match response == responsePut ......................................... skipped
+* url url ................................................................. passed
+Given path 'pet' .......................................................... passed
+And request "@$#%&amp;" ....................................................... passed
+When method PUT ........................................................... passed
+Then status 415 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="karate.request.Karate.request.pet.put" name="Update a pet with invalid category ID" time="0.376371">
+    <system-out>* url url ................................................................. passed
+* def requestPut = {"id": "#(id)", "category": {"id": "#(idCategory)", "name": "#(nameCategory)"},"name": "#(name)","photoUrls": ["#(photoUrls)"],"tags": [{"id": "#(idTags)","name": "#(nameTags)"}],"status": "#(status)"} . passed
+* def responsePut = read('classpath:karate/request/responsePut.json') ..... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: put.feature:11 - could not find or read file: classpath:karate/request/responsePut.json&#13;
+	at ✽.* def responsePut = read('classpath:karate/request/responsePut.json') (put.feature:11)&#13;
+
+Given path 'pet' .......................................................... skipped
+And request requestPut .................................................... skipped
+When method put ........................................................... skipped
+Then status 200 ........................................................... skipped
+And match response == responsePut ......................................... skipped
+* url url ................................................................. passed
+Given path 'pet' .......................................................... passed
+And request "@$#%&amp;" ....................................................... passed
+When method PUT ........................................................... passed
+Then status 415 ........................................................... passed
+* url url ................................................................. passed
+Given path 'pet' .......................................................... passed
+And request "squirtle" .................................................... passed
+When method PUT ........................................................... passed
+Then status 415 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="karate.request.Karate.request.pet.put" name="Update a pet with invalid category ID" time="0.408774">
+    <system-out>* url url ................................................................. passed
+* def requestPut = {"id": "#(id)", "category": {"id": "#(idCategory)", "name": "#(nameCategory)"},"name": "#(name)","photoUrls": ["#(photoUrls)"],"tags": [{"id": "#(idTags)","name": "#(nameTags)"}],"status": "#(status)"} . passed
+* def responsePut = read('classpath:karate/request/responsePut.json') ..... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: put.feature:11 - could not find or read file: classpath:karate/request/responsePut.json&#13;
+	at ✽.* def responsePut = read('classpath:karate/request/responsePut.json') (put.feature:11)&#13;
+
+Given path 'pet' .......................................................... skipped
+And request requestPut .................................................... skipped
+When method put ........................................................... skipped
+Then status 200 ........................................................... skipped
+And match response == responsePut ......................................... skipped
+* url url ................................................................. passed
+Given path 'pet' .......................................................... passed
+And request "@$#%&amp;" ....................................................... passed
+When method PUT ........................................................... passed
+Then status 415 ........................................................... passed
+* url url ................................................................. passed
+Given path 'pet' .......................................................... passed
+And request "squirtle" .................................................... passed
+When method PUT ........................................................... passed
+Then status 415 ........................................................... passed
+* url url ................................................................. passed
+Given path 'pet' .......................................................... passed
+And request 123.123 ....................................................... passed
+When method PUT ........................................................... passed
+Then status 415 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,104 @@
+<testsuite failures="1" name="karate/request/get.feature" skipped="0" tests="4" time="1.19044">
+  <testcase classname="karate.request.get" name="Check the service GET" time="0.004461">
+    <failure message="get.feature:12 - evaluation (js) failed: read('classpath:Karate/request/reponseGet.json), javax.script.ScriptException: &lt;eval&gt;:1:47 Missing close quote&#13;&#10;read('classpath:Karate/request/reponseGet.json)&#13;&#10;                                               ^ in &lt;eval&gt; at line number 1 at column number 47&#10;stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)">* url url ................................................................. passed
+* def responseGet = read('classpath:Karate/request/reponseGet.json) ....... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: get.feature:12 - evaluation (js) failed: read('classpath:Karate/request/reponseGet.json), javax.script.ScriptException: &lt;eval&gt;:1:47 Missing close quote&#13;
+read('classpath:Karate/request/reponseGet.json)&#13;
+                                               ^ in &lt;eval&gt; at line number 1 at column number 47
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#13;
+	at ✽.* def responseGet = read('classpath:Karate/request/reponseGet.json) (get.feature:12)&#13;
+
+Given path 'pet', id ...................................................... skipped
+When method GET ........................................................... skipped
+Then status 200 ........................................................... skipped
+And match response == responsesGet ........................................ skipped
+And assert response.support.text == "To keep ReqRes free, contribuitions .. skipped
+And assert response.data.email == email ................................... skipped</failure>
+  </testcase>
+  <testcase classname="karate.request.get" name="Find a pet by ID incorrect" time="0.420844">
+    <system-out>* url url ................................................................. passed
+* def responseGet = read('classpath:Karate/request/reponseGet.json) ....... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: get.feature:12 - evaluation (js) failed: read('classpath:Karate/request/reponseGet.json), javax.script.ScriptException: &lt;eval&gt;:1:47 Missing close quote&#13;
+read('classpath:Karate/request/reponseGet.json)&#13;
+                                               ^ in &lt;eval&gt; at line number 1 at column number 47
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#13;
+	at ✽.* def responseGet = read('classpath:Karate/request/reponseGet.json) (get.feature:12)&#13;
+
+Given path 'pet', id ...................................................... skipped
+When method GET ........................................................... skipped
+Then status 200 ........................................................... skipped
+And match response == responsesGet ........................................ skipped
+And assert response.support.text == "To keep ReqRes free, contribuitions .. skipped
+And assert response.data.email == email ................................... skipped
+* url url ................................................................. passed
+Given path 'pet', id ...................................................... passed
+And request "@#$%" ........................................................ passed
+When method get ........................................................... passed
+Then status 404 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="karate.request.get" name="Find a pet by ID incorrect" time="0.381771">
+    <system-out>* url url ................................................................. passed
+* def responseGet = read('classpath:Karate/request/reponseGet.json) ....... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: get.feature:12 - evaluation (js) failed: read('classpath:Karate/request/reponseGet.json), javax.script.ScriptException: &lt;eval&gt;:1:47 Missing close quote&#13;
+read('classpath:Karate/request/reponseGet.json)&#13;
+                                               ^ in &lt;eval&gt; at line number 1 at column number 47
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#13;
+	at ✽.* def responseGet = read('classpath:Karate/request/reponseGet.json) (get.feature:12)&#13;
+
+Given path 'pet', id ...................................................... skipped
+When method GET ........................................................... skipped
+Then status 200 ........................................................... skipped
+And match response == responsesGet ........................................ skipped
+And assert response.support.text == "To keep ReqRes free, contribuitions .. skipped
+And assert response.data.email == email ................................... skipped
+* url url ................................................................. passed
+Given path 'pet', id ...................................................... passed
+And request "@#$%" ........................................................ passed
+When method get ........................................................... passed
+Then status 404 ........................................................... passed
+* url url ................................................................. passed
+Given path 'pet', id ...................................................... passed
+And request "fish" ........................................................ passed
+When method get ........................................................... passed
+Then status 404 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="karate.request.get" name="Find a pet by ID incorrect" time="0.383365">
+    <system-out>* url url ................................................................. passed
+* def responseGet = read('classpath:Karate/request/reponseGet.json) ....... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: get.feature:12 - evaluation (js) failed: read('classpath:Karate/request/reponseGet.json), javax.script.ScriptException: &lt;eval&gt;:1:47 Missing close quote&#13;
+read('classpath:Karate/request/reponseGet.json)&#13;
+                                               ^ in &lt;eval&gt; at line number 1 at column number 47
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#13;
+	at ✽.* def responseGet = read('classpath:Karate/request/reponseGet.json) (get.feature:12)&#13;
+
+Given path 'pet', id ...................................................... skipped
+When method GET ........................................................... skipped
+Then status 200 ........................................................... skipped
+And match response == responsesGet ........................................ skipped
+And assert response.support.text == "To keep ReqRes free, contribuitions .. skipped
+And assert response.data.email == email ................................... skipped
+* url url ................................................................. passed
+Given path 'pet', id ...................................................... passed
+And request "@#$%" ........................................................ passed
+When method get ........................................................... passed
+Then status 404 ........................................................... passed
+* url url ................................................................. passed
+Given path 'pet', id ...................................................... passed
+And request "fish" ........................................................ passed
+When method get ........................................................... passed
+Then status 404 ........................................................... passed
+* url url ................................................................. passed
+Given path 'pet', id ...................................................... passed
+And request 123.123 ....................................................... passed
+When method get ........................................................... passed
+Then status 404 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>
