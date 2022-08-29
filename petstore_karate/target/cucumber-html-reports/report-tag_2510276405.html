@@ -74,8 +74,8 @@ $(document).ready(function() {
   </thead>
   <tbody>
     <tr class="info">
-      <td>PetStore API</td>
-            <td>28 ago 2022, 23:20</td>
+      <td>API PetStore</td>
+            <td>29 ago 2022, 11:43</td>
     </tr>
   </tbody>
 </table>
@@ -139,7 +139,7 @@ $(document).ready(function() {
           <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="430503100">0.430</td>
+          <td class="duration" data-value="441400000">0.441</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -172,7 +172,7 @@ $(document).ready(function() {
 <div class="element">
       <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_12_2991517290.html">karate/request/pet/03_UpdatePet/put.feature</a>
+      <a href="report-feature_2_2991517290.html">karate/request/pet/03_UpdatePet/put.feature</a>
     </div>
   
   
@@ -184,7 +184,7 @@ $(document).ready(function() {
       </div>
 
   
-  <span class="lead-duration duration">0.430</span>
+  <span class="lead-duration duration">0.441</span>
 
 
     <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
@@ -225,7 +225,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def requestPut = {&quot;id&quot;: &quot;#(id)&quot;, &quot;category&quot;: {&quot;id&quot;: &quot;#(idCategory)&quot;, &quot;name&quot;: &quot;#(nameCategory)&quot;},&quot;name&quot;: &quot;#(name)&quot;,&quot;photoUrls&quot;: [&quot;#(photoUrls)&quot;],&quot;tags&quot;: [{&quot;id&quot;: &quot;#(idTags)&quot;,&quot;name&quot;: &quot;#(nameTags)&quot;}],&quot;status&quot;: &quot;#(status)&quot;}</span>
   
-  <span class="lead-duration duration">0.032</span>
+  <span class="lead-duration duration">0.025</span>
 
 </div>
 
@@ -250,7 +250,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def responsePut = read('classpath:Karate/request/pet/03_UpdatePet/responsePut.json')</span>
   
-  <span class="lead-duration duration">0.007</span>
+  <span class="lead-duration duration">0.004</span>
 
 </div>
 
@@ -323,9 +323,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">When</span>
-  <span class="name">method put</span>
+  <span class="name">method PUT</span>
   
-  <span class="lead-duration duration">0.390</span>
+  <span class="lead-duration duration">0.410</span>
 
 </div>
 
@@ -342,7 +342,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details">
-        <pre>23:20:13.327 request:
+        <pre>11:43:46.105 request:
 1 &gt; PUT https://petstore.swagger.io/v2/pet
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
@@ -352,14 +352,14 @@ $(document).ready(function() {
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
 {&quot;id&quot;:2,&quot;category&quot;:{&quot;id&quot;:&quot;#(idCategory)&quot;,&quot;name&quot;:&quot;#(nameCategory)&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[[&quot;dog.jpg&quot;]],&quot;tags&quot;:[{&quot;id&quot;:&quot;#(idTags)&quot;,&quot;name&quot;:&quot;#(nameTags)&quot;}],&quot;status&quot;:&quot;available&quot;}
 
-23:20:13.715 response time in milliseconds: 386,97
+11:43:46.511 response time in milliseconds: 407,74
 1 &lt; 500
 1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json
-1 &lt; Date: Mon, 29 Aug 2022 04:20:13 GMT
+1 &lt; Date: Mon, 29 Aug 2022 16:43:46 GMT
 1 &lt; Server: Jetty(9.2.9.v20150224)
 1 &lt; Transfer-Encoding: chunked
 {&quot;code&quot;:500,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;something bad happened&quot;}</pre>
@@ -394,7 +394,7 @@ $(document).ready(function() {
           <a>com.intuit.karate.exception.KarateException:</a>
       </div>
       <div id="msg-4" class="collapse collapsable-details  in ">
-        <pre>com.intuit.karate.exception.KarateException: put.feature:18 - status code was: 500, expected: 200, response time: 387, url: https://petstore.swagger.io/v2/pet, response: {&quot;code&quot;:500,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;something bad happened&quot;}</pre>
+        <pre>com.intuit.karate.exception.KarateException: put.feature:18 - status code was: 500, expected: 200, response time: 408, url: https://petstore.swagger.io/v2/pet, response: {&quot;code&quot;:500,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;something bad happened&quot;}</pre>
       </div>
     </div>
   </div>
@@ -408,7 +408,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-5" class="collapse collapsable-details">
-        <pre>23:20:13.715 status code was: 500, expected: 200, response time: 387, url: https://petstore.swagger.io/v2/pet, response: {&quot;code&quot;:500,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;something bad happened&quot;}</pre>
+        <pre>11:43:46.511 status code was: 500, expected: 200, response time: 408, url: https://petstore.swagger.io/v2/pet, response: {&quot;code&quot;:500,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;something bad happened&quot;}</pre>
       </div>
     </div>
   </div>

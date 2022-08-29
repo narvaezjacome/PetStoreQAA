@@ -51,9 +51,9 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                450,
-                33,
-                35,
+                105,
+                6,
+                4,
                 0,
                 0
             ],
@@ -94,7 +94,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 518) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 115) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -107,8 +107,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                63,
-                33
+                15,
+                6
             ],
             backgroundColor: [
                 "#00B000",
@@ -144,7 +144,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 96) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 21) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -157,8 +157,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                   11,
-                   16
+                   3,
+                   3
                ],
                backgroundColor: [
                 "#00B000",
@@ -191,7 +191,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 27) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 6) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -231,8 +231,8 @@ $(document).ready(function() {
   </thead>
   <tbody>
     <tr class="info">
-      <td>PetStore API</td>
-            <td>28 ago 2022, 23:20</td>
+      <td>API PetStore</td>
+            <td>29 ago 2022, 11:43</td>
     </tr>
   </tbody>
 </table>
@@ -327,92 +327,7 @@ $(document).ready(function() {
 
   <tbody>
           <tr>
-        <td class="tagname"><a href="report-feature_1850955388.html">karate/request/create.feature</a></td>
-
-        <td      class="passed"    >6</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">6</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="1752353900">1.752</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-feature_1_3170376747.html">karate/request/delete.feature</a></td>
-
-        <td      class="passed"    >24</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">24</td>
-
-        <td  class="passed"    >5</td>
-        <td >0</td>
-        <td class="total">5</td>
-
-        <td class="duration" data-value="1970881400">1.970</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-feature_2_1252112516.html">karate/request/get.feature</a></td>
-
-        <td      class="passed"    >16</td>
-        <td      class="failed"    >1</td>
-        <td     class="skipped"   >6</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">23</td>
-
-        <td  class="passed"    >3</td>
-        <td  class="failed"    >1</td>
-        <td class="total">4</td>
-
-        <td class="duration" data-value="1190440000">1.190</td>
-        <td class="failed">Failed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-feature_3_2530140833.html">karate/request/Karate.request/pet/delete.feature</a></td>
-
-        <td      class="passed"    >24</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">24</td>
-
-        <td  class="passed"    >5</td>
-        <td >0</td>
-        <td class="total">5</td>
-
-        <td class="duration" data-value="4489434000">4.489</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-feature_4_1387754958.html">karate/request/Karate.request/pet/get.feature</a></td>
-
-        <td      class="passed"    >16</td>
-        <td      class="failed"    >1</td>
-        <td     class="skipped"   >6</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">23</td>
-
-        <td  class="passed"    >3</td>
-        <td  class="failed"    >1</td>
-        <td class="total">4</td>
-
-        <td class="duration" data-value="1338618000">1.338</td>
-        <td class="failed">Failed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-feature_5_842899542.html">karate/request/Karate.request/pet/post.feature</a></td>
+        <td class="tagname"><a href="report-feature_2449494499.html">karate/request/pet/01_AddPet/post.feature</a></td>
 
         <td      class="passed"    >21</td>
         <td >0</td>
@@ -425,100 +340,15 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">4</td>
 
-        <td class="duration" data-value="1551843100">1.551</td>
+        <td class="duration" data-value="3662292600">3.662</td>
         <td class="passed">Passed</td>
       </tr>
           <tr>
-        <td class="tagname"><a href="report-feature_6_3545813127.html">karate/request/Karate.request/pet/put.feature</a></td>
+        <td class="tagname"><a href="report-feature_1_161130139.html">karate/request/pet/02_FindPetID/get.feature</a></td>
 
-        <td      class="passed"    >17</td>
+        <td      class="passed"    >20</td>
         <td      class="failed"    >1</td>
-        <td     class="skipped"   >5</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">23</td>
-
-        <td  class="passed"    >3</td>
-        <td  class="failed"    >1</td>
-        <td class="total">4</td>
-
-        <td class="duration" data-value="1264402900">1.264</td>
-        <td class="failed">Failed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-feature_7_787626152.html">karate/request/Karate.request/user/create.feature</a></td>
-
-        <td      class="passed"    >6</td>
-        <td      class="failed"    >1</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">7</td>
-
-        <td >0</td>
-        <td  class="failed"    >1</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="523318800">0.523</td>
-        <td class="failed">Failed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-feature_8_3734769707.html">karate/request/Karate.request/user/login.feature</a></td>
-
-        <td      class="passed"    >22</td>
-        <td      class="failed"    >4</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">26</td>
-
-        <td  class="passed"    >1</td>
-        <td  class="failed"    >4</td>
-        <td class="total">5</td>
-
-        <td class="duration" data-value="2006269000">2.006</td>
-        <td class="failed">Failed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-feature_9_443934679.html">karate/request/login.feature</a></td>
-
-        <td      class="passed"    >22</td>
-        <td      class="failed"    >4</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">26</td>
-
-        <td  class="passed"    >1</td>
-        <td  class="failed"    >4</td>
-        <td class="total">5</td>
-
-        <td class="duration" data-value="1923346500">1.923</td>
-        <td class="failed">Failed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-feature_10_2449494499.html">karate/request/pet/01_AddPet/post.feature</a></td>
-
-        <td      class="passed"    >18</td>
-        <td      class="failed"    >3</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">21</td>
-
-        <td  class="passed"    >1</td>
-        <td  class="failed"    >3</td>
-        <td class="total">4</td>
-
-        <td class="duration" data-value="3699024700">3.699</td>
-        <td class="failed">Failed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-feature_11_161130139.html">karate/request/pet/02_FindPetID/get.feature</a></td>
-
-        <td      class="passed"    >16</td>
-        <td      class="failed"    >1</td>
-        <td     class="skipped"   >5</td>
+        <td     class="skipped"   >1</td>
         <td >0</td>
         <td >0</td>
         <td class="total">22</td>
@@ -527,11 +357,11 @@ $(document).ready(function() {
         <td  class="failed"    >1</td>
         <td class="total">4</td>
 
-        <td class="duration" data-value="1217691400">1.217</td>
+        <td class="duration" data-value="1589379600">1.589</td>
         <td class="failed">Failed</td>
       </tr>
           <tr>
-        <td class="tagname"><a href="report-feature_12_2991517290.html">karate/request/pet/03_UpdatePet/put.feature</a></td>
+        <td class="tagname"><a href="report-feature_2_2991517290.html">karate/request/pet/03_UpdatePet/put.feature</a></td>
 
         <td      class="passed"    >18</td>
         <td      class="failed"    >4</td>
@@ -544,147 +374,45 @@ $(document).ready(function() {
         <td  class="failed"    >4</td>
         <td class="total">4</td>
 
-        <td class="duration" data-value="1646952900">1.646</td>
+        <td class="duration" data-value="1573117300">1.573</td>
         <td class="failed">Failed</td>
       </tr>
           <tr>
-        <td class="tagname"><a href="report-feature_13_1440596319.html">karate/request/pet/04_DeletePet/delete.feature</a></td>
+        <td class="tagname"><a href="report-feature_3_1440596319.html">karate/request/pet/04_DeletePet/delete.feature</a></td>
 
-        <td      class="passed"    >22</td>
+        <td      class="passed"    >13</td>
         <td      class="failed"    >1</td>
-        <td     class="skipped"   >1</td>
+        <td     class="skipped"   >2</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">24</td>
+        <td class="total">16</td>
 
-        <td  class="passed"    >4</td>
+        <td  class="passed"    >2</td>
         <td  class="failed"    >1</td>
-        <td class="total">5</td>
+        <td class="total">3</td>
 
-        <td class="duration" data-value="1939194400">1.939</td>
+        <td class="duration" data-value="1145635000">1.145</td>
         <td class="failed">Failed</td>
       </tr>
           <tr>
-        <td class="tagname"><a href="report-feature_14_2440480411.html">karate/request/pet/delete.feature</a></td>
-
-        <td      class="passed"    >24</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">24</td>
-
-        <td  class="passed"    >5</td>
-        <td >0</td>
-        <td class="total">5</td>
-
-        <td class="duration" data-value="4157660500">4.157</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-feature_15_1769514004.html">karate/request/pet/get.feature</a></td>
+        <td class="tagname"><a href="report-feature_4_1140604920.html">karate/request/user/01_CreateUser/create.feature</a></td>
 
         <td      class="passed"    >16</td>
-        <td      class="failed"    >1</td>
-        <td     class="skipped"   >5</td>
         <td >0</td>
-        <td >0</td>
-        <td class="total">22</td>
-
-        <td  class="passed"    >3</td>
-        <td  class="failed"    >1</td>
-        <td class="total">4</td>
-
-        <td class="duration" data-value="1324211900">1.324</td>
-        <td class="failed">Failed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-feature_16_4087495376.html">karate/request/pet/post.feature</a></td>
-
-        <td      class="passed"    >18</td>
-        <td      class="failed"    >3</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">21</td>
-
-        <td  class="passed"    >1</td>
-        <td  class="failed"    >3</td>
-        <td class="total">4</td>
-
-        <td class="duration" data-value="1694529400">1.694</td>
-        <td class="failed">Failed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-feature_17_3927572173.html">karate/request/pet/put.feature</a></td>
-
-        <td      class="passed"    >14</td>
-        <td      class="failed"    >4</td>
-        <td     class="skipped"   >5</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">23</td>
-
-        <td >0</td>
-        <td  class="failed"    >4</td>
-        <td class="total">4</td>
-
-        <td class="duration" data-value="1241323200">1.241</td>
-        <td class="failed">Failed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-feature_18_932951136.html">karate/request/post.feature</a></td>
-
-        <td      class="passed"    >21</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">21</td>
-
-        <td  class="passed"    >4</td>
-        <td >0</td>
-        <td class="total">4</td>
-
-        <td class="duration" data-value="1478607300">1.478</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-feature_19_3410170685.html">karate/request/put.feature</a></td>
-
-        <td      class="passed"    >21</td>
-        <td      class="failed"    >1</td>
-        <td     class="skipped"   >1</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">23</td>
-
-        <td  class="passed"    >3</td>
-        <td  class="failed"    >1</td>
-        <td class="total">4</td>
-
-        <td class="duration" data-value="1513655700">1.513</td>
-        <td class="failed">Failed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-feature_20_1140604920.html">karate/request/user/01_CreateUser/create.feature</a></td>
-
-        <td      class="passed"    >14</td>
-        <td      class="failed"    >2</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
         <td class="total">16</td>
 
-        <td  class="passed"    >1</td>
-        <td  class="failed"    >2</td>
+        <td  class="passed"    >3</td>
+        <td >0</td>
         <td class="total">3</td>
 
-        <td class="duration" data-value="1320798400">1.320</td>
-        <td class="failed">Failed</td>
+        <td class="duration" data-value="1206047500">1.206</td>
+        <td class="passed">Passed</td>
       </tr>
           <tr>
-        <td class="tagname"><a href="report-feature_21_1989758339.html">karate/request/user/02_LoginUser/login.feature</a></td>
+        <td class="tagname"><a href="report-feature_5_1989758339.html">karate/request/user/02_LoginUser/login.feature</a></td>
 
         <td      class="passed"    >17</td>
         <td >0</td>
@@ -697,92 +425,7 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">3</td>
 
-        <td class="duration" data-value="1243398500">1.243</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-feature_22_2303120366.html">karate/request/user/create.feature</a></td>
-
-        <td      class="passed"    >6</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">6</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="519833000">0.519</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-feature_23_3645109285.html">karate/request/user/login.feature</a></td>
-
-        <td      class="passed"    >17</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">17</td>
-
-        <td  class="passed"    >3</td>
-        <td >0</td>
-        <td class="total">3</td>
-
-        <td class="duration" data-value="1247095700">1.247</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-feature_24_207977327.html">src/test/resources/Karate/request/delete.feature</a></td>
-
-        <td      class="passed"    >22</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">22</td>
-
-        <td  class="passed"    >4</td>
-        <td >0</td>
-        <td class="total">4</td>
-
-        <td class="duration" data-value="2192502900">2.192</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-feature_25_2711309804.html">src/test/resources/Karate/request/Karate.request/user/create.feature</a></td>
-
-        <td      class="passed"    >6</td>
-        <td      class="failed"    >1</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">7</td>
-
-        <td >0</td>
-        <td  class="failed"    >1</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="2145347900">2.145</td>
-        <td class="failed">Failed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-feature_26_916460708.html">src/test/resources/Karate/request/post.feature</a></td>
-
-        <td      class="passed"    >6</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">6</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="1082173600">1.082</td>
+        <td class="duration" data-value="1216679200">1.216</td>
         <td class="passed">Passed</td>
       </tr>
       </tbody>
@@ -790,33 +433,33 @@ $(document).ready(function() {
   <tfoot class="total">
     <tr>
       <td></td>
-      <td>450</td>
-      <td>33</td>
-      <td>35</td>
+      <td>105</td>
+      <td>6</td>
+      <td>4</td>
       <td>0</td>
       <td>0</td>
-      <td>518</td>
+      <td>115</td>
 
-      <td>63</td>
-      <td>33</td>
-      <td>96</td>
+      <td>15</td>
+      <td>6</td>
+      <td>21</td>
 
-      <td class="duration">47.674</td>
-      <td>27</td>
+      <td class="duration">10.393</td>
+      <td>6</td>
     </tr>
     <tr>
       <td></td>
-            <td>86.87%</td>
-      <td>6.37%</td>
-      <td>6.76%</td>
+            <td>91.30%</td>
+      <td>5.22%</td>
+      <td>3.48%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
-      <td>65.62%</td>
-      <td>34.38%</td>
+      <td>71.43%</td>
+      <td>28.57%</td>
       <td></td>
       <td></td>
-      <td>40.74%</td>
+      <td>50.00%</td>
     </tr>
   </tfoot>
 </table>

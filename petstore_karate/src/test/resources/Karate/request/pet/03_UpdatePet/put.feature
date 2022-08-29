@@ -14,7 +14,7 @@ Feature: Service client PUT
 
     Given path 'pet'
     And request requestPut
-    When method put
+    When method PUT
     Then status 200
     And match response == responsePut
 

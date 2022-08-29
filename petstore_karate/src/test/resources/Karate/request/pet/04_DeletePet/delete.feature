@@ -1,4 +1,4 @@
-Feature: Service client delete
+Feature: Service delete pet
   As AQ Automation
   I want to Delete a pet
   to validate the Status code and response
@@ -8,11 +8,13 @@ Feature: Service client delete
     @Pet
   @DeletePet
   @HappyPath
-  Scenario: Check the service DELETE
+  Scenario: Check the service DELETE pet
 
-    Given path 'pet', id
-    When method delete
-    Then status 200
+      Given path 'pet', 'id'
+      When method DELETE
+      Then status 200
+      And match response == deleteResponse
+      And assert response.message == message
 
 @VariablePath
   Scenario Outline: DELETE a pet with values an id in the url
@@ -25,7 +27,5 @@ Feature: Service client delete
 
     Examples:
       | id         | code | expected                                                                                              |
-      | 123.123    | 404  | {"code": "#number","type": "#string","message": "#string"}                                            |
-      | "camel"    | 415  | {"code": "#number","type": "#string","message": "#string"}                                            |
-      |            | 405  | <?xml version="1.0" encoding="UTF-8" standalone="yes"?><apiResponse><type>unknown</type></apiResponse>|
+      | 444.888    | 404  | {"code": "#number","type": "#string","message": "#string"}                                            |
       | "@#$%&"    | 404  | {"code": "#number","type": "#string","message": "#string"}                                            |
