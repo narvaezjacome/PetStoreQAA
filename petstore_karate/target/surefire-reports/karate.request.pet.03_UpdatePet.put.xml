@@ -1,119 +1,56 @@
-<testsuite failures="4" name="karate/request/pet/03_UpdatePet/put.feature" skipped="0" tests="4" time="1.573117">
-  <testcase classname="karate.request.pet.03_UpdatePet.put" name="check the service PUT (UpdatePet) To see if status code is 200." time="0.44142">
-    <failure message="put.feature:18 - status code was: 500, expected: 200, response time: 408, url: https://petstore.swagger.io/v2/pet, response: {&quot;code&quot;:500,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;something bad happened&quot;}">* url url ................................................................. passed
-* def requestPut = {"id": "#(id)", "category": {"id": "#(idCategory)", "name": "#(nameCategory)"},"name": "#(name)","photoUrls": ["#(photoUrls)"],"tags": [{"id": "#(idTags)","name": "#(nameTags)"}],"status": "#(status)"} . passed
+<testsuite failures="0" name="karate/request/pet/03_UpdatePet/put.feature" skipped="0" tests="3" time="1.141544">
+  <testcase classname="karate.request.pet.03_UpdatePet.put" name="check the service PUT (UpdatePet) To see if status code is 200." time="0.376187">
+    <system-out>* url url ................................................................. passed
+* def requestPut = {"id": '#(id)',"category": {"id": 1,"name": 'perro'},"name": "doggie","photoUrls": ["string"],"tags": [{"id": 1,"name": '#(tagsName)'}],"status": "available"} . passed
 * def responsePut = read('classpath:Karate/request/pet/03_UpdatePet/responsePut.json') . passed
 Given path 'pet' .......................................................... passed
 And request requestPut .................................................... passed
 When method PUT ........................................................... passed
-Then status 200 ........................................................... failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: put.feature:18 - status code was: 500, expected: 200, response time: 408, url: https://petstore.swagger.io/v2/pet, response: {"code":500,"type":"unknown","message":"something bad happened"}&#13;
-	at ✽.Then status 200 (put.feature:18)&#13;
-
-And match response == responsePut ......................................... skipped</failure>
+Then status 200 ........................................................... passed
+And match response == responsePut ......................................... passed</system-out>
   </testcase>
-  <testcase classname="karate.request.pet.03_UpdatePet.put" name="Update a pet with invalid category ID" time="0.34617">
-    <failure message="put.feature:26 - status code was: 415, expected: 404, response time: 334, url: https://petstore.swagger.io/v2/pet, response: &lt;apiResponse&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;">* url url ................................................................. passed
-* def requestPut = {"id": "#(id)", "category": {"id": "#(idCategory)", "name": "#(nameCategory)"},"name": "#(name)","photoUrls": ["#(photoUrls)"],"tags": [{"id": "#(idTags)","name": "#(nameTags)"}],"status": "#(status)"} . passed
+  <testcase classname="karate.request.pet.03_UpdatePet.put" name="Update a pet with invalid category ID" time="0.366178">
+    <system-out>* url url ................................................................. passed
+* def requestPut = {"id": '#(id)',"category": {"id": 1,"name": 'perro'},"name": "doggie","photoUrls": ["string"],"tags": [{"id": 1,"name": '#(tagsName)'}],"status": "available"} . passed
 * def responsePut = read('classpath:Karate/request/pet/03_UpdatePet/responsePut.json') . passed
 Given path 'pet' .......................................................... passed
 And request requestPut .................................................... passed
 When method PUT ........................................................... passed
-Then status 200 ........................................................... failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: put.feature:18 - status code was: 500, expected: 200, response time: 408, url: https://petstore.swagger.io/v2/pet, response: {"code":500,"type":"unknown","message":"something bad happened"}&#13;
-	at ✽.Then status 200 (put.feature:18)&#13;
-
-And match response == responsePut ......................................... skipped
+Then status 200 ........................................................... passed
+And match response == responsePut ......................................... passed
 * url url ................................................................. passed
+* def requestPut = {"id": '#(id)',"category": {"id": 1,"name": 'perro'},"name": "doggie","photoUrls": ["string"],"tags": [{"id": 1,"name": '#(tagsName)'}],"status": "available"} . passed
+* def requestPut = {"id": '#(id)',"category": {"id": 1,"name": 'perro'},"name": "doggie","photoUrls": ["string"],"tags": [{"id": 1,"name": '#(tagsName)'}],"status": "available"} . passed
+* set requestPut.category.id = "@$#%&amp;" .................................... passed
 Given path 'pet' .......................................................... passed
-And request "@$#%&amp;" ....................................................... passed
+And request requestPut .................................................... passed
 When method PUT ........................................................... passed
-Then status 404 ........................................................... failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: put.feature:26 - status code was: 415, expected: 404, response time: 334, url: https://petstore.swagger.io/v2/pet, response: &lt;apiResponse&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;&#13;
-	at ✽.Then status 404 (put.feature:26)</failure>
+Then status 500 ........................................................... passed</system-out>
   </testcase>
-  <testcase classname="karate.request.pet.03_UpdatePet.put" name="Update a pet with invalid category ID" time="0.428477">
-    <failure message="put.feature:26 - status code was: 415, expected: 404, response time: 420, url: https://petstore.swagger.io/v2/pet, response: &lt;apiResponse&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;">* url url ................................................................. passed
-* def requestPut = {"id": "#(id)", "category": {"id": "#(idCategory)", "name": "#(nameCategory)"},"name": "#(name)","photoUrls": ["#(photoUrls)"],"tags": [{"id": "#(idTags)","name": "#(nameTags)"}],"status": "#(status)"} . passed
+  <testcase classname="karate.request.pet.03_UpdatePet.put" name="Update a pet with invalid category ID" time="0.399179">
+    <system-out>* url url ................................................................. passed
+* def requestPut = {"id": '#(id)',"category": {"id": 1,"name": 'perro'},"name": "doggie","photoUrls": ["string"],"tags": [{"id": 1,"name": '#(tagsName)'}],"status": "available"} . passed
 * def responsePut = read('classpath:Karate/request/pet/03_UpdatePet/responsePut.json') . passed
 Given path 'pet' .......................................................... passed
 And request requestPut .................................................... passed
 When method PUT ........................................................... passed
-Then status 200 ........................................................... failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: put.feature:18 - status code was: 500, expected: 200, response time: 408, url: https://petstore.swagger.io/v2/pet, response: {"code":500,"type":"unknown","message":"something bad happened"}&#13;
-	at ✽.Then status 200 (put.feature:18)&#13;
-
-And match response == responsePut ......................................... skipped
+Then status 200 ........................................................... passed
+And match response == responsePut ......................................... passed
 * url url ................................................................. passed
-Given path 'pet' .......................................................... passed
-And request "@$#%&amp;" ....................................................... passed
-When method PUT ........................................................... passed
-Then status 404 ........................................................... failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: put.feature:26 - status code was: 415, expected: 404, response time: 334, url: https://petstore.swagger.io/v2/pet, response: &lt;apiResponse&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;&#13;
-	at ✽.Then status 404 (put.feature:26)&#13;
-
-* url url ................................................................. passed
-Given path 'pet' .......................................................... passed
-And request "horse" ....................................................... passed
-When method PUT ........................................................... passed
-Then status 404 ........................................................... failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: put.feature:26 - status code was: 415, expected: 404, response time: 420, url: https://petstore.swagger.io/v2/pet, response: &lt;apiResponse&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;&#13;
-	at ✽.Then status 404 (put.feature:26)</failure>
-  </testcase>
-  <testcase classname="karate.request.pet.03_UpdatePet.put" name="Update a pet with invalid category ID" time="0.35705">
-    <failure message="put.feature:26 - status code was: 415, expected: 404, response time: 348, url: https://petstore.swagger.io/v2/pet, response: &lt;apiResponse&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;">* url url ................................................................. passed
-* def requestPut = {"id": "#(id)", "category": {"id": "#(idCategory)", "name": "#(nameCategory)"},"name": "#(name)","photoUrls": ["#(photoUrls)"],"tags": [{"id": "#(idTags)","name": "#(nameTags)"}],"status": "#(status)"} . passed
-* def responsePut = read('classpath:Karate/request/pet/03_UpdatePet/responsePut.json') . passed
+* def requestPut = {"id": '#(id)',"category": {"id": 1,"name": 'perro'},"name": "doggie","photoUrls": ["string"],"tags": [{"id": 1,"name": '#(tagsName)'}],"status": "available"} . passed
+* def requestPut = {"id": '#(id)',"category": {"id": 1,"name": 'perro'},"name": "doggie","photoUrls": ["string"],"tags": [{"id": 1,"name": '#(tagsName)'}],"status": "available"} . passed
+* set requestPut.category.id = "@$#%&amp;" .................................... passed
 Given path 'pet' .......................................................... passed
 And request requestPut .................................................... passed
 When method PUT ........................................................... passed
-Then status 200 ........................................................... failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: put.feature:18 - status code was: 500, expected: 200, response time: 408, url: https://petstore.swagger.io/v2/pet, response: {"code":500,"type":"unknown","message":"something bad happened"}&#13;
-	at ✽.Then status 200 (put.feature:18)&#13;
-
-And match response == responsePut ......................................... skipped
+Then status 500 ........................................................... passed
 * url url ................................................................. passed
+* def requestPut = {"id": '#(id)',"category": {"id": 1,"name": 'perro'},"name": "doggie","photoUrls": ["string"],"tags": [{"id": 1,"name": '#(tagsName)'}],"status": "available"} . passed
+* def requestPut = {"id": '#(id)',"category": {"id": 1,"name": 'perro'},"name": "doggie","photoUrls": ["string"],"tags": [{"id": 1,"name": '#(tagsName)'}],"status": "available"} . passed
+* set requestPut.category.id = "horse" .................................... passed
 Given path 'pet' .......................................................... passed
-And request "@$#%&amp;" ....................................................... passed
+And request requestPut .................................................... passed
 When method PUT ........................................................... passed
-Then status 404 ........................................................... failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: put.feature:26 - status code was: 415, expected: 404, response time: 334, url: https://petstore.swagger.io/v2/pet, response: &lt;apiResponse&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;&#13;
-	at ✽.Then status 404 (put.feature:26)&#13;
-
-* url url ................................................................. passed
-Given path 'pet' .......................................................... passed
-And request "horse" ....................................................... passed
-When method PUT ........................................................... passed
-Then status 404 ........................................................... failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: put.feature:26 - status code was: 415, expected: 404, response time: 420, url: https://petstore.swagger.io/v2/pet, response: &lt;apiResponse&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;&#13;
-	at ✽.Then status 404 (put.feature:26)&#13;
-
-* url url ................................................................. passed
-Given path 'pet' .......................................................... passed
-And request 7885457 ....................................................... passed
-When method PUT ........................................................... passed
-Then status 404 ........................................................... failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: put.feature:26 - status code was: 415, expected: 404, response time: 348, url: https://petstore.swagger.io/v2/pet, response: &lt;apiResponse&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;&#13;
-	at ✽.Then status 404 (put.feature:26)</failure>
+Then status 500 ........................................................... passed</system-out>
   </testcase>
 </testsuite>

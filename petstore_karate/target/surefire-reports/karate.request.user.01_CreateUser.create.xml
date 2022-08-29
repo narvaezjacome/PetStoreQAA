@@ -1,15 +1,15 @@
-<testsuite failures="0" name="karate/request/user/01_CreateUser/create.feature" skipped="0" tests="3" time="1.206047">
-  <testcase classname="karate.request.user.01_CreateUser.create" name="check the service POST Method" time="0.377671">
+<testsuite failures="0" name="karate/request/user/01_CreateUser/create.feature" skipped="0" tests="3" time="1.083997">
+  <testcase classname="karate.request.user.01_CreateUser.create" name="check the service POST Method" time="0.362845">
     <system-out>* url url ................................................................. passed
-* def requestCreate = {"id": '#(userId)',"username": '#(username)',"firstName": '#(firstName)', "lastName": '#(lastName)',"email": '#(email)', "password": '#(password)',"phone": '#(phone)', "userStatus": '#(userStatus)'} . passed
+* def requestCreate = read('classpath:Karate/request/user/01_CreateUser/infoUser.json') . passed
 Given path 'user' ......................................................... passed
 And request requestCreate ................................................. passed
 When method POST .......................................................... passed
 Then status 200 ........................................................... passed</system-out>
   </testcase>
-  <testcase classname="karate.request.user.01_CreateUser.create" name="Create with invalid username" time="0.42942">
+  <testcase classname="karate.request.user.01_CreateUser.create" name="Create with invalid username" time="0.372101">
     <system-out>* url url ................................................................. passed
-* def requestCreate = {"id": '#(userId)',"username": '#(username)',"firstName": '#(firstName)', "lastName": '#(lastName)',"email": '#(email)', "password": '#(password)',"phone": '#(phone)', "userStatus": '#(userStatus)'} . passed
+* def requestCreate = read('classpath:Karate/request/user/01_CreateUser/infoUser.json') . passed
 Given path 'user' ......................................................... passed
 And request requestCreate ................................................. passed
 When method POST .......................................................... passed
@@ -20,9 +20,9 @@ And request  97779898 ..................................................... pass
 When method POST .......................................................... passed
 Then status 415 ........................................................... passed</system-out>
   </testcase>
-  <testcase classname="karate.request.user.01_CreateUser.create" name="Create with invalid username" time="0.398956">
+  <testcase classname="karate.request.user.01_CreateUser.create" name="Create with invalid username" time="0.349052">
     <system-out>* url url ................................................................. passed
-* def requestCreate = {"id": '#(userId)',"username": '#(username)',"firstName": '#(firstName)', "lastName": '#(lastName)',"email": '#(email)', "password": '#(password)',"phone": '#(phone)', "userStatus": '#(userStatus)'} . passed
+* def requestCreate = read('classpath:Karate/request/user/01_CreateUser/infoUser.json') . passed
 Given path 'user' ......................................................... passed
 And request requestCreate ................................................. passed
 When method POST .......................................................... passed

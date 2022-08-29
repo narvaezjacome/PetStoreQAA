@@ -9,8 +9,8 @@ Feature: Service delete pet
   @DeletePet
   @HappyPath
   Scenario: Check the service DELETE pet
-
-      Given path 'pet', 'id'
+* def deleteResponse = read('classpath:Karate/request/pet/04_DeletePet/reponseDelete.json')
+      Given path 'pet', id
       When method DELETE
       Then status 200
       And match response == deleteResponse

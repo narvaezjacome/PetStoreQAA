@@ -47,7 +47,7 @@
         
 <div id="nav-type">Scenarios</div>         
         
-<div id="nav-date">2022-08-29 11:43:51 AM</div>        
+<div id="nav-date">2022-08-29 01:26:36 PM</div>        
       
 <div class="nav-container">
 <div class="nav-item passed">
@@ -76,7 +76,7 @@
 </div>
 <span class="scenario-keyword">Scenario: [1:11]</span><span class="scenario-name">Login with valid data </span>
 </div>
-<div class="scenario-time passed">ms: 471</div>
+<div class="scenario-time passed">ms: 389</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="[1:11]bg">
@@ -97,42 +97,42 @@
 <div class="step-ref bg-step">2</div>
 <div class="step-cell passed">* def responseBody = read('classpath:Karate/request/user/02_LoginUser/responsePostUser.json')</div>
 </div>
-<div class="time-cell passed">15</div>
+<div class="time-cell passed">39</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="3">
 <div class="step-ref passed">3</div>
 <div class="step-cell passed">Given path 'user', 'login'</div>
 </div>
-<div class="time-cell passed">10</div>
+<div class="time-cell passed">3</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="4">
 <div class="step-ref passed">4</div>
 <div class="step-cell passed">When method GET</div>
 </div>
-<div class="time-cell passed">446</div>
+<div class="time-cell passed">347</div>
 </div>
-<div class="preformatted" data-parent="4">11:43:50.279 request:
+<div class="preformatted" data-parent="4">13:26:35.523 request:
 1 &gt; GET https://petstore.swagger.io/v2/user/login
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
 1 &gt; Host: petstore.swagger.io
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
 
-11:43:50.723 response time in milliseconds: 443,50
+13:26:35.868 response time in milliseconds: 344,11
 1 &lt; 200
 1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json
-1 &lt; Date: Mon, 29 Aug 2022 16:43:50 GMT
+1 &lt; Date: Mon, 29 Aug 2022 18:26:35 GMT
 1 &lt; Server: Jetty(9.2.9.v20150224)
 1 &lt; Transfer-Encoding: chunked
-1 &lt; X-Expires-After: Mon Aug 29 17:43:50 UTC 2022
+1 &lt; X-Expires-After: Mon Aug 29 19:26:35 UTC 2022
 1 &lt; X-Rate-Limit: 5000
-{"code":200,"type":"unknown","message":"logged in user session:1661791430690"}</div>
+{"code":200,"type":"unknown","message":"logged in user session:1661797595995"}</div>
 <div class="step-row">
 <div class="step-container" id="5">
 <div class="step-ref passed">5</div>
@@ -149,7 +149,7 @@
 </div>
 <span class="scenario-keyword">Scenario Outline: [2.1:25]</span><span class="scenario-name">Login with invalid username </span>
 </div>
-<div class="scenario-time passed">ms: 353</div>
+<div class="scenario-time passed">ms: 389</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="[2.1:25]bg">
@@ -170,7 +170,7 @@
 <div class="step-ref bg-step">7</div>
 <div class="step-cell passed">* def responseBody = read('classpath:Karate/request/user/02_LoginUser/responsePostUser.json')</div>
 </div>
-<div class="time-cell passed">4</div>
+<div class="time-cell passed">3</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="8">
@@ -191,28 +191,28 @@
 <div class="step-ref passed">10</div>
 <div class="step-cell passed">When method GET</div>
 </div>
-<div class="time-cell passed">349</div>
+<div class="time-cell passed">386</div>
 </div>
-<div class="preformatted" data-parent="10">11:43:50.742 request:
+<div class="preformatted" data-parent="10">13:26:35.883 request:
 1 &gt; GET https://petstore.swagger.io/v2/user/login
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
 1 &gt; Host: petstore.swagger.io
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
 
-11:43:51.088 response time in milliseconds: 343,61
+13:26:36.267 response time in milliseconds: 382,68
 1 &lt; 200
 1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json
-1 &lt; Date: Mon, 29 Aug 2022 16:43:51 GMT
+1 &lt; Date: Mon, 29 Aug 2022 18:26:36 GMT
 1 &lt; Server: Jetty(9.2.9.v20150224)
 1 &lt; Transfer-Encoding: chunked
-1 &lt; X-Expires-After: Mon Aug 29 17:43:51 UTC 2022
+1 &lt; X-Expires-After: Mon Aug 29 19:26:36 UTC 2022
 1 &lt; X-Rate-Limit: 5000
-{"code":200,"type":"unknown","message":"logged in user session:1661791431070"}</div>
+{"code":200,"type":"unknown","message":"logged in user session:1661797596394"}</div>
 <div class="step-row">
 <div class="step-container" id="11">
 <div class="step-ref passed">11</div>
@@ -229,7 +229,7 @@
 </div>
 <span class="scenario-keyword">Scenario Outline: [2.2:26]</span><span class="scenario-name">Login with invalid username </span>
 </div>
-<div class="scenario-time passed">ms: 392</div>
+<div class="scenario-time passed">ms: 388</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="[2.2:26]bg">
@@ -250,7 +250,7 @@
 <div class="step-ref bg-step">13</div>
 <div class="step-cell passed">* def responseBody = read('classpath:Karate/request/user/02_LoginUser/responsePostUser.json')</div>
 </div>
-<div class="time-cell passed">2</div>
+<div class="time-cell passed">1</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="14">
@@ -264,35 +264,35 @@
 <div class="step-ref passed">15</div>
 <div class="step-cell passed">And request  ")(/(  "</div>
 </div>
-<div class="time-cell passed">1</div>
+<div class="time-cell passed">0</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="16">
 <div class="step-ref passed">16</div>
 <div class="step-cell passed">When method GET</div>
 </div>
-<div class="time-cell passed">390</div>
+<div class="time-cell passed">387</div>
 </div>
-<div class="preformatted" data-parent="16">11:43:51.101 request:
+<div class="preformatted" data-parent="16">13:26:36.277 request:
 1 &gt; GET https://petstore.swagger.io/v2/user/login
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
 1 &gt; Host: petstore.swagger.io
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
 
-11:43:51.488 response time in milliseconds: 386,48
+13:26:36.662 response time in milliseconds: 383,98
 1 &lt; 200
 1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json
-1 &lt; Date: Mon, 29 Aug 2022 16:43:51 GMT
+1 &lt; Date: Mon, 29 Aug 2022 18:26:36 GMT
 1 &lt; Server: Jetty(9.2.9.v20150224)
 1 &lt; Transfer-Encoding: chunked
-1 &lt; X-Expires-After: Mon Aug 29 17:43:51 UTC 2022
+1 &lt; X-Expires-After: Mon Aug 29 19:26:36 UTC 2022
 1 &lt; X-Rate-Limit: 5000
-{"code":200,"type":"unknown","message":"logged in user session:1661791431462"}</div>
+{"code":200,"type":"unknown","message":"logged in user session:1661797596782"}</div>
 <div class="step-row">
 <div class="step-container" id="17">
 <div class="step-ref passed">17</div>

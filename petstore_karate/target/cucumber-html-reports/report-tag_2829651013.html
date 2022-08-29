@@ -75,7 +75,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>API PetStore</td>
-            <td>29 ago 2022, 11:43</td>
+            <td>29 ago 2022, 13:26</td>
     </tr>
   </tbody>
 </table>
@@ -128,19 +128,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@FindPet</td>
-          <td      class="passed"    >4</td>
-          <td      class="failed"    >1</td>
-          <td     class="skipped"   >1</td>
+          <td      class="passed"    >5</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">6</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">5</td>
 
+          <td  class="passed"    >1</td>
           <td >0</td>
-          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="393672400">0.393</td>
-          <td class="failed">Failed</td>
+          <td class="duration" data-value="388921000">0.388</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -184,12 +184,12 @@ $(document).ready(function() {
       </div>
 
   
-  <span class="lead-duration duration">0.393</span>
+  <span class="lead-duration duration">0.388</span>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Check the service GET</span>
   
@@ -200,15 +200,15 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -218,14 +218,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">*</span>
   <span class="name">def responseGet = read('classpath:Karate/request/pet/02_FindPetID/responseGet.json')</span>
   
-  <span class="lead-duration duration">0.004</span>
+  <span class="lead-duration duration">0.008</span>
 
 </div>
 
@@ -275,7 +275,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method GET</span>
   
-  <span class="lead-duration duration">0.383</span>
+  <span class="lead-duration duration">0.378</span>
 
 </div>
 
@@ -292,24 +292,24 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details">
-        <pre>11:43:44.386 request:
+        <pre>13:26:30.260 request:
 1 &gt; GET https://petstore.swagger.io/v2/pet/2
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
 1 &gt; Host: petstore.swagger.io
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
 
-11:43:44.777 response time in milliseconds: 381,30
+13:26:30.636 response time in milliseconds: 374,79
 1 &lt; 200
 1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json
-1 &lt; Date: Mon, 29 Aug 2022 16:43:44 GMT
+1 &lt; Date: Mon, 29 Aug 2022 18:26:30 GMT
 1 &lt; Server: Jetty(9.2.9.v20150224)
 1 &lt; Transfer-Encoding: chunked
-{&quot;id&quot;:2,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;#(nameCategory)&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;#(tagsName)&quot;}],&quot;status&quot;:&quot;available&quot;}</pre>
+{&quot;id&quot;:2,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;perro&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;#(tagsName)&quot;}],&quot;status&quot;:&quot;available&quot;}</pre>
       </div>
     </div>
   </div>
@@ -348,61 +348,11 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">And</span>
   <span class="name">match response == responseGet</span>
   
-  <span class="lead-duration duration">0.004</span>
-
-</div>
-
-        
-
-        
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
-          <a>com.intuit.karate.exception.KarateException:</a>
-      </div>
-      <div id="msg-4" class="collapse collapsable-details  in ">
-        <pre>com.intuit.karate.exception.KarateException: get.feature:19 - path: $, actual: {&quot;photoUrls&quot;:[&quot;string&quot;],&quot;name&quot;:&quot;doggie&quot;,&quot;id&quot;:2,&quot;category&quot;:{&quot;name&quot;:&quot;#(nameCategory)&quot;,&quot;id&quot;:1},&quot;tags&quot;:[{&quot;name&quot;:&quot;#(tagsName)&quot;,&quot;id&quot;:1}],&quot;status&quot;:&quot;available&quot;}, expected: {id=#number, category={id=#number, name=#string}, name=#string, photoUrls=[&quot;#string&quot;], s
-  &quot;tags&quot;=[{&quot;id&quot;:&quot;#number&quot;,&quot;name&quot;:&quot;#string&quot;}], status=#string}, reason: all key-values did not match, expected has un-matched keys: [s
-  &quot;tags&quot;]</pre>
-      </div>
-    </div>
-  </div>
-
-
-        
-        
-  <div class="inner-level">
-    <div class="docstring indention">
-            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-5" class="collapse collapsable-details">
-        <pre>11:43:44.777 assertion failed: path: $, actual: {&quot;photoUrls&quot;:[&quot;string&quot;],&quot;name&quot;:&quot;doggie&quot;,&quot;id&quot;:2,&quot;category&quot;:{&quot;name&quot;:&quot;#(nameCategory)&quot;,&quot;id&quot;:1},&quot;tags&quot;:[{&quot;name&quot;:&quot;#(tagsName)&quot;,&quot;id&quot;:1}],&quot;status&quot;:&quot;available&quot;}, expected: {id=#number, category={id=#number, name=#string}, name=#string, photoUrls=[&quot;#string&quot;], s
-  &quot;tags&quot;=[{&quot;id&quot;:&quot;#number&quot;,&quot;name&quot;:&quot;#string&quot;}], status=#string}, reason: all key-values did not match, expected has un-matched keys: [s
-  &quot;tags&quot;]</pre>
-      </div>
-    </div>
-  </div>
-
-        
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">assert response.support.text == &quot;To keep ReqRes free, contribuitions&quot;</span>
-  
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 

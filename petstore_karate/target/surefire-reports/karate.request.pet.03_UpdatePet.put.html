@@ -37,9 +37,9 @@
           
 <div class="nav-count">
             
-<div class="bg-success" id="nav-pass">0</div>
+<div class="bg-success" id="nav-pass">3</div>
             
-<div class="bg-danger" id="nav-fail">4</div>
+<div class="bg-danger" id="nav-fail">0</div>
           
 </div>
         
@@ -47,20 +47,17 @@
         
 <div id="nav-type">Scenarios</div>         
         
-<div id="nav-date">2022-08-29 11:43:51 AM</div>        
+<div id="nav-date">2022-08-29 01:26:36 PM</div>        
       
 <div class="nav-container">
-<div class="nav-item failed">
-<a href="#[1:11]">[1:11] check the service PUT (UpdatePet) To see if status code is 200. </a>
+<div class="nav-item passed">
+<a href="#[1:12]">[1:12] check the service PUT (UpdatePet) To see if status code is 200. </a>
 </div>
-<div class="nav-item failed">
-<a href="#[2.1:30]">[2.1:30] Update a pet with invalid category ID </a>
+<div class="nav-item passed">
+<a href="#[2.1:32]">[2.1:32] Update a pet with invalid category ID </a>
 </div>
-<div class="nav-item failed">
-<a href="#[2.2:31]">[2.2:31] Update a pet with invalid category ID </a>
-</div>
-<div class="nav-item failed">
-<a href="#[2.3:32]">[2.3:32] Update a pet with invalid category ID </a>
+<div class="nav-item passed">
+<a href="#[2.2:33]">[2.2:33] Update a pet with invalid category ID </a>
 </div>
 </div>
 </div>
@@ -73,42 +70,42 @@
   To validate the status code and response</span>
 </div>
 <div class="scenario">
-<div class="scenario-heading" id="[1:11]">
+<div class="scenario-heading" id="[1:12]">
 <div class="heading-container">
 <div class="scenario-tags">
 <a class="badge badge-primary" href="karate-tags.html">UpdatePet</a><a class="badge badge-primary" href="karate-tags.html">HappyPath</a><a class="badge badge-primary" href="karate-tags.html">Pet</a>
 </div>
-<span class="scenario-keyword">Scenario: [1:11]</span><span class="scenario-name">check the service PUT (UpdatePet) To see if status code is 200. </span>
+<span class="scenario-keyword">Scenario: [1:12]</span><span class="scenario-name">check the service PUT (UpdatePet) To see if status code is 200. </span>
 </div>
-<div class="scenario-time failed">ms: 441</div>
+<div class="scenario-time passed">ms: 376</div>
 </div>
 <div class="step-row">
-<div class="step-container" id="[1:11]bg">
+<div class="step-container" id="[1:12]bg">
 <div class="step-ref bg-step">&gt;&gt;</div>
 <div class="step-cell passed">Background:</div>
 </div>
 <div class="time-cell passed"></div>
 </div>
-<div class="step-row" data-parent="[1:11]bg">
+<div class="step-row" data-parent="[1:12]bg">
 <div class="step-container" id="1">
 <div class="step-ref bg-step">1</div>
 <div class="step-cell passed">* url url</div>
 </div>
 <div class="time-cell passed">0</div>
 </div>
-<div class="step-row">
+<div class="step-row" data-parent="[1:12]bg">
 <div class="step-container" id="2">
-<div class="step-ref passed">2</div>
-<div class="step-cell passed">* def requestPut = {"id": "#(id)", "category": {"id": "#(idCategory)", "name": "#(nameCategory)"},"name": "#(name)","photoUrls": ["#(photoUrls)"],"tags": [{"id": "#(idTags)","name": "#(nameTags)"}],"status": "#(status)"}</div>
+<div class="step-ref bg-step">2</div>
+<div class="step-cell passed">* def requestPut = {"id": '#(id)',"category": {"id": 1,"name": 'perro'},"name": "doggie","photoUrls": ["string"],"tags": [{"id": 1,"name": '#(tagsName)'}],"status": "available"}</div>
 </div>
-<div class="time-cell passed">25</div>
+<div class="time-cell passed">4</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="3">
 <div class="step-ref passed">3</div>
 <div class="step-cell passed">* def responsePut = read('classpath:Karate/request/pet/03_UpdatePet/responsePut.json')</div>
 </div>
-<div class="time-cell passed">5</div>
+<div class="time-cell passed">7</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="4">
@@ -129,273 +126,233 @@
 <div class="step-ref passed">6</div>
 <div class="step-cell passed">When method PUT</div>
 </div>
-<div class="time-cell passed">411</div>
+<div class="time-cell passed">363</div>
 </div>
-<div class="preformatted" data-parent="6">11:43:46.105 request:
+<div class="preformatted" data-parent="6">13:26:31.894 request:
 1 &gt; PUT https://petstore.swagger.io/v2/pet
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
-1 &gt; Content-Length: 179
+1 &gt; Content-Length: 142
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Host: petstore.swagger.io
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
-{"id":2,"category":{"id":"#(idCategory)","name":"#(nameCategory)"},"name":"doggie","photoUrls":[["dog.jpg"]],"tags":[{"id":"#(idTags)","name":"#(nameTags)"}],"status":"available"}
+{"id":2,"category":{"id":1,"name":"perro"},"name":"doggie","photoUrls":["string"],"tags":[{"id":1,"name":"#(tagsName)"}],"status":"available"}
 
-11:43:46.511 response time in milliseconds: 407,74
-1 &lt; 500
+13:26:32.255 response time in milliseconds: 359,52
+1 &lt; 200
 1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json
-1 &lt; Date: Mon, 29 Aug 2022 16:43:46 GMT
+1 &lt; Date: Mon, 29 Aug 2022 18:26:32 GMT
 1 &lt; Server: Jetty(9.2.9.v20150224)
 1 &lt; Transfer-Encoding: chunked
-{"code":500,"type":"unknown","message":"something bad happened"}</div>
+{"id":2,"category":{"id":1,"name":"perro"},"name":"doggie","photoUrls":["string"],"tags":[{"id":1,"name":"#(tagsName)"}],"status":"available"}</div>
 <div class="step-row">
 <div class="step-container" id="7">
-<div class="step-ref failed">7</div>
-<div class="step-cell failed">Then status 200</div>
+<div class="step-ref passed">7</div>
+<div class="step-cell passed">Then status 200</div>
 </div>
-<div class="time-cell failed">0</div>
+<div class="time-cell passed">0</div>
 </div>
-<div class="preformatted" data-parent="7">11:43:46.511 status code was: 500, expected: 200, response time: 408, url: https://petstore.swagger.io/v2/pet, response: {"code":500,"type":"unknown","message":"something bad happened"}
-put.feature:18 - status code was: 500, expected: 200, response time: 408, url: https://petstore.swagger.io/v2/pet, response: {"code":500,"type":"unknown","message":"something bad happened"}</div>
 <div class="step-row">
 <div class="step-container" id="8">
-<div class="step-ref skipped">8</div>
-<div class="step-cell skipped">And match response == responsePut</div>
+<div class="step-ref passed">8</div>
+<div class="step-cell passed">And match response == responsePut</div>
 </div>
-<div class="time-cell skipped">0</div>
+<div class="time-cell passed">1</div>
 </div>
 </div>
 <div class="scenario">
-<div class="scenario-heading" id="[2.1:30]">
+<div class="scenario-heading" id="[2.1:32]">
 <div class="heading-container">
 <div class="scenario-tags">
 <a class="badge badge-primary" href="karate-tags.html">VariablePath</a>
 </div>
-<span class="scenario-keyword">Scenario Outline: [2.1:30]</span><span class="scenario-name">Update a pet with invalid category ID </span>
+<span class="scenario-keyword">Scenario Outline: [2.1:32]</span><span class="scenario-name">Update a pet with invalid category ID </span>
 </div>
-<div class="scenario-time failed">ms: 346</div>
+<div class="scenario-time passed">ms: 366</div>
 </div>
 <div class="step-row">
-<div class="step-container" id="[2.1:30]bg">
+<div class="step-container" id="[2.1:32]bg">
 <div class="step-ref bg-step">&gt;&gt;</div>
 <div class="step-cell passed">Background:</div>
 </div>
 <div class="time-cell passed"></div>
 </div>
-<div class="step-row" data-parent="[2.1:30]bg">
+<div class="step-row" data-parent="[2.1:32]bg">
 <div class="step-container" id="9">
 <div class="step-ref bg-step">9</div>
 <div class="step-cell passed">* url url</div>
 </div>
 <div class="time-cell passed">0</div>
 </div>
-<div class="step-row">
+<div class="step-row" data-parent="[2.1:32]bg">
 <div class="step-container" id="10">
-<div class="step-ref passed">10</div>
-<div class="step-cell passed">Given path 'pet'</div>
+<div class="step-ref bg-step">10</div>
+<div class="step-cell passed">* def requestPut = {"id": '#(id)',"category": {"id": 1,"name": 'perro'},"name": "doggie","photoUrls": ["string"],"tags": [{"id": 1,"name": '#(tagsName)'}],"status": "available"}</div>
 </div>
-<div class="time-cell passed">0</div>
+<div class="time-cell passed">2</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="11">
 <div class="step-ref passed">11</div>
-<div class="step-cell passed">And request "@$#%&amp;"</div>
+<div class="step-cell passed">* def requestPut = {"id": '#(id)',"category": {"id": 1,"name": 'perro'},"name": "doggie","photoUrls": ["string"],"tags": [{"id": 1,"name": '#(tagsName)'}],"status": "available"}</div>
 </div>
-<div class="time-cell passed">4</div>
+<div class="time-cell passed">2</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="12">
 <div class="step-ref passed">12</div>
-<div class="step-cell passed">When method PUT</div>
+<div class="step-cell passed">* set requestPut.category.id = "@$#%&amp;"</div>
 </div>
-<div class="time-cell passed">339</div>
+<div class="time-cell passed">4</div>
 </div>
-<div class="preformatted" data-parent="12">11:43:46.527 request:
-1 &gt; PUT https://petstore.swagger.io/v2/pet
-1 &gt; Accept-Encoding: gzip,deflate
-1 &gt; Connection: Keep-Alive
-1 &gt; Content-Length: 5
-1 &gt; Content-Type: text/plain; charset=UTF-8
-1 &gt; Host: petstore.swagger.io
-1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
-@$#%&amp;
-
-11:43:46.869 response time in milliseconds: 333,67
-1 &lt; 415
-1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
-1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-1 &lt; Access-Control-Allow-Origin: *
-1 &lt; Connection: keep-alive
-1 &lt; Content-Length: 102
-1 &lt; Content-Type: application/xml
-1 &lt; Date: Mon, 29 Aug 2022 16:43:46 GMT
-1 &lt; Server: Jetty(9.2.9.v20150224)
-&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;&lt;apiResponse&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;</div>
 <div class="step-row">
 <div class="step-container" id="13">
-<div class="step-ref failed">13</div>
-<div class="step-cell failed">Then status 404</div>
+<div class="step-ref passed">13</div>
+<div class="step-cell passed">Given path 'pet'</div>
 </div>
-<div class="time-cell failed">3</div>
-</div>
-<div class="preformatted" data-parent="13">11:43:46.875 status code was: 415, expected: 404, response time: 334, url: https://petstore.swagger.io/v2/pet, response: &lt;apiResponse&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;
-put.feature:26 - status code was: 415, expected: 404, response time: 334, url: https://petstore.swagger.io/v2/pet, response: &lt;apiResponse&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;</div>
-</div>
-<div class="scenario">
-<div class="scenario-heading" id="[2.2:31]">
-<div class="heading-container">
-<div class="scenario-tags">
-<a class="badge badge-primary" href="karate-tags.html">VariablePath</a>
-</div>
-<span class="scenario-keyword">Scenario Outline: [2.2:31]</span><span class="scenario-name">Update a pet with invalid category ID </span>
-</div>
-<div class="scenario-time failed">ms: 428</div>
+<div class="time-cell passed">1</div>
 </div>
 <div class="step-row">
-<div class="step-container" id="[2.2:31]bg">
-<div class="step-ref bg-step">&gt;&gt;</div>
-<div class="step-cell passed">Background:</div>
-</div>
-<div class="time-cell passed"></div>
-</div>
-<div class="step-row" data-parent="[2.2:31]bg">
 <div class="step-container" id="14">
-<div class="step-ref bg-step">14</div>
-<div class="step-cell passed">* url url</div>
+<div class="step-ref passed">14</div>
+<div class="step-cell passed">And request requestPut</div>
 </div>
 <div class="time-cell passed">0</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="15">
 <div class="step-ref passed">15</div>
-<div class="step-cell passed">Given path 'pet'</div>
-</div>
-<div class="time-cell passed">0</div>
-</div>
-<div class="step-row">
-<div class="step-container" id="16">
-<div class="step-ref passed">16</div>
-<div class="step-cell passed">And request "horse"</div>
-</div>
-<div class="time-cell passed">3</div>
-</div>
-<div class="step-row">
-<div class="step-container" id="17">
-<div class="step-ref passed">17</div>
 <div class="step-cell passed">When method PUT</div>
 </div>
-<div class="time-cell passed">425</div>
+<div class="time-cell passed">357</div>
 </div>
-<div class="preformatted" data-parent="17">11:43:46.893 request:
+<div class="preformatted" data-parent="15">13:26:32.283 request:
 1 &gt; PUT https://petstore.swagger.io/v2/pet
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
-1 &gt; Content-Length: 5
-1 &gt; Content-Type: text/plain; charset=UTF-8
+1 &gt; Content-Length: 148
+1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Host: petstore.swagger.io
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
-horse
+{"id":2,"category":{"id":"@$#%&amp;","name":"perro"},"name":"doggie","photoUrls":["string"],"tags":[{"id":1,"name":"#(tagsName)"}],"status":"available"}
 
-11:43:47.313 response time in milliseconds: 420,16
-1 &lt; 415
+13:26:32.637 response time in milliseconds: 352,28
+1 &lt; 500
 1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; Connection: keep-alive
-1 &lt; Content-Length: 102
-1 &lt; Content-Type: application/xml
-1 &lt; Date: Mon, 29 Aug 2022 16:43:47 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Date: Mon, 29 Aug 2022 18:26:32 GMT
 1 &lt; Server: Jetty(9.2.9.v20150224)
-&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;&lt;apiResponse&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;</div>
+1 &lt; Transfer-Encoding: chunked
+{"code":500,"type":"unknown","message":"something bad happened"}</div>
 <div class="step-row">
-<div class="step-container" id="18">
-<div class="step-ref failed">18</div>
-<div class="step-cell failed">Then status 404</div>
+<div class="step-container" id="16">
+<div class="step-ref passed">16</div>
+<div class="step-cell passed">Then status 500</div>
 </div>
-<div class="time-cell failed">1</div>
+<div class="time-cell passed">0</div>
 </div>
-<div class="preformatted" data-parent="18">11:43:47.316 status code was: 415, expected: 404, response time: 420, url: https://petstore.swagger.io/v2/pet, response: &lt;apiResponse&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;
-put.feature:26 - status code was: 415, expected: 404, response time: 420, url: https://petstore.swagger.io/v2/pet, response: &lt;apiResponse&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;</div>
 </div>
 <div class="scenario">
-<div class="scenario-heading" id="[2.3:32]">
+<div class="scenario-heading" id="[2.2:33]">
 <div class="heading-container">
 <div class="scenario-tags">
 <a class="badge badge-primary" href="karate-tags.html">VariablePath</a>
 </div>
-<span class="scenario-keyword">Scenario Outline: [2.3:32]</span><span class="scenario-name">Update a pet with invalid category ID </span>
+<span class="scenario-keyword">Scenario Outline: [2.2:33]</span><span class="scenario-name">Update a pet with invalid category ID </span>
 </div>
-<div class="scenario-time failed">ms: 357</div>
+<div class="scenario-time passed">ms: 399</div>
 </div>
 <div class="step-row">
-<div class="step-container" id="[2.3:32]bg">
+<div class="step-container" id="[2.2:33]bg">
 <div class="step-ref bg-step">&gt;&gt;</div>
 <div class="step-cell passed">Background:</div>
 </div>
 <div class="time-cell passed"></div>
 </div>
-<div class="step-row" data-parent="[2.3:32]bg">
-<div class="step-container" id="19">
-<div class="step-ref bg-step">19</div>
+<div class="step-row" data-parent="[2.2:33]bg">
+<div class="step-container" id="17">
+<div class="step-ref bg-step">17</div>
 <div class="step-cell passed">* url url</div>
 </div>
 <div class="time-cell passed">0</div>
 </div>
+<div class="step-row" data-parent="[2.2:33]bg">
+<div class="step-container" id="18">
+<div class="step-ref bg-step">18</div>
+<div class="step-cell passed">* def requestPut = {"id": '#(id)',"category": {"id": 1,"name": 'perro'},"name": "doggie","photoUrls": ["string"],"tags": [{"id": 1,"name": '#(tagsName)'}],"status": "available"}</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="19">
+<div class="step-ref passed">19</div>
+<div class="step-cell passed">* def requestPut = {"id": '#(id)',"category": {"id": 1,"name": 'perro'},"name": "doggie","photoUrls": ["string"],"tags": [{"id": 1,"name": '#(tagsName)'}],"status": "available"}</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
 <div class="step-row">
 <div class="step-container" id="20">
 <div class="step-ref passed">20</div>
+<div class="step-cell passed">* set requestPut.category.id = "horse"</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="21">
+<div class="step-ref passed">21</div>
 <div class="step-cell passed">Given path 'pet'</div>
 </div>
 <div class="time-cell passed">0</div>
 </div>
 <div class="step-row">
-<div class="step-container" id="21">
-<div class="step-ref passed">21</div>
-<div class="step-cell passed">And request 7885457</div>
-</div>
-<div class="time-cell passed">4</div>
-</div>
-<div class="step-row">
 <div class="step-container" id="22">
 <div class="step-ref passed">22</div>
+<div class="step-cell passed">And request requestPut</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="23">
+<div class="step-ref passed">23</div>
 <div class="step-cell passed">When method PUT</div>
 </div>
-<div class="time-cell passed">352</div>
+<div class="time-cell passed">391</div>
 </div>
-<div class="preformatted" data-parent="22">11:43:47.333 request:
+<div class="preformatted" data-parent="23">13:26:32.665 request:
 1 &gt; PUT https://petstore.swagger.io/v2/pet
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
-1 &gt; Content-Length: 7
-1 &gt; Content-Type: text/plain; charset=UTF-8
+1 &gt; Content-Length: 148
+1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Host: petstore.swagger.io
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
-7885457
+{"id":2,"category":{"id":"horse","name":"perro"},"name":"doggie","photoUrls":["string"],"tags":[{"id":1,"name":"#(tagsName)"}],"status":"available"}
 
-11:43:47.673 response time in milliseconds: 348,43
-1 &lt; 415
+13:26:33.054 response time in milliseconds: 387,95
+1 &lt; 500
 1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; Connection: keep-alive
-1 &lt; Content-Length: 102
-1 &lt; Content-Type: application/xml
-1 &lt; Date: Mon, 29 Aug 2022 16:43:47 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Date: Mon, 29 Aug 2022 18:26:33 GMT
 1 &lt; Server: Jetty(9.2.9.v20150224)
-&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;&lt;apiResponse&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;</div>
+1 &lt; Transfer-Encoding: chunked
+{"code":500,"type":"unknown","message":"something bad happened"}</div>
 <div class="step-row">
-<div class="step-container" id="23">
-<div class="step-ref failed">23</div>
-<div class="step-cell failed">Then status 404</div>
+<div class="step-container" id="24">
+<div class="step-ref passed">24</div>
+<div class="step-cell passed">Then status 500</div>
 </div>
-<div class="time-cell failed">1</div>
+<div class="time-cell passed">0</div>
 </div>
-<div class="preformatted" data-parent="23">11:43:47.673 status code was: 415, expected: 404, response time: 348, url: https://petstore.swagger.io/v2/pet, response: &lt;apiResponse&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;
-put.feature:26 - status code was: 415, expected: 404, response time: 348, url: https://petstore.swagger.io/v2/pet, response: &lt;apiResponse&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;</div>
 </div>
 </div>
     

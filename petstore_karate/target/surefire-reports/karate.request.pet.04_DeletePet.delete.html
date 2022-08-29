@@ -37,9 +37,9 @@
           
 <div class="nav-count">
             
-<div class="bg-success" id="nav-pass">2</div>
+<div class="bg-success" id="nav-pass">3</div>
             
-<div class="bg-danger" id="nav-fail">1</div>
+<div class="bg-danger" id="nav-fail">0</div>
           
 </div>
         
@@ -47,10 +47,10 @@
         
 <div id="nav-type">Scenarios</div>         
         
-<div id="nav-date">2022-08-29 11:43:51 AM</div>        
+<div id="nav-date">2022-08-29 01:26:36 PM</div>        
       
 <div class="nav-container">
-<div class="nav-item failed">
+<div class="nav-item passed">
 <a href="#[1:11]">[1:11] Check the service DELETE pet </a>
 </div>
 <div class="nav-item passed">
@@ -77,7 +77,7 @@
 </div>
 <span class="scenario-keyword">Scenario: [1:11]</span><span class="scenario-name">Check the service DELETE pet </span>
 </div>
-<div class="scenario-time failed">ms: 389</div>
+<div class="scenario-time passed">ms: 377</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="[1:11]bg">
@@ -96,57 +96,62 @@
 <div class="step-row">
 <div class="step-container" id="2">
 <div class="step-ref passed">2</div>
-<div class="step-cell passed">Given path 'pet', 'id'</div>
+<div class="step-cell passed">* def deleteResponse = read('classpath:Karate/request/pet/04_DeletePet/reponseDelete.json')</div>
 </div>
-<div class="time-cell passed">3</div>
+<div class="time-cell passed">7</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="3">
 <div class="step-ref passed">3</div>
+<div class="step-cell passed">Given path 'pet', id</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="4">
+<div class="step-ref passed">4</div>
 <div class="step-cell passed">When method DELETE</div>
 </div>
-<div class="time-cell passed">386</div>
+<div class="time-cell passed">356</div>
 </div>
-<div class="preformatted" data-parent="3">11:43:47.751 request:
-1 &gt; DELETE https://petstore.swagger.io/v2/pet/id
+<div class="preformatted" data-parent="4">13:26:33.105 request:
+1 &gt; DELETE https://petstore.swagger.io/v2/pet/2
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
 1 &gt; Host: petstore.swagger.io
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
 
-11:43:48.138 response time in milliseconds: 381,29
-1 &lt; 404
+13:26:33.459 response time in milliseconds: 353,77
+1 &lt; 200
 1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json
-1 &lt; Date: Mon, 29 Aug 2022 16:43:48 GMT
+1 &lt; Date: Mon, 29 Aug 2022 18:26:33 GMT
 1 &lt; Server: Jetty(9.2.9.v20150224)
 1 &lt; Transfer-Encoding: chunked
-{"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"id\""}</div>
-<div class="step-row">
-<div class="step-container" id="4">
-<div class="step-ref failed">4</div>
-<div class="step-cell failed">Then status 200</div>
-</div>
-<div class="time-cell failed">1</div>
-</div>
-<div class="preformatted" data-parent="4">11:43:48.139 status code was: 404, expected: 200, response time: 381, url: https://petstore.swagger.io/v2/pet/id, response: {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"id\""}
-delete.feature:15 - status code was: 404, expected: 200, response time: 381, url: https://petstore.swagger.io/v2/pet/id, response: {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"id\""}</div>
+{"code":200,"type":"unknown","message":"2"}</div>
 <div class="step-row">
 <div class="step-container" id="5">
-<div class="step-ref skipped">5</div>
-<div class="step-cell skipped">And match response == deleteResponse</div>
+<div class="step-ref passed">5</div>
+<div class="step-cell passed">Then status 200</div>
 </div>
-<div class="time-cell skipped">0</div>
+<div class="time-cell passed">0</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="6">
-<div class="step-ref skipped">6</div>
-<div class="step-cell skipped">And assert response.message == message</div>
+<div class="step-ref passed">6</div>
+<div class="step-cell passed">And match response == deleteResponse</div>
 </div>
-<div class="time-cell skipped">0</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="7">
+<div class="step-ref passed">7</div>
+<div class="step-cell passed">And assert response.message == message</div>
+</div>
+<div class="time-cell passed">13</div>
 </div>
 </div>
 <div class="scenario">
@@ -157,7 +162,7 @@ delete.feature:15 - status code was: 404, expected: 200, response time: 381, url
 </div>
 <span class="scenario-keyword">Scenario Outline: [2.1:30]</span><span class="scenario-name">DELETE a pet with values an id in the url </span>
 </div>
-<div class="scenario-time passed">ms: 349</div>
+<div class="scenario-time passed">ms: 404</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="[2.1:30]bg">
@@ -167,54 +172,54 @@ delete.feature:15 - status code was: 404, expected: 200, response time: 381, url
 <div class="time-cell passed"></div>
 </div>
 <div class="step-row" data-parent="[2.1:30]bg">
-<div class="step-container" id="7">
-<div class="step-ref bg-step">7</div>
+<div class="step-container" id="8">
+<div class="step-ref bg-step">8</div>
 <div class="step-cell passed">* url url</div>
 </div>
 <div class="time-cell passed">0</div>
 </div>
 <div class="step-row">
-<div class="step-container" id="8">
-<div class="step-ref passed">8</div>
-<div class="step-cell passed">Given path 'pet', 444.888</div>
-</div>
-<div class="time-cell passed">8</div>
-</div>
-<div class="step-row">
 <div class="step-container" id="9">
 <div class="step-ref passed">9</div>
+<div class="step-cell passed">Given path 'pet', 444.888</div>
+</div>
+<div class="time-cell passed">5</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="10">
+<div class="step-ref passed">10</div>
 <div class="step-cell passed">When method DELETE</div>
 </div>
-<div class="time-cell passed">341</div>
+<div class="time-cell passed">398</div>
 </div>
-<div class="preformatted" data-parent="9">11:43:48.167 request:
+<div class="preformatted" data-parent="10">13:26:33.488 request:
 1 &gt; DELETE https://petstore.swagger.io/v2/pet/444.888
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
 1 &gt; Host: petstore.swagger.io
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
 
-11:43:48.505 response time in milliseconds: 337,19
+13:26:33.885 response time in milliseconds: 395,32
 1 &lt; 404
 1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json
-1 &lt; Date: Mon, 29 Aug 2022 16:43:48 GMT
+1 &lt; Date: Mon, 29 Aug 2022 18:26:34 GMT
 1 &lt; Server: Jetty(9.2.9.v20150224)
 1 &lt; Transfer-Encoding: chunked
 {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"444.888\""}</div>
 <div class="step-row">
-<div class="step-container" id="10">
-<div class="step-ref passed">10</div>
+<div class="step-container" id="11">
+<div class="step-ref passed">11</div>
 <div class="step-cell passed">Then status 404</div>
 </div>
 <div class="time-cell passed">0</div>
 </div>
 <div class="step-row">
-<div class="step-container" id="11">
-<div class="step-ref passed">11</div>
+<div class="step-container" id="12">
+<div class="step-ref passed">12</div>
 <div class="step-cell passed">And match response == {"code": "#number","type": "#string","message": "#string"}</div>
 </div>
 <div class="time-cell passed">1</div>
@@ -228,7 +233,7 @@ delete.feature:15 - status code was: 404, expected: 200, response time: 381, url
 </div>
 <span class="scenario-keyword">Scenario Outline: [2.2:31]</span><span class="scenario-name">DELETE a pet with values an id in the url </span>
 </div>
-<div class="scenario-time passed">ms: 407</div>
+<div class="scenario-time passed">ms: 378</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="[2.2:31]bg">
@@ -238,57 +243,57 @@ delete.feature:15 - status code was: 404, expected: 200, response time: 381, url
 <div class="time-cell passed"></div>
 </div>
 <div class="step-row" data-parent="[2.2:31]bg">
-<div class="step-container" id="12">
-<div class="step-ref bg-step">12</div>
+<div class="step-container" id="13">
+<div class="step-ref bg-step">13</div>
 <div class="step-cell passed">* url url</div>
 </div>
 <div class="time-cell passed">0</div>
 </div>
 <div class="step-row">
-<div class="step-container" id="13">
-<div class="step-ref passed">13</div>
-<div class="step-cell passed">Given path 'pet', "@#$%&amp;"</div>
-</div>
-<div class="time-cell passed">3</div>
-</div>
-<div class="step-row">
 <div class="step-container" id="14">
 <div class="step-ref passed">14</div>
+<div class="step-cell passed">Given path 'pet', "@#$%&amp;"</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="15">
+<div class="step-ref passed">15</div>
 <div class="step-cell passed">When method DELETE</div>
 </div>
-<div class="time-cell passed">403</div>
+<div class="time-cell passed">374</div>
 </div>
-<div class="preformatted" data-parent="14">11:43:48.521 request:
+<div class="preformatted" data-parent="15">13:26:33.900 request:
 1 &gt; DELETE https://petstore.swagger.io/v2/pet/@%23$%25&amp;
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
 1 &gt; Host: petstore.swagger.io
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
 
-11:43:48.922 response time in milliseconds: 399,20
+13:26:34.272 response time in milliseconds: 371,17
 1 &lt; 404
 1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json
-1 &lt; Date: Mon, 29 Aug 2022 16:43:48 GMT
+1 &lt; Date: Mon, 29 Aug 2022 18:26:34 GMT
 1 &lt; Server: Jetty(9.2.9.v20150224)
 1 &lt; Transfer-Encoding: chunked
 {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"@#$%&amp;\""}</div>
 <div class="step-row">
-<div class="step-container" id="15">
-<div class="step-ref passed">15</div>
+<div class="step-container" id="16">
+<div class="step-ref passed">16</div>
 <div class="step-cell passed">Then status 404</div>
 </div>
 <div class="time-cell passed">0</div>
 </div>
 <div class="step-row">
-<div class="step-container" id="16">
-<div class="step-ref passed">16</div>
+<div class="step-container" id="17">
+<div class="step-ref passed">17</div>
 <div class="step-cell passed">And match response == {"code": "#number","type": "#string","message": "#string"}</div>
 </div>
-<div class="time-cell passed">1</div>
+<div class="time-cell passed">0</div>
 </div>
 </div>
 </div>

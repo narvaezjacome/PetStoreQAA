@@ -1,47 +1,35 @@
-<testsuite failures="1" name="karate/request/pet/04_DeletePet/delete.feature" skipped="0" tests="3" time="1.145635">
-  <testcase classname="karate.request.pet.04_DeletePet.delete" name="Check the service DELETE pet" time="0.389383">
-    <failure message="delete.feature:15 - status code was: 404, expected: 200, response time: 381, url: https://petstore.swagger.io/v2/pet/id, response: {&quot;code&quot;:404,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;java.lang.NumberFormatException: For input string: \&quot;id\&quot;&quot;}">* url url ................................................................. passed
-Given path 'pet', 'id' .................................................... passed
-When method DELETE ........................................................ passed
-Then status 200 ........................................................... failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: delete.feature:15 - status code was: 404, expected: 200, response time: 381, url: https://petstore.swagger.io/v2/pet/id, response: {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"id\""}&#13;
-	at ✽.Then status 200 (delete.feature:15)&#13;
-
-And match response == deleteResponse ...................................... skipped
-And assert response.message == message .................................... skipped</failure>
-  </testcase>
-  <testcase classname="karate.request.pet.04_DeletePet.delete" name="DELETE a pet with values an id in the url" time="0.348984">
+<testsuite failures="0" name="karate/request/pet/04_DeletePet/delete.feature" skipped="0" tests="3" time="1.1599">
+  <testcase classname="karate.request.pet.04_DeletePet.delete" name="Check the service DELETE pet" time="0.377311">
     <system-out>* url url ................................................................. passed
-Given path 'pet', 'id' .................................................... passed
+* def deleteResponse = read('classpath:Karate/request/pet/04_DeletePet/reponseDelete.json') . passed
+Given path 'pet', id ...................................................... passed
 When method DELETE ........................................................ passed
-Then status 200 ........................................................... failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: delete.feature:15 - status code was: 404, expected: 200, response time: 381, url: https://petstore.swagger.io/v2/pet/id, response: {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"id\""}&#13;
-	at ✽.Then status 200 (delete.feature:15)&#13;
-
-And match response == deleteResponse ...................................... skipped
-And assert response.message == message .................................... skipped
+Then status 200 ........................................................... passed
+And match response == deleteResponse ...................................... passed
+And assert response.message == message .................................... passed</system-out>
+  </testcase>
+  <testcase classname="karate.request.pet.04_DeletePet.delete" name="DELETE a pet with values an id in the url" time="0.404311">
+    <system-out>* url url ................................................................. passed
+* def deleteResponse = read('classpath:Karate/request/pet/04_DeletePet/reponseDelete.json') . passed
+Given path 'pet', id ...................................................... passed
+When method DELETE ........................................................ passed
+Then status 200 ........................................................... passed
+And match response == deleteResponse ...................................... passed
+And assert response.message == message .................................... passed
 * url url ................................................................. passed
 Given path 'pet', 444.888 ................................................. passed
 When method DELETE ........................................................ passed
 Then status 404 ........................................................... passed
 And match response == {"code": "#number","type": "#string","message": "#string"} . passed</system-out>
   </testcase>
-  <testcase classname="karate.request.pet.04_DeletePet.delete" name="DELETE a pet with values an id in the url" time="0.407268">
+  <testcase classname="karate.request.pet.04_DeletePet.delete" name="DELETE a pet with values an id in the url" time="0.378278">
     <system-out>* url url ................................................................. passed
-Given path 'pet', 'id' .................................................... passed
+* def deleteResponse = read('classpath:Karate/request/pet/04_DeletePet/reponseDelete.json') . passed
+Given path 'pet', id ...................................................... passed
 When method DELETE ........................................................ passed
-Then status 200 ........................................................... failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: delete.feature:15 - status code was: 404, expected: 200, response time: 381, url: https://petstore.swagger.io/v2/pet/id, response: {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"id\""}&#13;
-	at ✽.Then status 200 (delete.feature:15)&#13;
-
-And match response == deleteResponse ...................................... skipped
-And assert response.message == message .................................... skipped
+Then status 200 ........................................................... passed
+And match response == deleteResponse ...................................... passed
+And assert response.message == message .................................... passed
 * url url ................................................................. passed
 Given path 'pet', 444.888 ................................................. passed
 When method DELETE ........................................................ passed

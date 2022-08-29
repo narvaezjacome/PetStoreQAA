@@ -12,7 +12,7 @@ Feature: Service client POST
   Scenario:  check the service POST
 
 
-    * def CreatePet = {"id": '#(id)',"category": {"id": 1,"name": '#(nameCategory)'},"name": "doggie","photoUrls": ["string"],"tags": [{"id": 1,"name": '#(tagsName)'}],"status": "available"}
+    * def CreatePet = {"id": '#(id)',"category": {"id": 1,"name": 'perro'},"name": "doggie","photoUrls": ["string"],"tags": [{"id": 1,"name": '#(tagsName)'}],"status": "available"}
 
     Given path 'pet'
     And request CreatePet
@@ -29,6 +29,6 @@ Feature: Service client POST
 
     Examples:
       | status     |
-      | ")/(&/%"    |
+      | ")/(&/%"   |
       | "squirtle" |
       | 123.123    |

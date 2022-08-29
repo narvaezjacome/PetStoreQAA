@@ -75,7 +75,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>API PetStore</td>
-            <td>29 ago 2022, 11:43</td>
+            <td>29 ago 2022, 13:26</td>
     </tr>
   </tbody>
 </table>
@@ -139,7 +139,7 @@ $(document).ready(function() {
           <td >0</td>
           <td class="total">2</td>
 
-          <td class="duration" data-value="833598900">0.833</td>
+          <td class="duration" data-value="713113200">0.713</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -184,7 +184,7 @@ $(document).ready(function() {
       </div>
 
   
-  <span class="lead-duration duration">0.377</span>
+  <span class="lead-duration duration">0.362</span>
 
 
     <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
@@ -223,9 +223,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">*</span>
-  <span class="name">def requestCreate = {&quot;id&quot;: '#(userId)',&quot;username&quot;: '#(username)',&quot;firstName&quot;: '#(firstName)', &quot;lastName&quot;: '#(lastName)',&quot;email&quot;: '#(email)', &quot;password&quot;: '#(password)',&quot;phone&quot;: '#(phone)', &quot;userStatus&quot;: '#(userStatus)'}</span>
+  <span class="name">def requestCreate = read('classpath:Karate/request/user/01_CreateUser/infoUser.json')</span>
   
-  <span class="lead-duration duration">0.026</span>
+  <span class="lead-duration duration">0.006</span>
 
 </div>
 
@@ -300,7 +300,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method POST</span>
   
-  <span class="lead-duration duration">0.347</span>
+  <span class="lead-duration duration">0.353</span>
 
 </div>
 
@@ -317,27 +317,27 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details">
-        <pre>11:43:48.989 request:
+        <pre>13:26:34.315 request:
 1 &gt; POST https://petstore.swagger.io/v2/user
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
-1 &gt; Content-Length: 199
+1 &gt; Content-Length: 203
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Host: petstore.swagger.io
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
-{&quot;id&quot;:-56908596,&quot;username&quot;:&quot;UserTest&quot;,&quot;firstName&quot;:&quot;UserTest&quot;,&quot;lastName&quot;:&quot;amet et nulla&quot;,&quot;email&quot;:&quot;exercitation laboris&quot;,&quot;password&quot;:&quot;ut voluptate&quot;,&quot;phone&quot;:&quot;pariatur consectetur&quot;,&quot;userStatus&quot;:-45381913}
+{&quot;userId&quot;:-56908596,&quot;username&quot;:&quot;UserTest&quot;,&quot;firstName&quot;:&quot;UserTest&quot;,&quot;lastName&quot;:&quot;amet et nulla&quot;,&quot;email&quot;:&quot;exercitation laboris&quot;,&quot;password&quot;:&quot;ut voluptate&quot;,&quot;phone&quot;:&quot;pariatur consectetur&quot;,&quot;userStatus&quot;:-45381913}
 
-11:43:49.332 response time in milliseconds: 342,75
+13:26:34.667 response time in milliseconds: 351,14
 1 &lt; 200
 1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json
-1 &lt; Date: Mon, 29 Aug 2022 16:43:49 GMT
+1 &lt; Date: Mon, 29 Aug 2022 18:26:34 GMT
 1 &lt; Server: Jetty(9.2.9.v20150224)
 1 &lt; Transfer-Encoding: chunked
-{&quot;code&quot;:200,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;9222968140497212983&quot;}</pre>
+{&quot;code&quot;:200,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;9222968140497216808&quot;}</pre>
       </div>
     </div>
   </div>
@@ -399,7 +399,7 @@ $(document).ready(function() {
       </div>
 
   
-  <span class="lead-duration duration">0.456</span>
+  <span class="lead-duration duration">0.350</span>
 
 
     <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
@@ -440,7 +440,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">path 'user', 'login'</span>
   
-  <span class="lead-duration duration">0.010</span>
+  <span class="lead-duration duration">0.003</span>
 
 </div>
 
@@ -465,7 +465,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method GET</span>
   
-  <span class="lead-duration duration">0.446</span>
+  <span class="lead-duration duration">0.346</span>
 
 </div>
 
@@ -482,26 +482,26 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-6" class="collapse collapsable-details">
-        <pre>11:43:50.279 request:
+        <pre>13:26:35.523 request:
 1 &gt; GET https://petstore.swagger.io/v2/user/login
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
 1 &gt; Host: petstore.swagger.io
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
 
-11:43:50.723 response time in milliseconds: 443,50
+13:26:35.868 response time in milliseconds: 344,11
 1 &lt; 200
 1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json
-1 &lt; Date: Mon, 29 Aug 2022 16:43:50 GMT
+1 &lt; Date: Mon, 29 Aug 2022 18:26:35 GMT
 1 &lt; Server: Jetty(9.2.9.v20150224)
 1 &lt; Transfer-Encoding: chunked
-1 &lt; X-Expires-After: Mon Aug 29 17:43:50 UTC 2022
+1 &lt; X-Expires-After: Mon Aug 29 19:26:35 UTC 2022
 1 &lt; X-Rate-Limit: 5000
-{&quot;code&quot;:200,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;logged in user session:1661791430690&quot;}</pre>
+{&quot;code&quot;:200,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;logged in user session:1661797595995&quot;}</pre>
       </div>
     </div>
   </div>

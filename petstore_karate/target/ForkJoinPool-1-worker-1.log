@@ -1,332 +1,313 @@
-11:57:06.835 request:
-1 > DELETE https://petstore.swagger.io/v2/pet/id
+13:26:27.866 request:
+1 > POST https://petstore.swagger.io/v2/pet
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
-1 > Host: petstore.swagger.io
-1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
-
-11:57:07.678 response time in milliseconds: 837,56
-1 < 404
-1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
-1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-1 < Access-Control-Allow-Origin: *
-1 < Connection: keep-alive
-1 < Content-Type: application/json
-1 < Date: Mon, 29 Aug 2022 16:57:07 GMT
-1 < Server: Jetty(9.2.9.v20150224)
-1 < Transfer-Encoding: chunked
-{"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"id\""}
-
-11:57:07.678 status code was: 404, expected: 200, response time: 838, url: https://petstore.swagger.io/v2/pet/id, response: {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"id\""}
-11:57:07.710 request:
-1 > DELETE https://petstore.swagger.io/v2/pet/444.888
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Host: petstore.swagger.io
-1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
-
-11:57:08.085 response time in milliseconds: 377,15
-1 < 404
-1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
-1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-1 < Access-Control-Allow-Origin: *
-1 < Connection: keep-alive
-1 < Content-Type: application/json
-1 < Date: Mon, 29 Aug 2022 16:57:08 GMT
-1 < Server: Jetty(9.2.9.v20150224)
-1 < Transfer-Encoding: chunked
-{"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"444.888\""}
-
-11:57:08.100 request:
-1 > DELETE https://petstore.swagger.io/v2/pet/@%23$%25&
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Host: petstore.swagger.io
-1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
-
-11:57:08.478 response time in milliseconds: 372,07
-1 < 404
-1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
-1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-1 < Access-Control-Allow-Origin: *
-1 < Connection: keep-alive
-1 < Content-Type: application/json
-1 < Date: Mon, 29 Aug 2022 16:57:08 GMT
-1 < Server: Jetty(9.2.9.v20150224)
-1 < Transfer-Encoding: chunked
-{"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"@#$%&\""}
-
-ds: 390,14
-1 < 415
-1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
-1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-1 < Access-Control-Allow-Origin: *
-1 < Connection: keep-alive
-1 < Content-Length: 102
-1 < Content-Type: application/xml
-1 < Date: Mon, 29 Aug 2022 16:55:49 GMT
-1 < Server: Jetty(9.2.9.v20150224)
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><apiResponse><type>unknown</type></apiResponse>
-
-11:55:49.119 status code was: 415, expected: 404, response time: 390, url: https://petstore.swagger.io/v2/pet, response: <apiResponse><type>unknown</type></apiResponse>
-11:55:49.135 request:
-1 > PUT https://petstore.swagger.io/v2/pet
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Content-Length: 7
-1 > Content-Type: text/plain; charset=UTF-8
-1 > Host: petstore.swagger.io
-1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
-7885457
-
-11:55:49.494 response time in milliseconds: 350,14
-1 < 415
-1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
-1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-1 < Access-Control-Allow-Origin: *
-1 < Connection: keep-alive
-1 < Content-Length: 102
-1 < Content-Type: application/xml
-1 < Date: Mon, 29 Aug 2022 16:55:49 GMT
-1 < Server: Jetty(9.2.9.v20150224)
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><apiResponse><type>unknown</type></apiResponse>
-
-11:55:49.494 status code was: 415, expected: 404, response time: 350, url: https://petstore.swagger.io/v2/pet, response: <apiResponse><type>unknown</type></apiResponse>
-":{"id":1,"name":"#(nameCategory)"},"name":"doggie","photoUrls":["string"],"tags":[{"id":1,"name":"#(tagsName)"}],"status":"available"}
-
-11:43:44.777 assertion failed: path: $, actual: {"photoUrls":["string"],"name":"doggie","id":2,"category":{"name":"#(nameCategory)","id":1},"tags":[{"name":"#(tagsName)","id":1}],"status":"available"}, expected: {id=#number, category={id=#number, name=#string}, name=#string, photoUrls=["#string"], s
-  "tags"=[{"id":"#number","name":"#string"}], status=#string}, reason: all key-values did not match, expected has un-matched keys: [s
-  "tags"]
-11:43:44.808 request:
-1 > GET https://petstore.swagger.io/v2/pet/%22@%23$%25%22
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Host: petstore.swagger.io
-1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
-
-11:43:45.199 response time in milliseconds: 385,56
-1 < 404
-1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
-1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-1 < Access-Control-Allow-Origin: *
-1 < Connection: keep-alive
-1 < Content-Type: application/json
-1 < Date: Mon, 29 Aug 2022 16:43:45 GMT
-1 < Server: Jetty(9.2.9.v20150224)
-1 < Transfer-Encoding: chunked
-{"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"\"@#$%\"\""}
-
-11:43:45.215 request:
-1 > GET https://petstore.swagger.io/v2/pet/%22doggie%22
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Host: petstore.swagger.io
-1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
-
-11:43:45.621 response time in milliseconds: 412,49
-1 < 404
-1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
-1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-1 < Access-Control-Allow-Origin: *
-1 < Connection: keep-alive
-1 < Content-Type: application/json
-1 < Date: Mon, 29 Aug 2022 16:43:45 GMT
-1 < Server: Jetty(9.2.9.v20150224)
-1 < Transfer-Encoding: chunked
-{"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"\"doggie\"\""}
-
-11:43:45.636 request:
-1 > GET https://petstore.swagger.io/v2/pet/123.123
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Host: petstore.swagger.io
-1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
-
-11:43:46.011 response time in milliseconds: 376,34
-1 < 404
-1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
-1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-1 < Access-Control-Allow-Origin: *
-1 < Connection: keep-alive
-1 < Content-Type: application/json
-1 < Date: Mon, 29 Aug 2022 16:43:45 GMT
-1 < Server: Jetty(9.2.9.v20150224)
-1 < Transfer-Encoding: chunked
-{"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"123.123\""}
-
-11:43:46.105 request:
-1 > PUT https://petstore.swagger.io/v2/pet
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Content-Length: 179
+1 > Content-Length: 142
 1 > Content-Type: application/json; charset=UTF-8
 1 > Host: petstore.swagger.io
 1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
-{"id":2,"category":{"id":"#(idCategory)","name":"#(nameCategory)"},"name":"doggie","photoUrls":[["dog.jpg"]],"tags":[{"id":"#(idTags)","name":"#(nameTags)"}],"status":"available"}
+{"id":2,"category":{"id":1,"name":"perro"},"name":"doggie","photoUrls":["string"],"tags":[{"id":1,"name":"#(tagsName)"}],"status":"available"}
 
-11:43:46.511 response time in milliseconds: 407,74
-1 < 500
-1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
-1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-1 < Access-Control-Allow-Origin: *
-1 < Connection: keep-alive
-1 < Content-Type: application/json
-1 < Date: Mon, 29 Aug 2022 16:43:46 GMT
-1 < Server: Jetty(9.2.9.v20150224)
-1 < Transfer-Encoding: chunked
-{"code":500,"type":"unknown","message":"something bad happened"}
-
-11:43:46.511 status code was: 500, expected: 200, response time: 408, url: https://petstore.swagger.io/v2/pet, response: {"code":500,"type":"unknown","message":"something bad happened"}
-11:43:46.527 request:
-1 > PUT https://petstore.swagger.io/v2/pet
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Content-Length: 5
-1 > Content-Type: text/plain; charset=UTF-8
-1 > Host: petstore.swagger.io
-1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
-@$#%&
-
-11:43:46.869 response time in milliseconds: 333,67
-1 < 415
-1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
-1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-1 < Access-Control-Allow-Origin: *
-1 < Connection: keep-alive
-1 < Content-Length: 102
-1 < Content-Type: application/xml
-1 < Date: Mon, 29 Aug 2022 16:43:46 GMT
-1 < Server: Jetty(9.2.9.v20150224)
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><apiResponse><type>unknown</type></apiResponse>
-
-11:43:46.875 status code was: 415, expected: 404, response time: 334, url: https://petstore.swagger.io/v2/pet, response: <apiResponse><type>unknown</type></apiResponse>
-11:43:46.893 request:
-1 > PUT https://petstore.swagger.io/v2/pet
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Content-Length: 5
-1 > Content-Type: text/plain; charset=UTF-8
-1 > Host: petstore.swagger.io
-1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
-horse
-
-11:43:47.313 response time in milliseconds: 420,16
-1 < 415
-1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
-1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-1 < Access-Control-Allow-Origin: *
-1 < Connection: keep-alive
-1 < Content-Length: 102
-1 < Content-Type: application/xml
-1 < Date: Mon, 29 Aug 2022 16:43:47 GMT
-1 < Server: Jetty(9.2.9.v20150224)
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><apiResponse><type>unknown</type></apiResponse>
-
-11:43:47.316 status code was: 415, expected: 404, response time: 420, url: https://petstore.swagger.io/v2/pet, response: <apiResponse><type>unknown</type></apiResponse>
-11:43:47.333 request:
-1 > PUT https://petstore.swagger.io/v2/pet
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Content-Length: 7
-1 > Content-Type: text/plain; charset=UTF-8
-1 > Host: petstore.swagger.io
-1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
-7885457
-
-11:43:47.673 response time in milliseconds: 348,43
-1 < 415
-1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
-1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-1 < Access-Control-Allow-Origin: *
-1 < Connection: keep-alive
-1 < Content-Length: 102
-1 < Content-Type: application/xml
-1 < Date: Mon, 29 Aug 2022 16:43:47 GMT
-1 < Server: Jetty(9.2.9.v20150224)
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><apiResponse><type>unknown</type></apiResponse>
-
-11:43:47.673 status code was: 415, expected: 404, response time: 348, url: https://petstore.swagger.io/v2/pet, response: <apiResponse><type>unknown</type></apiResponse>
-11:43:47.751 request:
-1 > DELETE https://petstore.swagger.io/v2/pet/id
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Host: petstore.swagger.io
-1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
-
-11:43:48.138 response time in milliseconds: 381,29
-1 < 404
-1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
-1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-1 < Access-Control-Allow-Origin: *
-1 < Connection: keep-alive
-1 < Content-Type: application/json
-1 < Date: Mon, 29 Aug 2022 16:43:48 GMT
-1 < Server: Jetty(9.2.9.v20150224)
-1 < Transfer-Encoding: chunked
-{"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"id\""}
-
-11:43:48.139 status code was: 404, expected: 200, response time: 381, url: https://petstore.swagger.io/v2/pet/id, response: {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"id\""}
-11:43:48.167 request:
-1 > DELETE https://petstore.swagger.io/v2/pet/444.888
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Host: petstore.swagger.io
-1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
-
-11:43:48.505 response time in milliseconds: 337,19
-1 < 404
-1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
-1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-1 < Access-Control-Allow-Origin: *
-1 < Connection: keep-alive
-1 < Content-Type: application/json
-1 < Date: Mon, 29 Aug 2022 16:43:48 GMT
-1 < Server: Jetty(9.2.9.v20150224)
-1 < Transfer-Encoding: chunked
-{"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"444.888\""}
-
-11:43:48.521 request:
-1 > DELETE https://petstore.swagger.io/v2/pet/@%23$%25&
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Host: petstore.swagger.io
-1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
-
-11:43:48.922 response time in milliseconds: 399,20
-1 < 404
-1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
-1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-1 < Access-Control-Allow-Origin: *
-1 < Connection: keep-alive
-1 < Content-Type: application/json
-1 < Date: Mon, 29 Aug 2022 16:43:48 GMT
-1 < Server: Jetty(9.2.9.v20150224)
-1 < Transfer-Encoding: chunked
-{"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"@#$%&\""}
-
-11:43:48.989 request:
-1 > POST https://petstore.swagger.io/v2/user
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Content-Length: 199
-1 > Content-Type: application/json; charset=UTF-8
-1 > Host: petstore.swagger.io
-1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
-{"id":-56908596,"username":"UserTest","firstName":"UserTest","lastName":"amet et nulla","email":"exercitation laboris","password":"ut voluptate","phone":"pariatur consectetur","userStatus":-45381913}
-
-11:43:49.332 response time in milliseconds: 342,75
+13:26:28.823 response time in milliseconds: 953,34
 1 < 200
 1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 1 < Access-Control-Allow-Origin: *
 1 < Connection: keep-alive
 1 < Content-Type: application/json
-1 < Date: Mon, 29 Aug 2022 16:43:49 GMT
+1 < Date: Mon, 29 Aug 2022 18:26:28 GMT
 1 < Server: Jetty(9.2.9.v20150224)
 1 < Transfer-Encoding: chunked
-{"code":200,"type":"unknown","message":"9222968140497212983"}
+{"id":2,"category":{"id":1,"name":"perro"},"name":"doggie","photoUrls":["string"],"tags":[{"id":1,"name":"#(tagsName)"}],"status":"available"}
 
-11:43:49.368 request:
+13:26:28.846 request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 6
+1 > Content-Type: text/plain; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
+)/(&/%
+
+13:26:29.256 response time in milliseconds: 409,42
+1 < 415
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Length: 102
+1 < Content-Type: application/xml
+1 < Date: Mon, 29 Aug 2022 18:26:29 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><apiResponse><type>unknown</type></apiResponse>
+
+13:26:29.316 request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 8
+1 > Content-Type: text/plain; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
+squirtle
+
+13:26:29.687 response time in milliseconds: 369,34
+1 < 415
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Length: 102
+1 < Content-Type: application/xml
+1 < Date: Mon, 29 Aug 2022 18:26:29 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><apiResponse><type>unknown</type></apiResponse>
+
+13:26:29.720 request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 7
+1 > Content-Type: text/plain; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
+123.123
+
+13:26:30.136 response time in milliseconds: 415,71
+1 < 415
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Length: 102
+1 < Content-Type: application/xml
+1 < Date: Mon, 29 Aug 2022 18:26:30 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><apiResponse><type>unknown</type></apiResponse>
+
+13:26:30.260 request:
+1 > GET https://petstore.swagger.io/v2/pet/2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
+
+13:26:30.636 response time in milliseconds: 374,79
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Mon, 29 Aug 2022 18:26:30 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"id":2,"category":{"id":1,"name":"perro"},"name":"doggie","photoUrls":["string"],"tags":[{"id":1,"name":"#(tagsName)"}],"status":"available"}
+
+13:26:30.662 request:
+1 > GET https://petstore.swagger.io/v2/pet/%22@%23$%25%22
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
+
+13:26:31.028 response time in milliseconds: 364,90
+1 < 404
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Mon, 29 Aug 2022 18:26:31 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"\"@#$%\"\""}
+
+13:26:31.047 request:
+1 > GET https://petstore.swagger.io/v2/pet/%22doggie%22
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
+
+13:26:31.412 response time in milliseconds: 363,28
+1 < 404
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Mon, 29 Aug 2022 18:26:31 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"\"doggie\"\""}
+
+13:26:31.428 request:
+1 > GET https://petstore.swagger.io/v2/pet/123.123
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
+
+13:26:31.825 response time in milliseconds: 395,77
+1 < 404
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Mon, 29 Aug 2022 18:26:31 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"123.123\""}
+
+13:26:31.894 request:
+1 > PUT https://petstore.swagger.io/v2/pet
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 142
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
+{"id":2,"category":{"id":1,"name":"perro"},"name":"doggie","photoUrls":["string"],"tags":[{"id":1,"name":"#(tagsName)"}],"status":"available"}
+
+13:26:32.255 response time in milliseconds: 359,52
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Mon, 29 Aug 2022 18:26:32 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"id":2,"category":{"id":1,"name":"perro"},"name":"doggie","photoUrls":["string"],"tags":[{"id":1,"name":"#(tagsName)"}],"status":"available"}
+
+13:26:32.283 request:
+1 > PUT https://petstore.swagger.io/v2/pet
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 148
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
+{"id":2,"category":{"id":"@$#%&","name":"perro"},"name":"doggie","photoUrls":["string"],"tags":[{"id":1,"name":"#(tagsName)"}],"status":"available"}
+
+13:26:32.637 response time in milliseconds: 352,28
+1 < 500
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Mon, 29 Aug 2022 18:26:32 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":500,"type":"unknown","message":"something bad happened"}
+
+13:26:32.665 request:
+1 > PUT https://petstore.swagger.io/v2/pet
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 148
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
+{"id":2,"category":{"id":"horse","name":"perro"},"name":"doggie","photoUrls":["string"],"tags":[{"id":1,"name":"#(tagsName)"}],"status":"available"}
+
+13:26:33.054 response time in milliseconds: 387,95
+1 < 500
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Mon, 29 Aug 2022 18:26:33 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":500,"type":"unknown","message":"something bad happened"}
+
+13:26:33.105 request:
+1 > DELETE https://petstore.swagger.io/v2/pet/2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
+
+13:26:33.459 response time in milliseconds: 353,77
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Mon, 29 Aug 2022 18:26:33 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":200,"type":"unknown","message":"2"}
+
+13:26:33.488 request:
+1 > DELETE https://petstore.swagger.io/v2/pet/444.888
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
+
+13:26:33.885 response time in milliseconds: 395,32
+1 < 404
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Mon, 29 Aug 2022 18:26:34 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"444.888\""}
+
+13:26:33.900 request:
+1 > DELETE https://petstore.swagger.io/v2/pet/@%23$%25&
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
+
+13:26:34.272 response time in milliseconds: 371,17
+1 < 404
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Mon, 29 Aug 2022 18:26:34 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"@#$%&\""}
+
+13:26:34.315 request:
+1 > POST https://petstore.swagger.io/v2/user
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 203
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
+{"userId":-56908596,"username":"UserTest","firstName":"UserTest","lastName":"amet et nulla","email":"exercitation laboris","password":"ut voluptate","phone":"pariatur consectetur","userStatus":-45381913}
+
+13:26:34.667 response time in milliseconds: 351,14
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Mon, 29 Aug 2022 18:26:34 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":200,"type":"unknown","message":"9222968140497216808"}
+
+13:26:34.683 request:
 1 > POST https://petstore.swagger.io/v2/user
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
@@ -336,19 +317,19 @@ horse
 1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
 97779898
 
-11:43:49.788 response time in milliseconds: 419,09
+13:26:35.048 response time in milliseconds: 364,08
 1 < 415
 1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 1 < Access-Control-Allow-Origin: *
 1 < Connection: keep-alive
 1 < Content-Type: application/json
-1 < Date: Mon, 29 Aug 2022 16:43:49 GMT
+1 < Date: Mon, 29 Aug 2022 18:26:35 GMT
 1 < Server: Jetty(9.2.9.v20150224)
 1 < Transfer-Encoding: chunked
 {"code":415,"type":"unknown","message":"com.sun.jersey.api.MessageException: A message body reader for Java class io.swagger.sample.model.User, and Java type class io.swagger.sample.model.User, and MIME media type text/plain; charset=UTF-8 was not found.\nThe registered message body readers compatible with the MIME media type are:\n*/* ->\n  com.sun.jersey.core.impl.provider.entity.FormProvider\n  com.sun.jersey.core.impl.provider.entity.StringProvider\n  com.sun.jersey.core.impl.provider.entity.ByteArrayProvider\n  com.sun.jersey.core.impl.provider.entity.FileProvider\n  com.sun.jersey.core.impl.provider.entity.InputStreamProvider\n  com.sun.jersey.core.impl.provider.entity.DataSourceProvider\n  com.sun.jersey.core.impl.provider.entity.XMLJAXBElementProvider$General\n  com.sun.jersey.core.impl.provider.entity.ReaderProvider\n  com.sun.jersey.core.impl.provider.entity.DocumentProvider\n  com.sun.jersey.core.impl.provider.entity.SourceProvider$StreamSourceReader\n  com.sun.jersey.core.impl.provider.entity.SourceProvider$SAXSourceReader\n  com.sun.jersey.core.impl.provider.entity.SourceProvider$DOMSourceReader\n  com.sun.jersey.json.impl.provider.entity.JSONJAXBElementProvider$General\n  com.sun.jersey.json.impl.provider.entity.JSONArrayProvider$General\n  com.sun.jersey.json.impl.provider.entity.JSONObjectProvider$General\n  com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider\n  com.sun.jersey.core.impl.provider.entity.XMLRootElementProvider$General\n  com.sun.jersey.core.impl.provider.entity.XMLListElementProvider$General\n  com.sun.jersey.core.impl.provider.entity.XMLRootObjectProvider$General\n  com.sun.jersey.core.impl.provider.entity.EntityHolderReader\n  com.sun.jersey.json.impl.provider.entity.JSONRootElementProvider$General\n  com.sun.jersey.json.impl.provider.entity.JSONListElementProvider$General\n  com.sun.jersey.json.impl.provider.entity.JacksonProviderProxy\ntext/plain; charset=UTF-8 ->\n  com.sun.jersey.core.impl.provider.entity.StringProvider\n  com.sun.jersey.core.impl.provider.entity.ReaderProvider\n"}
 
-11:43:49.818 request:
+13:26:35.073 request:
 1 > POST https://petstore.swagger.io/v2/user
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
@@ -358,78 +339,78 @@ horse
 1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
 )(/(  
 
-11:43:50.206 response time in milliseconds: 385,95
+13:26:35.414 response time in milliseconds: 340,22
 1 < 415
 1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 1 < Access-Control-Allow-Origin: *
 1 < Connection: keep-alive
 1 < Content-Type: application/json
-1 < Date: Mon, 29 Aug 2022 16:43:50 GMT
+1 < Date: Mon, 29 Aug 2022 18:26:35 GMT
 1 < Server: Jetty(9.2.9.v20150224)
 1 < Transfer-Encoding: chunked
 {"code":415,"type":"unknown","message":"com.sun.jersey.api.MessageException: A message body reader for Java class io.swagger.sample.model.User, and Java type class io.swagger.sample.model.User, and MIME media type text/plain; charset=UTF-8 was not found.\nThe registered message body readers compatible with the MIME media type are:\n*/* ->\n  com.sun.jersey.core.impl.provider.entity.FormProvider\n  com.sun.jersey.core.impl.provider.entity.StringProvider\n  com.sun.jersey.core.impl.provider.entity.ByteArrayProvider\n  com.sun.jersey.core.impl.provider.entity.FileProvider\n  com.sun.jersey.core.impl.provider.entity.InputStreamProvider\n  com.sun.jersey.core.impl.provider.entity.DataSourceProvider\n  com.sun.jersey.core.impl.provider.entity.XMLJAXBElementProvider$General\n  com.sun.jersey.core.impl.provider.entity.ReaderProvider\n  com.sun.jersey.core.impl.provider.entity.DocumentProvider\n  com.sun.jersey.core.impl.provider.entity.SourceProvider$StreamSourceReader\n  com.sun.jersey.core.impl.provider.entity.SourceProvider$SAXSourceReader\n  com.sun.jersey.core.impl.provider.entity.SourceProvider$DOMSourceReader\n  com.sun.jersey.json.impl.provider.entity.JSONJAXBElementProvider$General\n  com.sun.jersey.json.impl.provider.entity.JSONArrayProvider$General\n  com.sun.jersey.json.impl.provider.entity.JSONObjectProvider$General\n  com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider\n  com.sun.jersey.core.impl.provider.entity.XMLRootElementProvider$General\n  com.sun.jersey.core.impl.provider.entity.XMLListElementProvider$General\n  com.sun.jersey.core.impl.provider.entity.XMLRootObjectProvider$General\n  com.sun.jersey.core.impl.provider.entity.EntityHolderReader\n  com.sun.jersey.json.impl.provider.entity.JSONRootElementProvider$General\n  com.sun.jersey.json.impl.provider.entity.JSONListElementProvider$General\n  com.sun.jersey.json.impl.provider.entity.JacksonProviderProxy\ntext/plain; charset=UTF-8 ->\n  com.sun.jersey.core.impl.provider.entity.StringProvider\n  com.sun.jersey.core.impl.provider.entity.ReaderProvider\n"}
 
-11:43:50.279 request:
+13:26:35.523 request:
 1 > GET https://petstore.swagger.io/v2/user/login
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
 1 > Host: petstore.swagger.io
 1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
 
-11:43:50.723 response time in milliseconds: 443,50
+13:26:35.868 response time in milliseconds: 344,11
 1 < 200
 1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 1 < Access-Control-Allow-Origin: *
 1 < Connection: keep-alive
 1 < Content-Type: application/json
-1 < Date: Mon, 29 Aug 2022 16:43:50 GMT
+1 < Date: Mon, 29 Aug 2022 18:26:35 GMT
 1 < Server: Jetty(9.2.9.v20150224)
 1 < Transfer-Encoding: chunked
-1 < X-Expires-After: Mon Aug 29 17:43:50 UTC 2022
+1 < X-Expires-After: Mon Aug 29 19:26:35 UTC 2022
 1 < X-Rate-Limit: 5000
-{"code":200,"type":"unknown","message":"logged in user session:1661791430690"}
+{"code":200,"type":"unknown","message":"logged in user session:1661797595995"}
 
-11:43:50.742 request:
+13:26:35.883 request:
 1 > GET https://petstore.swagger.io/v2/user/login
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
 1 > Host: petstore.swagger.io
 1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
 
-11:43:51.088 response time in milliseconds: 343,61
+13:26:36.267 response time in milliseconds: 382,68
 1 < 200
 1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 1 < Access-Control-Allow-Origin: *
 1 < Connection: keep-alive
 1 < Content-Type: application/json
-1 < Date: Mon, 29 Aug 2022 16:43:51 GMT
+1 < Date: Mon, 29 Aug 2022 18:26:36 GMT
 1 < Server: Jetty(9.2.9.v20150224)
 1 < Transfer-Encoding: chunked
-1 < X-Expires-After: Mon Aug 29 17:43:51 UTC 2022
+1 < X-Expires-After: Mon Aug 29 19:26:36 UTC 2022
 1 < X-Rate-Limit: 5000
-{"code":200,"type":"unknown","message":"logged in user session:1661791431070"}
+{"code":200,"type":"unknown","message":"logged in user session:1661797596394"}
 
-11:43:51.101 request:
+13:26:36.277 request:
 1 > GET https://petstore.swagger.io/v2/user/login
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
 1 > Host: petstore.swagger.io
 1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
 
-11:43:51.488 response time in milliseconds: 386,48
+13:26:36.662 response time in milliseconds: 383,98
 1 < 200
 1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 1 < Access-Control-Allow-Origin: *
 1 < Connection: keep-alive
 1 < Content-Type: application/json
-1 < Date: Mon, 29 Aug 2022 16:43:51 GMT
+1 < Date: Mon, 29 Aug 2022 18:26:36 GMT
 1 < Server: Jetty(9.2.9.v20150224)
 1 < Transfer-Encoding: chunked
-1 < X-Expires-After: Mon Aug 29 17:43:51 UTC 2022
+1 < X-Expires-After: Mon Aug 29 19:26:36 UTC 2022
 1 < X-Rate-Limit: 5000
-{"code":200,"type":"unknown","message":"logged in user session:1661791431462"}
+{"code":200,"type":"unknown","message":"logged in user session:1661797596782"}
 

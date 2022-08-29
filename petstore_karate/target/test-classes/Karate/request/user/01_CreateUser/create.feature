@@ -10,7 +10,7 @@ Feature: Service POST
   @HappyPath
     Scenario: check the service POST Method
 
-      * def requestCreate = {"id": '#(userId)',"username": '#(username)',"firstName": '#(firstName)', "lastName": '#(lastName)',"email": '#(email)', "password": '#(password)',"phone": '#(phone)', "userStatus": '#(userStatus)'}
+      * def requestCreate = read('classpath:Karate/request/user/01_CreateUser/infoUser.json')
 
       Given path 'user'
       And request requestCreate

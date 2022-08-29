@@ -75,7 +75,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>API PetStore</td>
-            <td>29 ago 2022, 11:43</td>
+            <td>29 ago 2022, 13:26</td>
     </tr>
   </tbody>
 </table>
@@ -139,7 +139,7 @@ $(document).ready(function() {
           <td >0</td>
           <td class="total">3</td>
 
-          <td class="duration" data-value="1206047500">1.206</td>
+          <td class="duration" data-value="1083996900">1.083</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -274,7 +274,7 @@ As QA Automation
       </div>
 
   
-  <span class="lead-duration duration">0.377</span>
+  <span class="lead-duration duration">0.362</span>
 
 
     <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
@@ -313,9 +313,9 @@ As QA Automation
         
 <div class="brief passed">
   <span class="keyword indention">*</span>
-  <span class="name">def requestCreate = {&quot;id&quot;: '#(userId)',&quot;username&quot;: '#(username)',&quot;firstName&quot;: '#(firstName)', &quot;lastName&quot;: '#(lastName)',&quot;email&quot;: '#(email)', &quot;password&quot;: '#(password)',&quot;phone&quot;: '#(phone)', &quot;userStatus&quot;: '#(userStatus)'}</span>
+  <span class="name">def requestCreate = read('classpath:Karate/request/user/01_CreateUser/infoUser.json')</span>
   
-  <span class="lead-duration duration">0.026</span>
+  <span class="lead-duration duration">0.006</span>
 
 </div>
 
@@ -390,7 +390,7 @@ As QA Automation
   <span class="keyword indention">When</span>
   <span class="name">method POST</span>
   
-  <span class="lead-duration duration">0.347</span>
+  <span class="lead-duration duration">0.353</span>
 
 </div>
 
@@ -407,27 +407,27 @@ As QA Automation
           <a>Doc string</a>
       </div>
       <div id="msg-5" class="collapse collapsable-details">
-        <pre>11:43:48.989 request:
+        <pre>13:26:34.315 request:
 1 &gt; POST https://petstore.swagger.io/v2/user
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
-1 &gt; Content-Length: 199
+1 &gt; Content-Length: 203
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Host: petstore.swagger.io
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
-{&quot;id&quot;:-56908596,&quot;username&quot;:&quot;UserTest&quot;,&quot;firstName&quot;:&quot;UserTest&quot;,&quot;lastName&quot;:&quot;amet et nulla&quot;,&quot;email&quot;:&quot;exercitation laboris&quot;,&quot;password&quot;:&quot;ut voluptate&quot;,&quot;phone&quot;:&quot;pariatur consectetur&quot;,&quot;userStatus&quot;:-45381913}
+{&quot;userId&quot;:-56908596,&quot;username&quot;:&quot;UserTest&quot;,&quot;firstName&quot;:&quot;UserTest&quot;,&quot;lastName&quot;:&quot;amet et nulla&quot;,&quot;email&quot;:&quot;exercitation laboris&quot;,&quot;password&quot;:&quot;ut voluptate&quot;,&quot;phone&quot;:&quot;pariatur consectetur&quot;,&quot;userStatus&quot;:-45381913}
 
-11:43:49.332 response time in milliseconds: 342,75
+13:26:34.667 response time in milliseconds: 351,14
 1 &lt; 200
 1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json
-1 &lt; Date: Mon, 29 Aug 2022 16:43:49 GMT
+1 &lt; Date: Mon, 29 Aug 2022 18:26:34 GMT
 1 &lt; Server: Jetty(9.2.9.v20150224)
 1 &lt; Transfer-Encoding: chunked
-{&quot;code&quot;:200,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;9222968140497212983&quot;}</pre>
+{&quot;code&quot;:200,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;9222968140497216808&quot;}</pre>
       </div>
     </div>
   </div>
@@ -560,7 +560,7 @@ As QA Automation
       </div>
 
   
-  <span class="lead-duration duration">0.429</span>
+  <span class="lead-duration duration">0.371</span>
 
 
     <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-8">
@@ -626,7 +626,7 @@ As QA Automation
   <span class="keyword indention">And</span>
   <span class="name">request  97779898</span>
   
-  <span class="lead-duration duration">0.004</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -651,7 +651,7 @@ As QA Automation
   <span class="keyword indention">When</span>
   <span class="name">method POST</span>
   
-  <span class="lead-duration duration">0.424</span>
+  <span class="lead-duration duration">0.367</span>
 
 </div>
 
@@ -668,7 +668,7 @@ As QA Automation
           <a>Doc string</a>
       </div>
       <div id="msg-10" class="collapse collapsable-details">
-        <pre>11:43:49.368 request:
+        <pre>13:26:34.683 request:
 1 &gt; POST https://petstore.swagger.io/v2/user
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
@@ -678,14 +678,14 @@ As QA Automation
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
 97779898
 
-11:43:49.788 response time in milliseconds: 419,09
+13:26:35.048 response time in milliseconds: 364,08
 1 &lt; 415
 1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json
-1 &lt; Date: Mon, 29 Aug 2022 16:43:49 GMT
+1 &lt; Date: Mon, 29 Aug 2022 18:26:35 GMT
 1 &lt; Server: Jetty(9.2.9.v20150224)
 1 &lt; Transfer-Encoding: chunked
 {&quot;code&quot;:415,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;com.sun.jersey.api.MessageException: A message body reader for Java class io.swagger.sample.model.User, and Java type class io.swagger.sample.model.User, and MIME media type text/plain; charset=UTF-8 was not found.\nThe registered message body readers compatible with the MIME media type are:\n*/* -&gt;\n  com.sun.jersey.core.impl.provider.entity.FormProvider\n  com.sun.jersey.core.impl.provider.entity.StringProvider\n  com.sun.jersey.core.impl.provider.entity.ByteArrayProvider\n  com.sun.jersey.core.impl.provider.entity.FileProvider\n  com.sun.jersey.core.impl.provider.entity.InputStreamProvider\n  com.sun.jersey.core.impl.provider.entity.DataSourceProvider\n  com.sun.jersey.core.impl.provider.entity.XMLJAXBElementProvider$General\n  com.sun.jersey.core.impl.provider.entity.ReaderProvider\n  com.sun.jersey.core.impl.provider.entity.DocumentProvider\n  com.sun.jersey.core.impl.provider.entity.SourceProvider$StreamSourceReader\n  com.sun.jersey.core.impl.provider.entity.SourceProvider$SAXSourceReader\n  com.sun.jersey.core.impl.provider.entity.SourceProvider$DOMSourceReader\n  com.sun.jersey.json.impl.provider.entity.JSONJAXBElementProvider$General\n  com.sun.jersey.json.impl.provider.entity.JSONArrayProvider$General\n  com.sun.jersey.json.impl.provider.entity.JSONObjectProvider$General\n  com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider\n  com.sun.jersey.core.impl.provider.entity.XMLRootElementProvider$General\n  com.sun.jersey.core.impl.provider.entity.XMLListElementProvider$General\n  com.sun.jersey.core.impl.provider.entity.XMLRootObjectProvider$General\n  com.sun.jersey.core.impl.provider.entity.EntityHolderReader\n  com.sun.jersey.json.impl.provider.entity.JSONRootElementProvider$General\n  com.sun.jersey.json.impl.provider.entity.JSONListElementProvider$General\n  com.sun.jersey.json.impl.provider.entity.JacksonProviderProxy\ntext/plain; charset=UTF-8 -&gt;\n  com.sun.jersey.core.impl.provider.entity.StringProvider\n  com.sun.jersey.core.impl.provider.entity.ReaderProvider\n&quot;}</pre>
@@ -821,7 +821,7 @@ As QA Automation
       </div>
 
   
-  <span class="lead-duration duration">0.398</span>
+  <span class="lead-duration duration">0.349</span>
 
 
     <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
@@ -887,7 +887,7 @@ As QA Automation
   <span class="keyword indention">And</span>
   <span class="name">request  &quot;)(/(  &quot;</span>
   
-  <span class="lead-duration duration">0.004</span>
+  <span class="lead-duration duration">0.003</span>
 
 </div>
 
@@ -912,7 +912,7 @@ As QA Automation
   <span class="keyword indention">When</span>
   <span class="name">method POST</span>
   
-  <span class="lead-duration duration">0.393</span>
+  <span class="lead-duration duration">0.345</span>
 
 </div>
 
@@ -929,7 +929,7 @@ As QA Automation
           <a>Doc string</a>
       </div>
       <div id="msg-15" class="collapse collapsable-details">
-        <pre>11:43:49.818 request:
+        <pre>13:26:35.073 request:
 1 &gt; POST https://petstore.swagger.io/v2/user
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
@@ -939,14 +939,14 @@ As QA Automation
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
 )(/(  
 
-11:43:50.206 response time in milliseconds: 385,95
+13:26:35.414 response time in milliseconds: 340,22
 1 &lt; 415
 1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json
-1 &lt; Date: Mon, 29 Aug 2022 16:43:50 GMT
+1 &lt; Date: Mon, 29 Aug 2022 18:26:35 GMT
 1 &lt; Server: Jetty(9.2.9.v20150224)
 1 &lt; Transfer-Encoding: chunked
 {&quot;code&quot;:415,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;com.sun.jersey.api.MessageException: A message body reader for Java class io.swagger.sample.model.User, and Java type class io.swagger.sample.model.User, and MIME media type text/plain; charset=UTF-8 was not found.\nThe registered message body readers compatible with the MIME media type are:\n*/* -&gt;\n  com.sun.jersey.core.impl.provider.entity.FormProvider\n  com.sun.jersey.core.impl.provider.entity.StringProvider\n  com.sun.jersey.core.impl.provider.entity.ByteArrayProvider\n  com.sun.jersey.core.impl.provider.entity.FileProvider\n  com.sun.jersey.core.impl.provider.entity.InputStreamProvider\n  com.sun.jersey.core.impl.provider.entity.DataSourceProvider\n  com.sun.jersey.core.impl.provider.entity.XMLJAXBElementProvider$General\n  com.sun.jersey.core.impl.provider.entity.ReaderProvider\n  com.sun.jersey.core.impl.provider.entity.DocumentProvider\n  com.sun.jersey.core.impl.provider.entity.SourceProvider$StreamSourceReader\n  com.sun.jersey.core.impl.provider.entity.SourceProvider$SAXSourceReader\n  com.sun.jersey.core.impl.provider.entity.SourceProvider$DOMSourceReader\n  com.sun.jersey.json.impl.provider.entity.JSONJAXBElementProvider$General\n  com.sun.jersey.json.impl.provider.entity.JSONArrayProvider$General\n  com.sun.jersey.json.impl.provider.entity.JSONObjectProvider$General\n  com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider\n  com.sun.jersey.core.impl.provider.entity.XMLRootElementProvider$General\n  com.sun.jersey.core.impl.provider.entity.XMLListElementProvider$General\n  com.sun.jersey.core.impl.provider.entity.XMLRootObjectProvider$General\n  com.sun.jersey.core.impl.provider.entity.EntityHolderReader\n  com.sun.jersey.json.impl.provider.entity.JSONRootElementProvider$General\n  com.sun.jersey.json.impl.provider.entity.JSONListElementProvider$General\n  com.sun.jersey.json.impl.provider.entity.JacksonProviderProxy\ntext/plain; charset=UTF-8 -&gt;\n  com.sun.jersey.core.impl.provider.entity.StringProvider\n  com.sun.jersey.core.impl.provider.entity.ReaderProvider\n&quot;}</pre>

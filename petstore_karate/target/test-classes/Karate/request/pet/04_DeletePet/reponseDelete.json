@@ -1,21 +1,5 @@
 {
-  "id": "#number",
-  "category":
-  {
-    "id": "#number",
-    "name": "#string"
-  },
-
-  "name": "#string",
-
-  "photoUrls": [
-    "#string"
-  ],
-
-  "tags":[
-    {
-      "id": "#number",
-      "name": "#string"
-    }],
-  "status": "#string"
+  "code": 200,
+  "type": "unknown",
+  "message": "2"
 }

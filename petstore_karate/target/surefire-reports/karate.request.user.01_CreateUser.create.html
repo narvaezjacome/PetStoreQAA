@@ -19,7 +19,7 @@
     <script src="res/bootstrap.min.js" type="text/javascript"></script>
     <script src="res/karate-report.js" type="text/javascript"></script>
     
-<title>Karate.request.user.01_CreateUser.create</title>
+<title>karate.request.user.01_CreateUser.create</title>
   
 </head>
   
@@ -47,7 +47,7 @@
         
 <div id="nav-type">Scenarios</div>         
         
-<div id="nav-date">2022-08-29 11:52:54 AM</div>        
+<div id="nav-date">2022-08-29 01:26:36 PM</div>        
       
 <div class="nav-container">
 <div class="nav-item passed">
@@ -65,7 +65,7 @@
 <div id="content">
       
 <div class="page-heading alert alert-primary">
-<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">Karate/request/user/01_CreateUser/create.feature</span><span class="feature-description">Service POST | As QA Automation&#13;
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">karate/request/user/01_CreateUser/create.feature</span><span class="feature-description">Service POST | As QA Automation&#13;
   I want to create a client&#13;
   To validate the status code and response.</span>
 </div>
@@ -77,7 +77,7 @@
 </div>
 <span class="scenario-keyword">Scenario: [1:11]</span><span class="scenario-name">check the service POST Method </span>
 </div>
-<div class="scenario-time passed">ms: 1455</div>
+<div class="scenario-time passed">ms: 363</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="[1:11]bg">
@@ -96,16 +96,16 @@
 <div class="step-row">
 <div class="step-container" id="2">
 <div class="step-ref passed">2</div>
-<div class="step-cell passed">* def requestCreate = {"id": '#(userId)',"username": '#(username)',"firstName": '#(firstName)', "lastName": '#(lastName)',"email": '#(email)', "password": '#(password)',"phone": '#(phone)', "userStatus": '#(userStatus)'}</div>
+<div class="step-cell passed">* def requestCreate = read('classpath:Karate/request/user/01_CreateUser/infoUser.json')</div>
 </div>
-<div class="time-cell passed">43</div>
+<div class="time-cell passed">6</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="3">
 <div class="step-ref passed">3</div>
 <div class="step-cell passed">Given path 'user'</div>
 </div>
-<div class="time-cell passed">4</div>
+<div class="time-cell passed">3</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="4">
@@ -119,29 +119,29 @@
 <div class="step-ref passed">5</div>
 <div class="step-cell passed">When method POST</div>
 </div>
-<div class="time-cell passed">1408</div>
+<div class="time-cell passed">354</div>
 </div>
-<div class="preformatted" data-parent="5">11:52:52.591 request:
+<div class="preformatted" data-parent="5">13:26:34.315 request:
 1 &gt; POST https://petstore.swagger.io/v2/user
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
-1 &gt; Content-Length: 199
+1 &gt; Content-Length: 203
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Host: petstore.swagger.io
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
-{"id":-56908596,"username":"UserTest","firstName":"UserTest","lastName":"amet et nulla","email":"exercitation laboris","password":"ut voluptate","phone":"pariatur consectetur","userStatus":-45381913}
+{"userId":-56908596,"username":"UserTest","firstName":"UserTest","lastName":"amet et nulla","email":"exercitation laboris","password":"ut voluptate","phone":"pariatur consectetur","userStatus":-45381913}
 
-11:52:53.307 response time in milliseconds: 708,94
+13:26:34.667 response time in milliseconds: 351,14
 1 &lt; 200
 1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json
-1 &lt; Date: Mon, 29 Aug 2022 16:52:53 GMT
+1 &lt; Date: Mon, 29 Aug 2022 18:26:34 GMT
 1 &lt; Server: Jetty(9.2.9.v20150224)
 1 &lt; Transfer-Encoding: chunked
-{"code":200,"type":"unknown","message":"9222968140497213261"}</div>
+{"code":200,"type":"unknown","message":"9222968140497216808"}</div>
 <div class="step-row">
 <div class="step-container" id="6">
 <div class="step-ref passed">6</div>
@@ -158,7 +158,7 @@
 </div>
 <span class="scenario-keyword">Scenario Outline: [2.1:29]</span><span class="scenario-name">Create with invalid username </span>
 </div>
-<div class="scenario-time passed">ms: 407</div>
+<div class="scenario-time passed">ms: 372</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="[2.1:29]bg">
@@ -172,30 +172,30 @@
 <div class="step-ref bg-step">7</div>
 <div class="step-cell passed">* url url</div>
 </div>
-<div class="time-cell passed">0</div>
+<div class="time-cell passed">1</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="8">
 <div class="step-ref passed">8</div>
 <div class="step-cell passed">Given path 'user'</div>
 </div>
-<div class="time-cell passed">0</div>
+<div class="time-cell passed">1</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="9">
 <div class="step-ref passed">9</div>
 <div class="step-cell passed">And request  97779898</div>
 </div>
-<div class="time-cell passed">4</div>
+<div class="time-cell passed">3</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="10">
 <div class="step-ref passed">10</div>
 <div class="step-cell passed">When method POST</div>
 </div>
-<div class="time-cell passed">403</div>
+<div class="time-cell passed">368</div>
 </div>
-<div class="preformatted" data-parent="10">11:52:53.338 request:
+<div class="preformatted" data-parent="10">13:26:34.683 request:
 1 &gt; POST https://petstore.swagger.io/v2/user
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
@@ -205,14 +205,14 @@
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
 97779898
 
-11:52:53.729 response time in milliseconds: 399,56
+13:26:35.048 response time in milliseconds: 364,08
 1 &lt; 415
 1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json
-1 &lt; Date: Mon, 29 Aug 2022 16:52:53 GMT
+1 &lt; Date: Mon, 29 Aug 2022 18:26:35 GMT
 1 &lt; Server: Jetty(9.2.9.v20150224)
 1 &lt; Transfer-Encoding: chunked
 {"code":415,"type":"unknown","message":"com.sun.jersey.api.MessageException: A message body reader for Java class io.swagger.sample.model.User, and Java type class io.swagger.sample.model.User, and MIME media type text/plain; charset=UTF-8 was not found.\nThe registered message body readers compatible with the MIME media type are:\n*/* -&gt;\n  com.sun.jersey.core.impl.provider.entity.FormProvider\n  com.sun.jersey.core.impl.provider.entity.StringProvider\n  com.sun.jersey.core.impl.provider.entity.ByteArrayProvider\n  com.sun.jersey.core.impl.provider.entity.FileProvider\n  com.sun.jersey.core.impl.provider.entity.InputStreamProvider\n  com.sun.jersey.core.impl.provider.entity.DataSourceProvider\n  com.sun.jersey.core.impl.provider.entity.XMLJAXBElementProvider$General\n  com.sun.jersey.core.impl.provider.entity.ReaderProvider\n  com.sun.jersey.core.impl.provider.entity.DocumentProvider\n  com.sun.jersey.core.impl.provider.entity.SourceProvider$StreamSourceReader\n  com.sun.jersey.core.impl.provider.entity.SourceProvider$SAXSourceReader\n  com.sun.jersey.core.impl.provider.entity.SourceProvider$DOMSourceReader\n  com.sun.jersey.json.impl.provider.entity.JSONJAXBElementProvider$General\n  com.sun.jersey.json.impl.provider.entity.JSONArrayProvider$General\n  com.sun.jersey.json.impl.provider.entity.JSONObjectProvider$General\n  com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider\n  com.sun.jersey.core.impl.provider.entity.XMLRootElementProvider$General\n  com.sun.jersey.core.impl.provider.entity.XMLListElementProvider$General\n  com.sun.jersey.core.impl.provider.entity.XMLRootObjectProvider$General\n  com.sun.jersey.core.impl.provider.entity.EntityHolderReader\n  com.sun.jersey.json.impl.provider.entity.JSONRootElementProvider$General\n  com.sun.jersey.json.impl.provider.entity.JSONListElementProvider$General\n  com.sun.jersey.json.impl.provider.entity.JacksonProviderProxy\ntext/plain; charset=UTF-8 -&gt;\n  com.sun.jersey.core.impl.provider.entity.StringProvider\n  com.sun.jersey.core.impl.provider.entity.ReaderProvider\n"}</div>
@@ -221,7 +221,7 @@
 <div class="step-ref passed">11</div>
 <div class="step-cell passed">Then status 415</div>
 </div>
-<div class="time-cell passed">0</div>
+<div class="time-cell passed">1</div>
 </div>
 </div>
 <div class="scenario">
@@ -232,7 +232,7 @@
 </div>
 <span class="scenario-keyword">Scenario Outline: [2.2:30]</span><span class="scenario-name">Create with invalid username </span>
 </div>
-<div class="scenario-time passed">ms: 409</div>
+<div class="scenario-time passed">ms: 349</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="[2.2:30]bg">
@@ -260,16 +260,16 @@
 <div class="step-ref passed">14</div>
 <div class="step-cell passed">And request  ")(/(  "</div>
 </div>
-<div class="time-cell passed">4</div>
+<div class="time-cell passed">3</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="15">
 <div class="step-ref passed">15</div>
 <div class="step-cell passed">When method POST</div>
 </div>
-<div class="time-cell passed">405</div>
+<div class="time-cell passed">346</div>
 </div>
-<div class="preformatted" data-parent="15">11:52:53.760 request:
+<div class="preformatted" data-parent="15">13:26:35.073 request:
 1 &gt; POST https://petstore.swagger.io/v2/user
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
@@ -279,14 +279,14 @@
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
 )(/(  
 
-11:52:54.151 response time in milliseconds: 401,42
+13:26:35.414 response time in milliseconds: 340,22
 1 &lt; 415
 1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json
-1 &lt; Date: Mon, 29 Aug 2022 16:52:54 GMT
+1 &lt; Date: Mon, 29 Aug 2022 18:26:35 GMT
 1 &lt; Server: Jetty(9.2.9.v20150224)
 1 &lt; Transfer-Encoding: chunked
 {"code":415,"type":"unknown","message":"com.sun.jersey.api.MessageException: A message body reader for Java class io.swagger.sample.model.User, and Java type class io.swagger.sample.model.User, and MIME media type text/plain; charset=UTF-8 was not found.\nThe registered message body readers compatible with the MIME media type are:\n*/* -&gt;\n  com.sun.jersey.core.impl.provider.entity.FormProvider\n  com.sun.jersey.core.impl.provider.entity.StringProvider\n  com.sun.jersey.core.impl.provider.entity.ByteArrayProvider\n  com.sun.jersey.core.impl.provider.entity.FileProvider\n  com.sun.jersey.core.impl.provider.entity.InputStreamProvider\n  com.sun.jersey.core.impl.provider.entity.DataSourceProvider\n  com.sun.jersey.core.impl.provider.entity.XMLJAXBElementProvider$General\n  com.sun.jersey.core.impl.provider.entity.ReaderProvider\n  com.sun.jersey.core.impl.provider.entity.DocumentProvider\n  com.sun.jersey.core.impl.provider.entity.SourceProvider$StreamSourceReader\n  com.sun.jersey.core.impl.provider.entity.SourceProvider$SAXSourceReader\n  com.sun.jersey.core.impl.provider.entity.SourceProvider$DOMSourceReader\n  com.sun.jersey.json.impl.provider.entity.JSONJAXBElementProvider$General\n  com.sun.jersey.json.impl.provider.entity.JSONArrayProvider$General\n  com.sun.jersey.json.impl.provider.entity.JSONObjectProvider$General\n  com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider\n  com.sun.jersey.core.impl.provider.entity.XMLRootElementProvider$General\n  com.sun.jersey.core.impl.provider.entity.XMLListElementProvider$General\n  com.sun.jersey.core.impl.provider.entity.XMLRootObjectProvider$General\n  com.sun.jersey.core.impl.provider.entity.EntityHolderReader\n  com.sun.jersey.json.impl.provider.entity.JSONRootElementProvider$General\n  com.sun.jersey.json.impl.provider.entity.JSONListElementProvider$General\n  com.sun.jersey.json.impl.provider.entity.JacksonProviderProxy\ntext/plain; charset=UTF-8 -&gt;\n  com.sun.jersey.core.impl.provider.entity.StringProvider\n  com.sun.jersey.core.impl.provider.entity.ReaderProvider\n"}</div>

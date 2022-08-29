@@ -75,7 +75,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>API PetStore</td>
-            <td>29 ago 2022, 11:43</td>
+            <td>29 ago 2022, 13:26</td>
     </tr>
   </tbody>
 </table>
@@ -128,19 +128,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@UpdatePet</td>
-          <td      class="passed"    >5</td>
-          <td      class="failed"    >1</td>
-          <td     class="skipped"   >1</td>
+          <td      class="passed"    >6</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">7</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">6</td>
 
+          <td  class="passed"    >1</td>
           <td >0</td>
-          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="441400000">0.441</td>
-          <td class="failed">Failed</td>
+          <td class="duration" data-value="371737300">0.371</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -184,12 +184,12 @@ $(document).ready(function() {
       </div>
 
   
-  <span class="lead-duration duration">0.441</span>
+  <span class="lead-duration duration">0.371</span>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">check the service PUT (UpdatePet) To see if status code is 200.</span>
   
@@ -200,15 +200,15 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -218,39 +218,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def requestPut = {&quot;id&quot;: &quot;#(id)&quot;, &quot;category&quot;: {&quot;id&quot;: &quot;#(idCategory)&quot;, &quot;name&quot;: &quot;#(nameCategory)&quot;},&quot;name&quot;: &quot;#(name)&quot;,&quot;photoUrls&quot;: [&quot;#(photoUrls)&quot;],&quot;tags&quot;: [{&quot;id&quot;: &quot;#(idTags)&quot;,&quot;name&quot;: &quot;#(nameTags)&quot;}],&quot;status&quot;: &quot;#(status)&quot;}</span>
-  
-  <span class="lead-duration duration">0.025</span>
-
-</div>
-
-        
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">*</span>
   <span class="name">def responsePut = read('classpath:Karate/request/pet/03_UpdatePet/responsePut.json')</span>
   
-  <span class="lead-duration duration">0.004</span>
+  <span class="lead-duration duration">0.007</span>
 
 </div>
 
@@ -325,7 +300,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method PUT</span>
   
-  <span class="lead-duration duration">0.410</span>
+  <span class="lead-duration duration">0.363</span>
 
 </div>
 
@@ -342,27 +317,27 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details">
-        <pre>11:43:46.105 request:
+        <pre>13:26:31.894 request:
 1 &gt; PUT https://petstore.swagger.io/v2/pet
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
-1 &gt; Content-Length: 179
+1 &gt; Content-Length: 142
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Host: petstore.swagger.io
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
-{&quot;id&quot;:2,&quot;category&quot;:{&quot;id&quot;:&quot;#(idCategory)&quot;,&quot;name&quot;:&quot;#(nameCategory)&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[[&quot;dog.jpg&quot;]],&quot;tags&quot;:[{&quot;id&quot;:&quot;#(idTags)&quot;,&quot;name&quot;:&quot;#(nameTags)&quot;}],&quot;status&quot;:&quot;available&quot;}
+{&quot;id&quot;:2,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;perro&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;#(tagsName)&quot;}],&quot;status&quot;:&quot;available&quot;}
 
-11:43:46.511 response time in milliseconds: 407,74
-1 &lt; 500
+13:26:32.255 response time in milliseconds: 359,52
+1 &lt; 200
 1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json
-1 &lt; Date: Mon, 29 Aug 2022 16:43:46 GMT
+1 &lt; Date: Mon, 29 Aug 2022 18:26:32 GMT
 1 &lt; Server: Jetty(9.2.9.v20150224)
 1 &lt; Transfer-Encoding: chunked
-{&quot;code&quot;:500,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;something bad happened&quot;}</pre>
+{&quot;id&quot;:2,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;perro&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;#(tagsName)&quot;}],&quot;status&quot;:&quot;available&quot;}</pre>
       </div>
     </div>
   </div>
@@ -376,7 +351,7 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
   <span class="name">status 200</span>
   
@@ -388,30 +363,9 @@ $(document).ready(function() {
 
         
 
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
-          <a>com.intuit.karate.exception.KarateException:</a>
-      </div>
-      <div id="msg-4" class="collapse collapsable-details  in ">
-        <pre>com.intuit.karate.exception.KarateException: put.feature:18 - status code was: 500, expected: 200, response time: 408, url: https://petstore.swagger.io/v2/pet, response: {&quot;code&quot;:500,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;something bad happened&quot;}</pre>
-      </div>
-    </div>
-  </div>
-
 
         
         
-  <div class="inner-level">
-    <div class="docstring indention">
-            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-5" class="collapse collapsable-details">
-        <pre>11:43:46.511 status code was: 500, expected: 200, response time: 408, url: https://petstore.swagger.io/v2/pet, response: {&quot;code&quot;:500,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;something bad happened&quot;}</pre>
-      </div>
-    </div>
-  </div>
 
         
 
@@ -422,7 +376,7 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">And</span>
   <span class="name">match response == responsePut</span>
   

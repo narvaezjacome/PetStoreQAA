@@ -17,7 +17,7 @@ Feature: Service client GET
     When method GET
     Then status 200
     And match response == responseGet
-    And assert response.support.text == "To keep ReqRes free, contribuitions"
+
 
   @VariablePath
   Scenario Outline: Find a pet by ID incorrect
@@ -28,7 +28,7 @@ Feature: Service client GET
     Then status 404
 
     Examples:
-      | id     |
-      | "@#$%" |
+      | id       |
+      | "@#$%"   |
       | "doggie" |
-      | 123.123|
+      | 123.123  |
