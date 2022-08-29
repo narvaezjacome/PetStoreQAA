@@ -1,5 +1,5 @@
-<testsuite failures="1" name="karate/request/Karate.request/pet/get.feature" skipped="0" tests="4" time="1.277914">
-  <testcase classname="karate.request.Karate.request.pet.get" name="Check the service GET" time="0.011077">
+<testsuite failures="1" name="karate/request/Karate.request/pet/get.feature" skipped="0" tests="4" time="1.338618">
+  <testcase classname="karate.request.Karate.request.pet.get" name="Check the service GET" time="0.009652">
     <failure message="get.feature:12 - evaluation (js) failed: read('classpath:Karate/request/reponseGet.json), javax.script.ScriptException: &lt;eval&gt;:1:47 Missing close quote&#13;&#10;read('classpath:Karate/request/reponseGet.json)&#13;&#10;                                               ^ in &lt;eval&gt; at line number 1 at column number 47&#10;stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)">* url url ................................................................. passed
 * def responseGet = read('classpath:Karate/request/reponseGet.json) ....... failed
 
@@ -17,7 +17,7 @@ And match response == responsesGet ........................................ skip
 And assert response.support.text == "To keep ReqRes free, contribuitions .. skipped
 And assert response.data.email == email ................................... skipped</failure>
   </testcase>
-  <testcase classname="karate.request.Karate.request.pet.get" name="Find a pet by ID incorrect" time="0.445415">
+  <testcase classname="karate.request.Karate.request.pet.get" name="Find a pet by ID incorrect" time="0.416595">
     <system-out>* url url ................................................................. passed
 * def responseGet = read('classpath:Karate/request/reponseGet.json) ....... failed
 
@@ -40,7 +40,7 @@ And request "@#$%" ........................................................ pass
 When method get ........................................................... passed
 Then status 404 ........................................................... passed</system-out>
   </testcase>
-  <testcase classname="karate.request.Karate.request.pet.get" name="Find a pet by ID incorrect" time="0.360762">
+  <testcase classname="karate.request.Karate.request.pet.get" name="Find a pet by ID incorrect" time="0.460026">
     <system-out>* url url ................................................................. passed
 * def responseGet = read('classpath:Karate/request/reponseGet.json) ....... failed
 
@@ -68,7 +68,7 @@ And request "fish" ........................................................ pass
 When method get ........................................................... passed
 Then status 404 ........................................................... passed</system-out>
   </testcase>
-  <testcase classname="karate.request.Karate.request.pet.get" name="Find a pet by ID incorrect" time="0.46066">
+  <testcase classname="karate.request.Karate.request.pet.get" name="Find a pet by ID incorrect" time="0.452345">
     <system-out>* url url ................................................................. passed
 * def responseGet = read('classpath:Karate/request/reponseGet.json) ....... failed
 

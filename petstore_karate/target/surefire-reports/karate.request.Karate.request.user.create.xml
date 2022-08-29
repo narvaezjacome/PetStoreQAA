@@ -1,10 +1,15 @@
-<testsuite failures="0" name="karate/request/Karate.request/user/create.feature" skipped="0" tests="1" time="0.467529">
-  <testcase classname="karate.request.Karate.request.user.create" name="check the service POST Method" time="0.467529">
-    <system-out>* url url ................................................................. passed
+<testsuite failures="1" name="karate/request/Karate.request/user/create.feature" skipped="0" tests="1" time="0.523319">
+  <testcase classname="karate.request.Karate.request.user.create" name="check the service POST Method" time="0.523319">
+    <failure message="create.feature:17 - org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 11; Las estructuras del documento XML deben empezar y finalizar en la misma entidad.">* url url ................................................................. passed
 * def requestCreate = {"id": '#(userId)',"username": '#(username)',"firstName": '#(firstName)', "lastName": '#(lastName)',"email": '#(email)', "password": '#(password)',"phone": '#(phone)', "userStatus": '#(userStatus)'} . passed
 Given path 'user' ......................................................... passed
 And request requestCreate ................................................. passed
 When method post .......................................................... passed
-Then status 200 ........................................................... passed</system-out>
+Then status 200 ........................................................... passed
+And match response == &lt;expected&gt; .......................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: create.feature:17 - org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 11; Las estructuras del documento XML deben empezar y finalizar en la misma entidad.&#13;
+	at ✽.And match response == &lt;expected&gt; (create.feature:17)</failure>
   </testcase>
 </testsuite>

@@ -74,8 +74,8 @@ $(document).ready(function() {
   </thead>
   <tbody>
     <tr class="info">
-      <td>PetStore Report</td>
-            <td>28 ago 2022, 18:40</td>
+      <td>PetStore API</td>
+            <td>28 ago 2022, 23:20</td>
     </tr>
   </tbody>
 </table>
@@ -129,18 +129,18 @@ $(document).ready(function() {
         <tr>
           <td class="tagname">karate/request/Karate.request/user/create.feature</td>
           <td      class="passed"    >6</td>
+          <td      class="failed"    >1</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td >0</td>
-          <td class="total">6</td>
+          <td class="total">7</td>
 
-          <td  class="passed"    >1</td>
           <td >0</td>
+          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="467529300">0.467</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="523318800">0.523</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -172,7 +172,7 @@ $(document).ready(function() {
   </div>
 
         
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Feature</span>
   <span class="name">karate/request/Karate.request/user/create.feature</span>
   
@@ -270,12 +270,12 @@ As QA Automation
   </div>
 
   
-  <span class="lead-duration duration">0.467</span>
+  <span class="lead-duration duration">0.523</span>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-3">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
   <span class="name">check the service POST Method</span>
   
@@ -286,15 +286,15 @@ As QA Automation
   </span>
   <div class="description indention"></div>
 
-  <div id="element-3" class="collapse collapsable-details ">
+  <div id="element-3" class="collapse collapsable-details  in ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-4">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-4">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -304,14 +304,14 @@ As QA Automation
 
   </div>
 
-  <div id="steps-4" class="inner-level collapse collapsable-details ">
+  <div id="steps-4" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">*</span>
   <span class="name">def requestCreate = {&quot;id&quot;: '#(userId)',&quot;username&quot;: '#(username)',&quot;firstName&quot;: '#(firstName)', &quot;lastName&quot;: '#(lastName)',&quot;email&quot;: '#(email)', &quot;password&quot;: '#(password)',&quot;phone&quot;: '#(phone)', &quot;userStatus&quot;: '#(userStatus)'}</span>
   
-  <span class="lead-duration duration">0.040</span>
+  <span class="lead-duration duration">0.043</span>
 
 </div>
 
@@ -386,7 +386,7 @@ As QA Automation
   <span class="keyword indention">When</span>
   <span class="name">method post</span>
   
-  <span class="lead-duration duration">0.421</span>
+  <span class="lead-duration duration">0.463</span>
 
 </div>
 
@@ -403,7 +403,7 @@ As QA Automation
           <a>Doc string</a>
       </div>
       <div id="msg-5" class="collapse collapsable-details">
-        <pre>18:40:01.228 request:
+        <pre>21:17:53.561 request:
 1 &gt; POST https://petstore.swagger.io/v2/user
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
@@ -413,17 +413,17 @@ As QA Automation
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
 {&quot;id&quot;:-56908596,&quot;username&quot;:&quot;UserTest&quot;,&quot;firstName&quot;:&quot;UserTest&quot;,&quot;lastName&quot;:&quot;amet et nulla&quot;,&quot;email&quot;:&quot;exercitation laboris&quot;,&quot;password&quot;:&quot;ut voluptate&quot;,&quot;phone&quot;:&quot;pariatur consectetur&quot;,&quot;userStatus&quot;:-45381913}
 
-18:40:01.647 response time in milliseconds: 417,13
+21:17:54.022 response time in milliseconds: 459,68
 1 &lt; 200
 1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json
-1 &lt; Date: Sun, 28 Aug 2022 23:40:00 GMT
+1 &lt; Date: Mon, 29 Aug 2022 02:17:53 GMT
 1 &lt; Server: Jetty(9.2.9.v20150224)
 1 &lt; Transfer-Encoding: chunked
-{&quot;code&quot;:200,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;9222968140497214568&quot;}</pre>
+{&quot;code&quot;:200,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;1213534&quot;}</pre>
       </div>
     </div>
   </div>
@@ -448,6 +448,42 @@ As QA Automation
         
 
         
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == &lt;expected&gt;</span>
+  
+  <span class="lead-duration duration">0.010</span>
+
+</div>
+
+        
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-6">
+          <a>com.intuit.karate.exception.KarateException:</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: create.feature:17 - org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 11; Las estructuras del documento XML deben empezar y finalizar en la misma entidad.</pre>
+      </div>
+    </div>
+  </div>
 
 
         

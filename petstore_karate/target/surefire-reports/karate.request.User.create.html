@@ -19,7 +19,7 @@
     <script src="res/bootstrap.min.js" type="text/javascript"></script>
     <script src="res/karate-report.js" type="text/javascript"></script>
     
-<title>karate.request.User.create</title>
+<title>karate.request.user.create</title>
   
 </head>
   
@@ -47,7 +47,7 @@
         
 <div id="nav-type">Scenarios</div>         
         
-<div id="nav-date">2022-08-28 05:59:58 PM</div>        
+<div id="nav-date">2022-08-28 10:11:41 PM</div>        
       
 <div class="nav-container">
 <div class="nav-item passed">
@@ -59,7 +59,7 @@
 <div id="content">
       
 <div class="page-heading alert alert-primary">
-<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">karate/request/User/create.feature</span><span class="feature-description">Service POST | As QA Automation&#13;
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">karate/request/user/create.feature</span><span class="feature-description">Service POST | As QA Automation&#13;
   I want to create a client&#13;
   To validate the status code and response.</span>
 </div>
@@ -69,7 +69,7 @@
 <div class="scenario-tags"></div>
 <span class="scenario-keyword">Scenario: [1:9]</span><span class="scenario-name">check the service POST Method </span>
 </div>
-<div class="scenario-time passed">ms: 2187</div>
+<div class="scenario-time passed">ms: 520</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="[1:9]bg">
@@ -90,7 +90,7 @@
 <div class="step-ref passed">2</div>
 <div class="step-cell passed">* def requestCreate = {"id": '#(userId)',"username": '#(username)',"firstName": '#(firstName)', "lastName": '#(lastName)',"email": '#(email)', "password": '#(password)',"phone": '#(phone)', "userStatus": '#(userStatus)'}</div>
 </div>
-<div class="time-cell passed">53</div>
+<div class="time-cell passed">63</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="3">
@@ -111,9 +111,9 @@
 <div class="step-ref passed">5</div>
 <div class="step-cell passed">When method post</div>
 </div>
-<div class="time-cell passed">2128</div>
+<div class="time-cell passed">451</div>
 </div>
-<div class="preformatted" data-parent="5">17:59:54.728 request:
+<div class="preformatted" data-parent="5">22:11:39.062 request:
 1 &gt; POST https://petstore.swagger.io/v2/user
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
@@ -123,23 +123,23 @@
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
 {"id":-56908596,"username":"UserTest","firstName":"UserTest","lastName":"amet et nulla","email":"exercitation laboris","password":"ut voluptate","phone":"pariatur consectetur","userStatus":-45381913}
 
-17:59:55.728 response time in milliseconds: 980,98
+22:11:39.507 response time in milliseconds: 443,48
 1 &lt; 200
 1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json
-1 &lt; Date: Sun, 28 Aug 2022 22:59:54 GMT
+1 &lt; Date: Mon, 29 Aug 2022 03:11:38 GMT
 1 &lt; Server: Jetty(9.2.9.v20150224)
 1 &lt; Transfer-Encoding: chunked
-{"code":200,"type":"unknown","message":"9222968140497212977"}</div>
+{"code":200,"type":"unknown","message":"72255667"}</div>
 <div class="step-row">
 <div class="step-container" id="6">
 <div class="step-ref passed">6</div>
 <div class="step-cell passed">Then status 200</div>
 </div>
-<div class="time-cell passed">0</div>
+<div class="time-cell passed">1</div>
 </div>
 </div>
 </div>

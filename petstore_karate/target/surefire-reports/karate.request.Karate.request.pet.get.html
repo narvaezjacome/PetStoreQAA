@@ -47,7 +47,7 @@
         
 <div id="nav-type">Scenarios</div>         
         
-<div id="nav-date">2022-08-28 06:40:04 PM</div>        
+<div id="nav-date">2022-08-28 09:17:56 PM</div>        
       
 <div class="nav-container">
 <div class="nav-item failed">
@@ -78,7 +78,7 @@
 <div class="scenario-tags"></div>
 <span class="scenario-keyword">Scenario: [1:9]</span><span class="scenario-name">Check the service GET </span>
 </div>
-<div class="scenario-time failed">ms: 11</div>
+<div class="scenario-time failed">ms: 10</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="[1:9]bg">
@@ -99,7 +99,7 @@
 <div class="step-ref failed">2</div>
 <div class="step-cell failed">* def responseGet = read('classpath:Karate/request/reponseGet.json)</div>
 </div>
-<div class="time-cell failed">11</div>
+<div class="time-cell failed">10</div>
 </div>
 <div class="preformatted" data-parent="2">get.feature:12 - evaluation (js) failed: read('classpath:Karate/request/reponseGet.json), javax.script.ScriptException: &lt;eval&gt;:1:47 Missing close quote&#13;
 read('classpath:Karate/request/reponseGet.json)&#13;
@@ -154,7 +154,7 @@ stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptExceptio
 <div class="scenario-tags"></div>
 <span class="scenario-keyword">Scenario Outline: [2.1:30]</span><span class="scenario-name">Find a pet by ID incorrect </span>
 </div>
-<div class="scenario-time passed">ms: 445</div>
+<div class="scenario-time passed">ms: 417</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="[2.1:30]bg">
@@ -182,30 +182,30 @@ stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptExceptio
 <div class="step-ref passed">11</div>
 <div class="step-cell passed">And request "@#$%"</div>
 </div>
-<div class="time-cell passed">6</div>
+<div class="time-cell passed">4</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="12">
 <div class="step-ref passed">12</div>
 <div class="step-cell passed">When method get</div>
 </div>
-<div class="time-cell passed">439</div>
+<div class="time-cell passed">412</div>
 </div>
-<div class="preformatted" data-parent="12">18:39:56.809 request:
+<div class="preformatted" data-parent="12">21:17:49.123 request:
 1 &gt; GET https://petstore.swagger.io/v2/pet/%22@%23$%25%22
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
 1 &gt; Host: petstore.swagger.io
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
 
-18:39:57.243 response time in milliseconds: 434,01
+21:17:49.516 response time in milliseconds: 407,59
 1 &lt; 404
 1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json
-1 &lt; Date: Sun, 28 Aug 2022 23:39:56 GMT
+1 &lt; Date: Mon, 29 Aug 2022 02:17:48 GMT
 1 &lt; Server: Jetty(9.2.9.v20150224)
 1 &lt; Transfer-Encoding: chunked
 {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"\"@#$%\"\""}</div>
@@ -223,7 +223,7 @@ stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptExceptio
 <div class="scenario-tags"></div>
 <span class="scenario-keyword">Scenario Outline: [2.2:31]</span><span class="scenario-name">Find a pet by ID incorrect </span>
 </div>
-<div class="scenario-time passed">ms: 361</div>
+<div class="scenario-time passed">ms: 460</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="[2.2:31]bg">
@@ -258,23 +258,23 @@ stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptExceptio
 <div class="step-ref passed">17</div>
 <div class="step-cell passed">When method get</div>
 </div>
-<div class="time-cell passed">357</div>
+<div class="time-cell passed">456</div>
 </div>
-<div class="preformatted" data-parent="17">18:39:57.264 request:
+<div class="preformatted" data-parent="17">21:17:49.547 request:
 1 &gt; GET https://petstore.swagger.io/v2/pet/%22fish%22
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
 1 &gt; Host: petstore.swagger.io
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
 
-18:39:57.619 response time in milliseconds: 353,49
+21:17:50.005 response time in milliseconds: 452,07
 1 &lt; 404
 1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json
-1 &lt; Date: Sun, 28 Aug 2022 23:39:56 GMT
+1 &lt; Date: Mon, 29 Aug 2022 02:17:49 GMT
 1 &lt; Server: Jetty(9.2.9.v20150224)
 1 &lt; Transfer-Encoding: chunked
 {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"\"fish\"\""}</div>
@@ -292,7 +292,7 @@ stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptExceptio
 <div class="scenario-tags"></div>
 <span class="scenario-keyword">Scenario Outline: [2.3:32]</span><span class="scenario-name">Find a pet by ID incorrect </span>
 </div>
-<div class="scenario-time passed">ms: 461</div>
+<div class="scenario-time passed">ms: 452</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="[2.3:32]bg">
@@ -327,23 +327,23 @@ stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptExceptio
 <div class="step-ref passed">22</div>
 <div class="step-cell passed">When method get</div>
 </div>
-<div class="time-cell passed">460</div>
+<div class="time-cell passed">452</div>
 </div>
-<div class="preformatted" data-parent="22">18:39:57.634 request:
+<div class="preformatted" data-parent="22">21:17:50.020 request:
 1 &gt; GET https://petstore.swagger.io/v2/pet/123.123
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
 1 &gt; Host: petstore.swagger.io
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
 
-18:39:58.092 response time in milliseconds: 456,44
+21:17:50.460 response time in milliseconds: 447,81
 1 &lt; 404
 1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json
-1 &lt; Date: Sun, 28 Aug 2022 23:39:57 GMT
+1 &lt; Date: Mon, 29 Aug 2022 02:17:49 GMT
 1 &lt; Server: Jetty(9.2.9.v20150224)
 1 &lt; Transfer-Encoding: chunked
 {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"123.123\""}</div>

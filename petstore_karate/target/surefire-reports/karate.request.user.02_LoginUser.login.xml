@@ -1,0 +1,41 @@
+<testsuite failures="0" name="karate/request/user/02_LoginUser/login.feature" skipped="0" tests="3" time="1.243399">
+  <testcase classname="karate.request.user.02_LoginUser.login" name="Login with valid data" time="0.474987">
+    <system-out>* url url ................................................................. passed
+* def responseBody = read('classpath:Karate/request/user/02_LoginUser/responsePostUser.json') . passed
+Given path 'user', 'login' ................................................ passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="karate.request.user.02_LoginUser.login" name="Login with invalid username" time="0.361576">
+    <system-out>* url url ................................................................. passed
+* def responseBody = read('classpath:Karate/request/user/02_LoginUser/responsePostUser.json') . passed
+Given path 'user', 'login' ................................................ passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url url ................................................................. passed
+* def responseBody = read('classpath:Karate/request/user/02_LoginUser/responsePostUser.json') . passed
+Given path 'user','login' ................................................. passed
+And request  97779898 ..................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="karate.request.user.02_LoginUser.login" name="Login with invalid username" time="0.406835">
+    <system-out>* url url ................................................................. passed
+* def responseBody = read('classpath:Karate/request/user/02_LoginUser/responsePostUser.json') . passed
+Given path 'user', 'login' ................................................ passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url url ................................................................. passed
+* def responseBody = read('classpath:Karate/request/user/02_LoginUser/responsePostUser.json') . passed
+Given path 'user','login' ................................................. passed
+And request  97779898 ..................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url url ................................................................. passed
+* def responseBody = read('classpath:Karate/request/user/02_LoginUser/responsePostUser.json') . passed
+Given path 'user','login' ................................................. passed
+And request  ")(/(  " ..................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>

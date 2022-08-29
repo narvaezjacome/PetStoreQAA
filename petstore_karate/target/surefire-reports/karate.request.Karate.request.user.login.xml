@@ -1,5 +1,5 @@
-<testsuite failures="4" name="karate/request/Karate.request/user/login.feature" skipped="0" tests="5" time="2.175568">
-  <testcase classname="karate.request.Karate.request.user.login" name="check the login Method" time="0.478841">
+<testsuite failures="4" name="karate/request/Karate.request/user/login.feature" skipped="0" tests="5" time="2.006269">
+  <testcase classname="karate.request.Karate.request.user.login" name="check the login Method" time="0.397152">
     <system-out>* url url ................................................................. passed
 * params { username: '#(username)', password: '#(password)' } ............. passed
 Given path 'user/login' ................................................... passed
@@ -7,8 +7,8 @@ When method get ........................................................... pass
 Then status 200 ........................................................... passed
 And assert response.code == 200 ........................................... passed</system-out>
   </testcase>
-  <testcase classname="karate.request.Karate.request.user.login" name="check the login Method with bad credentials" time="0.446547">
-    <failure message="login.feature:25 - status code was: 200, expected: 400, response time: 440, url: https://petstore.swagger.io/v2/user/login?username=.45.2&amp;password=4sds5, response: {&quot;code&quot;:200,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;logged in user session:1661730001727&quot;}">* url url ................................................................. passed
+  <testcase classname="karate.request.Karate.request.user.login" name="check the login Method with bad credentials" time="0.402086">
+    <failure message="login.feature:25 - status code was: 200, expected: 400, response time: 397, url: https://petstore.swagger.io/v2/user/login?username=.45.2&amp;password=4sds5, response: {&quot;code&quot;:200,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;logged in user session:1661739474091&quot;}">* url url ................................................................. passed
 * params { username: '#(username)', password: '#(password)' } ............. passed
 Given path 'user/login' ................................................... passed
 When method get ........................................................... passed
@@ -21,11 +21,11 @@ When method get ........................................................... pass
 Then status 400 ........................................................... failed
 
 Stack Trace:
-com.intuit.karate.exception.KarateException: login.feature:25 - status code was: 200, expected: 400, response time: 440, url: https://petstore.swagger.io/v2/user/login?username=.45.2&amp;password=4sds5, response: {"code":200,"type":"unknown","message":"logged in user session:1661730001727"}&#13;
+com.intuit.karate.exception.KarateException: login.feature:25 - status code was: 200, expected: 400, response time: 397, url: https://petstore.swagger.io/v2/user/login?username=.45.2&amp;password=4sds5, response: {"code":200,"type":"unknown","message":"logged in user session:1661739474091"}&#13;
 	at ✽.Then status 400 (login.feature:25)</failure>
   </testcase>
-  <testcase classname="karate.request.Karate.request.user.login" name="check the login Method with bad credentials" time="0.417131">
-    <failure message="login.feature:25 - status code was: 200, expected: 400, response time: 412, url: https://petstore.swagger.io/v2/user/login?username=%22NotFound%22&amp;password=%29%2F%26%2F%28, response: {&quot;code&quot;:200,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;logged in user session:1661730002150&quot;}">* url url ................................................................. passed
+  <testcase classname="karate.request.Karate.request.user.login" name="check the login Method with bad credentials" time="0.402931">
+    <failure message="login.feature:25 - status code was: 200, expected: 400, response time: 398, url: https://petstore.swagger.io/v2/user/login?username=%22NotFound%22&amp;password=%29%2F%26%2F%28, response: {&quot;code&quot;:200,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;logged in user session:1661739474506&quot;}">* url url ................................................................. passed
 * params { username: '#(username)', password: '#(password)' } ............. passed
 Given path 'user/login' ................................................... passed
 When method get ........................................................... passed
@@ -38,7 +38,7 @@ When method get ........................................................... pass
 Then status 400 ........................................................... failed
 
 Stack Trace:
-com.intuit.karate.exception.KarateException: login.feature:25 - status code was: 200, expected: 400, response time: 440, url: https://petstore.swagger.io/v2/user/login?username=.45.2&amp;password=4sds5, response: {"code":200,"type":"unknown","message":"logged in user session:1661730001727"}&#13;
+com.intuit.karate.exception.KarateException: login.feature:25 - status code was: 200, expected: 400, response time: 397, url: https://petstore.swagger.io/v2/user/login?username=.45.2&amp;password=4sds5, response: {"code":200,"type":"unknown","message":"logged in user session:1661739474091"}&#13;
 	at ✽.Then status 400 (login.feature:25)&#13;
 
 * url url ................................................................. passed
@@ -48,11 +48,11 @@ When method get ........................................................... pass
 Then status 400 ........................................................... failed
 
 Stack Trace:
-com.intuit.karate.exception.KarateException: login.feature:25 - status code was: 200, expected: 400, response time: 412, url: https://petstore.swagger.io/v2/user/login?username=%22NotFound%22&amp;password=%29%2F%26%2F%28, response: {"code":200,"type":"unknown","message":"logged in user session:1661730002150"}&#13;
+com.intuit.karate.exception.KarateException: login.feature:25 - status code was: 200, expected: 400, response time: 398, url: https://petstore.swagger.io/v2/user/login?username=%22NotFound%22&amp;password=%29%2F%26%2F%28, response: {"code":200,"type":"unknown","message":"logged in user session:1661739474506"}&#13;
 	at ✽.Then status 400 (login.feature:25)</failure>
   </testcase>
-  <testcase classname="karate.request.Karate.request.user.login" name="check the login Method with bad credentials" time="0.43999">
-    <failure message="login.feature:25 - status code was: 200, expected: 400, response time: 435, url: https://petstore.swagger.io/v2/user/login?username=&amp;password=0000, response: {&quot;code&quot;:200,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;logged in user session:1661730002607&quot;}">* url url ................................................................. passed
+  <testcase classname="karate.request.Karate.request.user.login" name="check the login Method with bad credentials" time="0.382452">
+    <failure message="login.feature:25 - status code was: 200, expected: 400, response time: 378, url: https://petstore.swagger.io/v2/user/login?username=&amp;password=0000, response: {&quot;code&quot;:200,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;logged in user session:1661739474904&quot;}">* url url ................................................................. passed
 * params { username: '#(username)', password: '#(password)' } ............. passed
 Given path 'user/login' ................................................... passed
 When method get ........................................................... passed
@@ -65,7 +65,7 @@ When method get ........................................................... pass
 Then status 400 ........................................................... failed
 
 Stack Trace:
-com.intuit.karate.exception.KarateException: login.feature:25 - status code was: 200, expected: 400, response time: 440, url: https://petstore.swagger.io/v2/user/login?username=.45.2&amp;password=4sds5, response: {"code":200,"type":"unknown","message":"logged in user session:1661730001727"}&#13;
+com.intuit.karate.exception.KarateException: login.feature:25 - status code was: 200, expected: 400, response time: 397, url: https://petstore.swagger.io/v2/user/login?username=.45.2&amp;password=4sds5, response: {"code":200,"type":"unknown","message":"logged in user session:1661739474091"}&#13;
 	at ✽.Then status 400 (login.feature:25)&#13;
 
 * url url ................................................................. passed
@@ -75,7 +75,7 @@ When method get ........................................................... pass
 Then status 400 ........................................................... failed
 
 Stack Trace:
-com.intuit.karate.exception.KarateException: login.feature:25 - status code was: 200, expected: 400, response time: 412, url: https://petstore.swagger.io/v2/user/login?username=%22NotFound%22&amp;password=%29%2F%26%2F%28, response: {"code":200,"type":"unknown","message":"logged in user session:1661730002150"}&#13;
+com.intuit.karate.exception.KarateException: login.feature:25 - status code was: 200, expected: 400, response time: 398, url: https://petstore.swagger.io/v2/user/login?username=%22NotFound%22&amp;password=%29%2F%26%2F%28, response: {"code":200,"type":"unknown","message":"logged in user session:1661739474506"}&#13;
 	at ✽.Then status 400 (login.feature:25)&#13;
 
 * url url ................................................................. passed
@@ -85,11 +85,11 @@ When method get ........................................................... pass
 Then status 400 ........................................................... failed
 
 Stack Trace:
-com.intuit.karate.exception.KarateException: login.feature:25 - status code was: 200, expected: 400, response time: 435, url: https://petstore.swagger.io/v2/user/login?username=&amp;password=0000, response: {"code":200,"type":"unknown","message":"logged in user session:1661730002607"}&#13;
+com.intuit.karate.exception.KarateException: login.feature:25 - status code was: 200, expected: 400, response time: 378, url: https://petstore.swagger.io/v2/user/login?username=&amp;password=0000, response: {"code":200,"type":"unknown","message":"logged in user session:1661739474904"}&#13;
 	at ✽.Then status 400 (login.feature:25)</failure>
   </testcase>
-  <testcase classname="karate.request.Karate.request.user.login" name="check the login Method with bad credentials" time="0.39306">
-    <failure message="login.feature:25 - status code was: 200, expected: 400, response time: 388, url: https://petstore.swagger.io/v2/user/login?username=%22%40%23%24%25%26%22&amp;password=OIUHJK, response: {&quot;code&quot;:200,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;logged in user session:1661730003007&quot;}">* url url ................................................................. passed
+  <testcase classname="karate.request.Karate.request.user.login" name="check the login Method with bad credentials" time="0.421648">
+    <failure message="login.feature:25 - status code was: 200, expected: 400, response time: 417, url: https://petstore.swagger.io/v2/user/login?username=%22%40%23%24%25%26%22&amp;password=OIUHJK, response: {&quot;code&quot;:200,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;logged in user session:1661739475322&quot;}">* url url ................................................................. passed
 * params { username: '#(username)', password: '#(password)' } ............. passed
 Given path 'user/login' ................................................... passed
 When method get ........................................................... passed
@@ -102,7 +102,7 @@ When method get ........................................................... pass
 Then status 400 ........................................................... failed
 
 Stack Trace:
-com.intuit.karate.exception.KarateException: login.feature:25 - status code was: 200, expected: 400, response time: 440, url: https://petstore.swagger.io/v2/user/login?username=.45.2&amp;password=4sds5, response: {"code":200,"type":"unknown","message":"logged in user session:1661730001727"}&#13;
+com.intuit.karate.exception.KarateException: login.feature:25 - status code was: 200, expected: 400, response time: 397, url: https://petstore.swagger.io/v2/user/login?username=.45.2&amp;password=4sds5, response: {"code":200,"type":"unknown","message":"logged in user session:1661739474091"}&#13;
 	at ✽.Then status 400 (login.feature:25)&#13;
 
 * url url ................................................................. passed
@@ -112,7 +112,7 @@ When method get ........................................................... pass
 Then status 400 ........................................................... failed
 
 Stack Trace:
-com.intuit.karate.exception.KarateException: login.feature:25 - status code was: 200, expected: 400, response time: 412, url: https://petstore.swagger.io/v2/user/login?username=%22NotFound%22&amp;password=%29%2F%26%2F%28, response: {"code":200,"type":"unknown","message":"logged in user session:1661730002150"}&#13;
+com.intuit.karate.exception.KarateException: login.feature:25 - status code was: 200, expected: 400, response time: 398, url: https://petstore.swagger.io/v2/user/login?username=%22NotFound%22&amp;password=%29%2F%26%2F%28, response: {"code":200,"type":"unknown","message":"logged in user session:1661739474506"}&#13;
 	at ✽.Then status 400 (login.feature:25)&#13;
 
 * url url ................................................................. passed
@@ -122,7 +122,7 @@ When method get ........................................................... pass
 Then status 400 ........................................................... failed
 
 Stack Trace:
-com.intuit.karate.exception.KarateException: login.feature:25 - status code was: 200, expected: 400, response time: 435, url: https://petstore.swagger.io/v2/user/login?username=&amp;password=0000, response: {"code":200,"type":"unknown","message":"logged in user session:1661730002607"}&#13;
+com.intuit.karate.exception.KarateException: login.feature:25 - status code was: 200, expected: 400, response time: 378, url: https://petstore.swagger.io/v2/user/login?username=&amp;password=0000, response: {"code":200,"type":"unknown","message":"logged in user session:1661739474904"}&#13;
 	at ✽.Then status 400 (login.feature:25)&#13;
 
 * url url ................................................................. passed
@@ -132,7 +132,7 @@ When method get ........................................................... pass
 Then status 400 ........................................................... failed
 
 Stack Trace:
-com.intuit.karate.exception.KarateException: login.feature:25 - status code was: 200, expected: 400, response time: 388, url: https://petstore.swagger.io/v2/user/login?username=%22%40%23%24%25%26%22&amp;password=OIUHJK, response: {"code":200,"type":"unknown","message":"logged in user session:1661730003007"}&#13;
+com.intuit.karate.exception.KarateException: login.feature:25 - status code was: 200, expected: 400, response time: 417, url: https://petstore.swagger.io/v2/user/login?username=%22%40%23%24%25%26%22&amp;password=OIUHJK, response: {"code":200,"type":"unknown","message":"logged in user session:1661739475322"}&#13;
 	at ✽.Then status 400 (login.feature:25)</failure>
   </testcase>
 </testsuite>

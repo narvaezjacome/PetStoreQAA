@@ -47,7 +47,7 @@
         
 <div id="nav-type">Scenarios</div>         
         
-<div id="nav-date">2022-08-28 06:40:04 PM</div>        
+<div id="nav-date">2022-08-28 09:17:56 PM</div>        
       
 <div class="nav-container">
 <div class="nav-item passed">
@@ -81,7 +81,7 @@
 <div class="scenario-tags"></div>
 <span class="scenario-keyword">Scenario: [1:10]</span><span class="scenario-name">check the login Method </span>
 </div>
-<div class="scenario-time passed">ms: 479</div>
+<div class="scenario-time passed">ms: 397</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="[1:10]bg">
@@ -102,7 +102,7 @@
 <div class="step-ref passed">2</div>
 <div class="step-cell passed">* params { username: '#(username)', password: '#(password)' }</div>
 </div>
-<div class="time-cell passed">3</div>
+<div class="time-cell passed">2</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="3">
@@ -116,28 +116,28 @@
 <div class="step-ref passed">4</div>
 <div class="step-cell passed">When method get</div>
 </div>
-<div class="time-cell passed">450</div>
+<div class="time-cell passed">378</div>
 </div>
-<div class="preformatted" data-parent="4">18:40:01.718 request:
+<div class="preformatted" data-parent="4">21:17:54.163 request:
 1 &gt; GET https://petstore.swagger.io/v2/user/login?username=UserTest&amp;password=ut+voluptate
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
 1 &gt; Host: petstore.swagger.io
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
 
-18:40:02.163 response time in milliseconds: 444,67
+21:17:54.525 response time in milliseconds: 373,20
 1 &lt; 200
 1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json
-1 &lt; Date: Sun, 28 Aug 2022 23:40:01 GMT
+1 &lt; Date: Mon, 29 Aug 2022 02:17:53 GMT
 1 &lt; Server: Jetty(9.2.9.v20150224)
 1 &lt; Transfer-Encoding: chunked
-1 &lt; X-Expires-After: Mon Aug 29 00:40:01 UTC 2022
+1 &lt; X-Expires-After: Mon Aug 29 03:17:53 UTC 2022
 1 &lt; X-Rate-Limit: 5000
-{"code":200,"type":"unknown","message":"logged in user session:1661730001237"}</div>
+{"code":200,"type":"unknown","message":"logged in user session:1661739473674"}</div>
 <div class="step-row">
 <div class="step-container" id="5">
 <div class="step-ref passed">5</div>
@@ -150,7 +150,7 @@
 <div class="step-ref passed">6</div>
 <div class="step-cell passed">And assert response.code == 200</div>
 </div>
-<div class="time-cell passed">22</div>
+<div class="time-cell passed">14</div>
 </div>
 </div>
 <div class="scenario">
@@ -159,7 +159,7 @@
 <div class="scenario-tags"></div>
 <span class="scenario-keyword">Scenario Outline: [2.1:29]</span><span class="scenario-name">check the login Method with bad credentials </span>
 </div>
-<div class="scenario-time failed">ms: 447</div>
+<div class="scenario-time failed">ms: 402</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="[2.1:29]bg">
@@ -180,7 +180,7 @@
 <div class="step-ref passed">8</div>
 <div class="step-cell passed">* params { username: '.45.2', password: '4sds5' }</div>
 </div>
-<div class="time-cell passed">1</div>
+<div class="time-cell passed">0</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="9">
@@ -194,37 +194,37 @@
 <div class="step-ref passed">10</div>
 <div class="step-cell passed">When method get</div>
 </div>
-<div class="time-cell passed">445</div>
+<div class="time-cell passed">401</div>
 </div>
-<div class="preformatted" data-parent="10">18:40:02.205 request:
+<div class="preformatted" data-parent="10">21:17:54.556 request:
 1 &gt; GET https://petstore.swagger.io/v2/user/login?username=.45.2&amp;password=4sds5
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
 1 &gt; Host: petstore.swagger.io
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
 
-18:40:02.646 response time in milliseconds: 440,17
+21:17:54.962 response time in milliseconds: 397,04
 1 &lt; 200
 1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json
-1 &lt; Date: Sun, 28 Aug 2022 23:40:01 GMT
+1 &lt; Date: Mon, 29 Aug 2022 02:17:54 GMT
 1 &lt; Server: Jetty(9.2.9.v20150224)
 1 &lt; Transfer-Encoding: chunked
-1 &lt; X-Expires-After: Mon Aug 29 00:40:01 UTC 2022
+1 &lt; X-Expires-After: Mon Aug 29 03:17:54 UTC 2022
 1 &lt; X-Rate-Limit: 5000
-{"code":200,"type":"unknown","message":"logged in user session:1661730001727"}</div>
+{"code":200,"type":"unknown","message":"logged in user session:1661739474091"}</div>
 <div class="step-row">
 <div class="step-container" id="11">
 <div class="step-ref failed">11</div>
 <div class="step-cell failed">Then status 400</div>
 </div>
-<div class="time-cell failed">0</div>
+<div class="time-cell failed">1</div>
 </div>
-<div class="preformatted" data-parent="11">18:40:02.647 status code was: 200, expected: 400, response time: 440, url: https://petstore.swagger.io/v2/user/login?username=.45.2&amp;password=4sds5, response: {"code":200,"type":"unknown","message":"logged in user session:1661730001727"}
-login.feature:25 - status code was: 200, expected: 400, response time: 440, url: https://petstore.swagger.io/v2/user/login?username=.45.2&amp;password=4sds5, response: {"code":200,"type":"unknown","message":"logged in user session:1661730001727"}</div>
+<div class="preformatted" data-parent="11">21:17:54.963 status code was: 200, expected: 400, response time: 397, url: https://petstore.swagger.io/v2/user/login?username=.45.2&amp;password=4sds5, response: {"code":200,"type":"unknown","message":"logged in user session:1661739474091"}
+login.feature:25 - status code was: 200, expected: 400, response time: 397, url: https://petstore.swagger.io/v2/user/login?username=.45.2&amp;password=4sds5, response: {"code":200,"type":"unknown","message":"logged in user session:1661739474091"}</div>
 </div>
 <div class="scenario">
 <div class="scenario-heading" id="[2.2:30]">
@@ -232,7 +232,7 @@ login.feature:25 - status code was: 200, expected: 400, response time: 440, url:
 <div class="scenario-tags"></div>
 <span class="scenario-keyword">Scenario Outline: [2.2:30]</span><span class="scenario-name">check the login Method with bad credentials </span>
 </div>
-<div class="scenario-time failed">ms: 417</div>
+<div class="scenario-time failed">ms: 403</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="[2.2:30]bg">
@@ -267,28 +267,28 @@ login.feature:25 - status code was: 200, expected: 400, response time: 440, url:
 <div class="step-ref passed">15</div>
 <div class="step-cell passed">When method get</div>
 </div>
-<div class="time-cell passed">416</div>
+<div class="time-cell passed">402</div>
 </div>
-<div class="preformatted" data-parent="15">18:40:02.659 request:
+<div class="preformatted" data-parent="15">21:17:54.976 request:
 1 &gt; GET https://petstore.swagger.io/v2/user/login?username=%22NotFound%22&amp;password=%29%2F%26%2F%28
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
 1 &gt; Host: petstore.swagger.io
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
 
-18:40:03.073 response time in milliseconds: 411,74
+21:17:55.371 response time in milliseconds: 398,34
 1 &lt; 200
 1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json
-1 &lt; Date: Sun, 28 Aug 2022 23:40:02 GMT
+1 &lt; Date: Mon, 29 Aug 2022 02:17:54 GMT
 1 &lt; Server: Jetty(9.2.9.v20150224)
 1 &lt; Transfer-Encoding: chunked
-1 &lt; X-Expires-After: Mon Aug 29 00:40:02 UTC 2022
+1 &lt; X-Expires-After: Mon Aug 29 03:17:54 UTC 2022
 1 &lt; X-Rate-Limit: 5000
-{"code":200,"type":"unknown","message":"logged in user session:1661730002150"}</div>
+{"code":200,"type":"unknown","message":"logged in user session:1661739474506"}</div>
 <div class="step-row">
 <div class="step-container" id="16">
 <div class="step-ref failed">16</div>
@@ -296,8 +296,8 @@ login.feature:25 - status code was: 200, expected: 400, response time: 440, url:
 </div>
 <div class="time-cell failed">0</div>
 </div>
-<div class="preformatted" data-parent="16">18:40:03.073 status code was: 200, expected: 400, response time: 412, url: https://petstore.swagger.io/v2/user/login?username=%22NotFound%22&amp;password=%29%2F%26%2F%28, response: {"code":200,"type":"unknown","message":"logged in user session:1661730002150"}
-login.feature:25 - status code was: 200, expected: 400, response time: 412, url: https://petstore.swagger.io/v2/user/login?username=%22NotFound%22&amp;password=%29%2F%26%2F%28, response: {"code":200,"type":"unknown","message":"logged in user session:1661730002150"}</div>
+<div class="preformatted" data-parent="16">21:17:55.371 status code was: 200, expected: 400, response time: 398, url: https://petstore.swagger.io/v2/user/login?username=%22NotFound%22&amp;password=%29%2F%26%2F%28, response: {"code":200,"type":"unknown","message":"logged in user session:1661739474506"}
+login.feature:25 - status code was: 200, expected: 400, response time: 398, url: https://petstore.swagger.io/v2/user/login?username=%22NotFound%22&amp;password=%29%2F%26%2F%28, response: {"code":200,"type":"unknown","message":"logged in user session:1661739474506"}</div>
 </div>
 <div class="scenario">
 <div class="scenario-heading" id="[2.3:31]">
@@ -305,7 +305,7 @@ login.feature:25 - status code was: 200, expected: 400, response time: 412, url:
 <div class="scenario-tags"></div>
 <span class="scenario-keyword">Scenario Outline: [2.3:31]</span><span class="scenario-name">check the login Method with bad credentials </span>
 </div>
-<div class="scenario-time failed">ms: 440</div>
+<div class="scenario-time failed">ms: 382</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="[2.3:31]bg">
@@ -340,28 +340,28 @@ login.feature:25 - status code was: 200, expected: 400, response time: 412, url:
 <div class="step-ref passed">20</div>
 <div class="step-cell passed">When method get</div>
 </div>
-<div class="time-cell passed">439</div>
+<div class="time-cell passed">382</div>
 </div>
-<div class="preformatted" data-parent="20">18:40:03.089 request:
+<div class="preformatted" data-parent="20">21:17:55.386 request:
 1 &gt; GET https://petstore.swagger.io/v2/user/login?username=&amp;password=0000
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
 1 &gt; Host: petstore.swagger.io
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
 
-18:40:03.524 response time in milliseconds: 435,19
+21:17:55.762 response time in milliseconds: 377,95
 1 &lt; 200
 1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json
-1 &lt; Date: Sun, 28 Aug 2022 23:40:02 GMT
+1 &lt; Date: Mon, 29 Aug 2022 02:17:54 GMT
 1 &lt; Server: Jetty(9.2.9.v20150224)
 1 &lt; Transfer-Encoding: chunked
-1 &lt; X-Expires-After: Mon Aug 29 00:40:02 UTC 2022
+1 &lt; X-Expires-After: Mon Aug 29 03:17:54 UTC 2022
 1 &lt; X-Rate-Limit: 5000
-{"code":200,"type":"unknown","message":"logged in user session:1661730002607"}</div>
+{"code":200,"type":"unknown","message":"logged in user session:1661739474904"}</div>
 <div class="step-row">
 <div class="step-container" id="21">
 <div class="step-ref failed">21</div>
@@ -369,8 +369,8 @@ login.feature:25 - status code was: 200, expected: 400, response time: 412, url:
 </div>
 <div class="time-cell failed">0</div>
 </div>
-<div class="preformatted" data-parent="21">18:40:03.525 status code was: 200, expected: 400, response time: 435, url: https://petstore.swagger.io/v2/user/login?username=&amp;password=0000, response: {"code":200,"type":"unknown","message":"logged in user session:1661730002607"}
-login.feature:25 - status code was: 200, expected: 400, response time: 435, url: https://petstore.swagger.io/v2/user/login?username=&amp;password=0000, response: {"code":200,"type":"unknown","message":"logged in user session:1661730002607"}</div>
+<div class="preformatted" data-parent="21">21:17:55.762 status code was: 200, expected: 400, response time: 378, url: https://petstore.swagger.io/v2/user/login?username=&amp;password=0000, response: {"code":200,"type":"unknown","message":"logged in user session:1661739474904"}
+login.feature:25 - status code was: 200, expected: 400, response time: 378, url: https://petstore.swagger.io/v2/user/login?username=&amp;password=0000, response: {"code":200,"type":"unknown","message":"logged in user session:1661739474904"}</div>
 </div>
 <div class="scenario">
 <div class="scenario-heading" id="[2.4:32]">
@@ -378,7 +378,7 @@ login.feature:25 - status code was: 200, expected: 400, response time: 435, url:
 <div class="scenario-tags"></div>
 <span class="scenario-keyword">Scenario Outline: [2.4:32]</span><span class="scenario-name">check the login Method with bad credentials </span>
 </div>
-<div class="scenario-time failed">ms: 393</div>
+<div class="scenario-time failed">ms: 422</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="[2.4:32]bg">
@@ -413,28 +413,28 @@ login.feature:25 - status code was: 200, expected: 400, response time: 435, url:
 <div class="step-ref passed">25</div>
 <div class="step-cell passed">When method get</div>
 </div>
-<div class="time-cell passed">392</div>
+<div class="time-cell passed">421</div>
 </div>
-<div class="preformatted" data-parent="25">18:40:03.537 request:
+<div class="preformatted" data-parent="25">21:17:55.778 request:
 1 &gt; GET https://petstore.swagger.io/v2/user/login?username=%22%40%23%24%25%26%22&amp;password=OIUHJK
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
 1 &gt; Host: petstore.swagger.io
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
 
-18:40:03.926 response time in milliseconds: 387,90
+21:17:56.188 response time in milliseconds: 417,28
 1 &lt; 200
 1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json
-1 &lt; Date: Sun, 28 Aug 2022 23:40:03 GMT
+1 &lt; Date: Mon, 29 Aug 2022 02:17:55 GMT
 1 &lt; Server: Jetty(9.2.9.v20150224)
 1 &lt; Transfer-Encoding: chunked
-1 &lt; X-Expires-After: Mon Aug 29 00:40:03 UTC 2022
+1 &lt; X-Expires-After: Mon Aug 29 03:17:55 UTC 2022
 1 &lt; X-Rate-Limit: 5000
-{"code":200,"type":"unknown","message":"logged in user session:1661730003007"}</div>
+{"code":200,"type":"unknown","message":"logged in user session:1661739475322"}</div>
 <div class="step-row">
 <div class="step-container" id="26">
 <div class="step-ref failed">26</div>
@@ -442,8 +442,8 @@ login.feature:25 - status code was: 200, expected: 400, response time: 435, url:
 </div>
 <div class="time-cell failed">0</div>
 </div>
-<div class="preformatted" data-parent="26">18:40:03.927 status code was: 200, expected: 400, response time: 388, url: https://petstore.swagger.io/v2/user/login?username=%22%40%23%24%25%26%22&amp;password=OIUHJK, response: {"code":200,"type":"unknown","message":"logged in user session:1661730003007"}
-login.feature:25 - status code was: 200, expected: 400, response time: 388, url: https://petstore.swagger.io/v2/user/login?username=%22%40%23%24%25%26%22&amp;password=OIUHJK, response: {"code":200,"type":"unknown","message":"logged in user session:1661730003007"}</div>
+<div class="preformatted" data-parent="26">21:17:56.188 status code was: 200, expected: 400, response time: 417, url: https://petstore.swagger.io/v2/user/login?username=%22%40%23%24%25%26%22&amp;password=OIUHJK, response: {"code":200,"type":"unknown","message":"logged in user session:1661739475322"}
+login.feature:25 - status code was: 200, expected: 400, response time: 417, url: https://petstore.swagger.io/v2/user/login?username=%22%40%23%24%25%26%22&amp;password=OIUHJK, response: {"code":200,"type":"unknown","message":"logged in user session:1661739475322"}</div>
 </div>
 </div>
     

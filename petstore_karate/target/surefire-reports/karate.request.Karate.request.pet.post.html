@@ -47,7 +47,7 @@
         
 <div id="nav-type">Scenarios</div>         
         
-<div id="nav-date">2022-08-28 06:40:04 PM</div>        
+<div id="nav-date">2022-08-28 09:17:56 PM</div>        
       
 <div class="nav-container">
 <div class="nav-item passed">
@@ -78,7 +78,7 @@
 <div class="scenario-tags"></div>
 <span class="scenario-keyword">Scenario: [1:9]</span><span class="scenario-name">check the service POST </span>
 </div>
-<div class="scenario-time passed">ms: 414</div>
+<div class="scenario-time passed">ms: 440</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="[1:9]bg">
@@ -99,7 +99,7 @@
 <div class="step-ref passed">2</div>
 <div class="step-cell passed">* def CreatePet = {"id": '#(id)',"category": {"id": 1,"name": '#(nameCategory)'},"name": "doggie","photoUrls": ["string"],"tags": [{"id": 1,"name": '#(tagsName)'}],"status": "available"}</div>
 </div>
-<div class="time-cell passed">22</div>
+<div class="time-cell passed">23</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="3">
@@ -120,9 +120,9 @@
 <div class="step-ref passed">5</div>
 <div class="step-cell passed">When method POST</div>
 </div>
-<div class="time-cell passed">391</div>
+<div class="time-cell passed">416</div>
 </div>
-<div class="preformatted" data-parent="5">18:39:58.181 request:
+<div class="preformatted" data-parent="5">21:17:50.554 request:
 1 &gt; POST https://petstore.swagger.io/v2/pet
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
@@ -132,14 +132,14 @@
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
 {"id":2,"category":{"id":1,"name":"#(nameCategory)"},"name":"doggie","photoUrls":["string"],"tags":[{"id":1,"name":"#(tagsName)"}],"status":"available"}
 
-18:39:58.560 response time in milliseconds: 378,05
+21:17:50.962 response time in milliseconds: 403,04
 1 &lt; 200
 1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json
-1 &lt; Date: Sun, 28 Aug 2022 23:39:57 GMT
+1 &lt; Date: Mon, 29 Aug 2022 02:17:50 GMT
 1 &lt; Server: Jetty(9.2.9.v20150224)
 1 &lt; Transfer-Encoding: chunked
 {"id":2,"category":{"id":1,"name":"#(nameCategory)"},"name":"doggie","photoUrls":["string"],"tags":[{"id":1,"name":"#(tagsName)"}],"status":"available"}</div>
@@ -157,7 +157,7 @@
 <div class="scenario-tags"></div>
 <span class="scenario-keyword">Scenario Outline: [2.1:28]</span><span class="scenario-name">Add a pet using a valid status </span>
 </div>
-<div class="scenario-time passed">ms: 404</div>
+<div class="scenario-time passed">ms: 383</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="[2.1:28]bg">
@@ -185,16 +185,16 @@
 <div class="step-ref passed">9</div>
 <div class="step-cell passed">And request "@$#%&amp;"</div>
 </div>
-<div class="time-cell passed">8</div>
+<div class="time-cell passed">5</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="10">
 <div class="step-ref passed">10</div>
 <div class="step-cell passed">When method post</div>
 </div>
-<div class="time-cell passed">396</div>
+<div class="time-cell passed">377</div>
 </div>
-<div class="preformatted" data-parent="10">18:39:58.595 request:
+<div class="preformatted" data-parent="10">21:17:50.977 request:
 1 &gt; POST https://petstore.swagger.io/v2/pet
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
@@ -204,7 +204,7 @@
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
 @$#%&amp;
 
-18:39:58.986 response time in milliseconds: 390,16
+21:17:51.354 response time in milliseconds: 371,34
 1 &lt; 415
 1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
@@ -212,7 +212,7 @@
 1 &lt; Connection: keep-alive
 1 &lt; Content-Length: 102
 1 &lt; Content-Type: application/xml
-1 &lt; Date: Sun, 28 Aug 2022 23:39:58 GMT
+1 &lt; Date: Mon, 29 Aug 2022 02:17:50 GMT
 1 &lt; Server: Jetty(9.2.9.v20150224)
 &lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;&lt;apiResponse&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;</div>
 <div class="step-row">
@@ -229,7 +229,7 @@
 <div class="scenario-tags"></div>
 <span class="scenario-keyword">Scenario Outline: [2.2:29]</span><span class="scenario-name">Add a pet using a valid status </span>
 </div>
-<div class="scenario-time passed">ms: 427</div>
+<div class="scenario-time passed">ms: 394</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="[2.2:29]bg">
@@ -264,9 +264,9 @@
 <div class="step-ref passed">15</div>
 <div class="step-cell passed">When method post</div>
 </div>
-<div class="time-cell passed">423</div>
+<div class="time-cell passed">390</div>
 </div>
-<div class="preformatted" data-parent="15">18:39:59.008 request:
+<div class="preformatted" data-parent="15">21:17:51.369 request:
 1 &gt; POST https://petstore.swagger.io/v2/pet
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
@@ -276,7 +276,7 @@
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
 squirtle
 
-18:39:59.426 response time in milliseconds: 417,00
+21:17:51.766 response time in milliseconds: 384,86
 1 &lt; 415
 1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
@@ -284,7 +284,7 @@ squirtle
 1 &lt; Connection: keep-alive
 1 &lt; Content-Length: 102
 1 &lt; Content-Type: application/xml
-1 &lt; Date: Sun, 28 Aug 2022 23:39:58 GMT
+1 &lt; Date: Mon, 29 Aug 2022 02:17:50 GMT
 1 &lt; Server: Jetty(9.2.9.v20150224)
 &lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;&lt;apiResponse&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;</div>
 <div class="step-row">
@@ -301,7 +301,7 @@ squirtle
 <div class="scenario-tags"></div>
 <span class="scenario-keyword">Scenario Outline: [2.3:30]</span><span class="scenario-name">Add a pet using a valid status </span>
 </div>
-<div class="scenario-time passed">ms: 396</div>
+<div class="scenario-time passed">ms: 335</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="[2.3:30]bg">
@@ -336,9 +336,9 @@ squirtle
 <div class="step-ref passed">20</div>
 <div class="step-cell passed">When method post</div>
 </div>
-<div class="time-cell passed">395</div>
+<div class="time-cell passed">334</div>
 </div>
-<div class="preformatted" data-parent="20">18:39:59.443 request:
+<div class="preformatted" data-parent="20">21:17:51.783 request:
 1 &gt; POST https://petstore.swagger.io/v2/pet
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
@@ -348,7 +348,7 @@ squirtle
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
 123.123
 
-18:39:59.834 response time in milliseconds: 389,34
+21:17:52.108 response time in milliseconds: 329,76
 1 &lt; 415
 1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
@@ -356,7 +356,7 @@ squirtle
 1 &lt; Connection: keep-alive
 1 &lt; Content-Length: 102
 1 &lt; Content-Type: application/xml
-1 &lt; Date: Sun, 28 Aug 2022 23:39:58 GMT
+1 &lt; Date: Mon, 29 Aug 2022 02:17:51 GMT
 1 &lt; Server: Jetty(9.2.9.v20150224)
 &lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;&lt;apiResponse&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;</div>
 <div class="step-row">

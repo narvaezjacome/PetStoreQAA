@@ -47,7 +47,7 @@
         
 <div id="nav-type">Scenarios</div>         
         
-<div id="nav-date">2022-08-28 06:40:04 PM</div>        
+<div id="nav-date">2022-08-28 09:17:56 PM</div>        
       
 <div class="nav-container">
 <div class="nav-item failed">
@@ -78,7 +78,7 @@
 <div class="scenario-tags"></div>
 <span class="scenario-keyword">Scenario: [1:9]</span><span class="scenario-name">check the service PUT (UpdatePet) To see if status code is 200. </span>
 </div>
-<div class="scenario-time failed">ms: 57</div>
+<div class="scenario-time failed">ms: 46</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="[1:9]bg">
@@ -99,14 +99,14 @@
 <div class="step-ref passed">2</div>
 <div class="step-cell passed">* def requestPut = {"id": "#(id)", "category": {"id": "#(idCategory)", "name": "#(nameCategory)"},"name": "#(name)","photoUrls": ["#(photoUrls)"],"tags": [{"id": "#(idTags)","name": "#(nameTags)"}],"status": "#(status)"}</div>
 </div>
-<div class="time-cell passed">46</div>
+<div class="time-cell passed">39</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="3">
 <div class="step-ref failed">3</div>
 <div class="step-cell failed">* def responsePut = read('classpath:karate/request/responsePut.json')</div>
 </div>
-<div class="time-cell failed">11</div>
+<div class="time-cell failed">8</div>
 </div>
 <div class="preformatted" data-parent="3">put.feature:11 - could not find or read file: classpath:karate/request/responsePut.json</div>
 <div class="step-row">
@@ -151,7 +151,7 @@
 <div class="scenario-tags"></div>
 <span class="scenario-keyword">Scenario Outline: [2.1:27]</span><span class="scenario-name">Update a pet with invalid category ID </span>
 </div>
-<div class="scenario-time passed">ms: 396</div>
+<div class="scenario-time passed">ms: 433</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="[2.1:27]bg">
@@ -179,16 +179,16 @@
 <div class="step-ref passed">11</div>
 <div class="step-cell passed">And request "@$#%&amp;"</div>
 </div>
-<div class="time-cell passed">0</div>
+<div class="time-cell passed">1</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="12">
 <div class="step-ref passed">12</div>
 <div class="step-cell passed">When method PUT</div>
 </div>
-<div class="time-cell passed">395</div>
+<div class="time-cell passed">432</div>
 </div>
-<div class="preformatted" data-parent="12">18:39:59.986 request:
+<div class="preformatted" data-parent="12">21:17:52.233 request:
 1 &gt; PUT https://petstore.swagger.io/v2/pet
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
@@ -198,7 +198,7 @@
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
 @$#%&amp;
 
-18:40:00.375 response time in milliseconds: 389,24
+21:17:52.672 response time in milliseconds: 426,57
 1 &lt; 415
 1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
@@ -206,7 +206,7 @@
 1 &lt; Connection: keep-alive
 1 &lt; Content-Length: 102
 1 &lt; Content-Type: application/xml
-1 &lt; Date: Sun, 28 Aug 2022 23:39:59 GMT
+1 &lt; Date: Mon, 29 Aug 2022 02:17:51 GMT
 1 &lt; Server: Jetty(9.2.9.v20150224)
 &lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;&lt;apiResponse&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;</div>
 <div class="step-row">
@@ -223,7 +223,7 @@
 <div class="scenario-tags"></div>
 <span class="scenario-keyword">Scenario Outline: [2.2:28]</span><span class="scenario-name">Update a pet with invalid category ID </span>
 </div>
-<div class="scenario-time passed">ms: 383</div>
+<div class="scenario-time passed">ms: 376</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="[2.2:28]bg">
@@ -258,9 +258,9 @@
 <div class="step-ref passed">17</div>
 <div class="step-cell passed">When method PUT</div>
 </div>
-<div class="time-cell passed">382</div>
+<div class="time-cell passed">375</div>
 </div>
-<div class="preformatted" data-parent="17">18:40:00.393 request:
+<div class="preformatted" data-parent="17">21:17:52.688 request:
 1 &gt; PUT https://petstore.swagger.io/v2/pet
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
@@ -270,7 +270,7 @@
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
 squirtle
 
-18:40:00.770 response time in milliseconds: 376,34
+21:17:53.048 response time in milliseconds: 369,65
 1 &lt; 415
 1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
@@ -278,7 +278,7 @@ squirtle
 1 &lt; Connection: keep-alive
 1 &lt; Content-Length: 102
 1 &lt; Content-Type: application/xml
-1 &lt; Date: Sun, 28 Aug 2022 23:39:59 GMT
+1 &lt; Date: Mon, 29 Aug 2022 02:17:52 GMT
 1 &lt; Server: Jetty(9.2.9.v20150224)
 &lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;&lt;apiResponse&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;</div>
 <div class="step-row">
@@ -295,7 +295,7 @@ squirtle
 <div class="scenario-tags"></div>
 <span class="scenario-keyword">Scenario Outline: [2.3:29]</span><span class="scenario-name">Update a pet with invalid category ID </span>
 </div>
-<div class="scenario-time passed">ms: 364</div>
+<div class="scenario-time passed">ms: 409</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="[2.3:29]bg">
@@ -330,9 +330,9 @@ squirtle
 <div class="step-ref passed">22</div>
 <div class="step-cell passed">When method PUT</div>
 </div>
-<div class="time-cell passed">363</div>
+<div class="time-cell passed">408</div>
 </div>
-<div class="preformatted" data-parent="22">18:40:00.792 request:
+<div class="preformatted" data-parent="22">21:17:53.079 request:
 1 &gt; PUT https://petstore.swagger.io/v2/pet
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
@@ -342,7 +342,7 @@ squirtle
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
 123.123
 
-18:40:01.152 response time in milliseconds: 358,08
+21:17:53.483 response time in milliseconds: 403,03
 1 &lt; 415
 1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
@@ -350,7 +350,7 @@ squirtle
 1 &lt; Connection: keep-alive
 1 &lt; Content-Length: 102
 1 &lt; Content-Type: application/xml
-1 &lt; Date: Sun, 28 Aug 2022 23:40:00 GMT
+1 &lt; Date: Mon, 29 Aug 2022 02:17:52 GMT
 1 &lt; Server: Jetty(9.2.9.v20150224)
 &lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;&lt;apiResponse&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;</div>
 <div class="step-row">
