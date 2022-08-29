@@ -37,9 +37,9 @@
           
 <div class="nav-count">
             
-<div class="bg-success" id="nav-pass">1</div>
+<div class="bg-success" id="nav-pass">4</div>
             
-<div class="bg-danger" id="nav-fail">3</div>
+<div class="bg-danger" id="nav-fail">0</div>
           
 </div>
         
@@ -47,20 +47,20 @@
         
 <div id="nav-type">Scenarios</div>         
         
-<div id="nav-date">2022-08-28 11:20:19 PM</div>        
+<div id="nav-date">2022-08-29 11:43:51 AM</div>        
       
 <div class="nav-container">
 <div class="nav-item passed">
 <a href="#[1:12]">[1:12] check the service POST </a>
 </div>
-<div class="nav-item failed">
-<a href="#[2.1:32]">[2.1:32] Add a pet using a valid status </a>
+<div class="nav-item passed">
+<a href="#[2.1:32]">[2.1:32] Add a pet using a invalid status </a>
 </div>
-<div class="nav-item failed">
-<a href="#[2.2:33]">[2.2:33] Add a pet using a valid status </a>
+<div class="nav-item passed">
+<a href="#[2.2:33]">[2.2:33] Add a pet using a invalid status </a>
 </div>
-<div class="nav-item failed">
-<a href="#[2.3:34]">[2.3:34] Add a pet using a valid status </a>
+<div class="nav-item passed">
+<a href="#[2.3:34]">[2.3:34] Add a pet using a invalid status </a>
 </div>
 </div>
 </div>
@@ -80,7 +80,7 @@
 </div>
 <span class="scenario-keyword">Scenario: [1:12]</span><span class="scenario-name">check the service POST </span>
 </div>
-<div class="scenario-time passed">ms: 2260</div>
+<div class="scenario-time passed">ms: 2382</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="[1:12]bg">
@@ -101,7 +101,7 @@
 <div class="step-ref passed">2</div>
 <div class="step-cell passed">* def CreatePet = {"id": '#(id)',"category": {"id": 1,"name": '#(nameCategory)'},"name": "doggie","photoUrls": ["string"],"tags": [{"id": 1,"name": '#(tagsName)'}],"status": "available"}</div>
 </div>
-<div class="time-cell passed">28</div>
+<div class="time-cell passed">67</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="3">
@@ -122,9 +122,9 @@
 <div class="step-ref passed">5</div>
 <div class="step-cell passed">When method POST</div>
 </div>
-<div class="time-cell passed">2226</div>
+<div class="time-cell passed">2309</div>
 </div>
-<div class="preformatted" data-parent="5">23:20:09.230 request:
+<div class="preformatted" data-parent="5">11:43:42.032 request:
 1 &gt; POST https://petstore.swagger.io/v2/pet
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
@@ -134,14 +134,14 @@
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
 {"id":2,"category":{"id":1,"name":"#(nameCategory)"},"name":"doggie","photoUrls":["string"],"tags":[{"id":1,"name":"#(tagsName)"}],"status":"available"}
 
-23:20:10.395 response time in milliseconds: 1161,55
+11:43:42.965 response time in milliseconds: 943,12
 1 &lt; 200
 1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json
-1 &lt; Date: Mon, 29 Aug 2022 04:20:09 GMT
+1 &lt; Date: Mon, 29 Aug 2022 16:43:42 GMT
 1 &lt; Server: Jetty(9.2.9.v20150224)
 1 &lt; Transfer-Encoding: chunked
 {"id":2,"category":{"id":1,"name":"#(nameCategory)"},"name":"doggie","photoUrls":["string"],"tags":[{"id":1,"name":"#(tagsName)"}],"status":"available"}</div>
@@ -159,9 +159,9 @@
 <div class="scenario-tags">
 <a class="badge badge-primary" href="karate-tags.html">VariablePath</a>
 </div>
-<span class="scenario-keyword">Scenario Outline: [2.1:32]</span><span class="scenario-name">Add a pet using a valid status </span>
+<span class="scenario-keyword">Scenario Outline: [2.1:32]</span><span class="scenario-name">Add a pet using a invalid status </span>
 </div>
-<div class="scenario-time failed">ms: 595</div>
+<div class="scenario-time passed">ms: 475</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="[2.1:32]bg">
@@ -187,28 +187,28 @@
 <div class="step-row">
 <div class="step-container" id="9">
 <div class="step-ref passed">9</div>
-<div class="step-cell passed">And request "@$#%&amp;"</div>
+<div class="step-cell passed">And request ")/(&amp;/%"</div>
 </div>
-<div class="time-cell passed">4</div>
+<div class="time-cell passed">3</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="10">
 <div class="step-ref passed">10</div>
-<div class="step-cell passed">When method post</div>
+<div class="step-cell passed">When method POST</div>
 </div>
-<div class="time-cell passed">498</div>
+<div class="time-cell passed">472</div>
 </div>
-<div class="preformatted" data-parent="10">23:20:10.425 request:
+<div class="preformatted" data-parent="10">11:43:42.996 request:
 1 &gt; POST https://petstore.swagger.io/v2/pet
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
-1 &gt; Content-Length: 5
+1 &gt; Content-Length: 6
 1 &gt; Content-Type: text/plain; charset=UTF-8
 1 &gt; Host: petstore.swagger.io
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
-@$#%&amp;
+)/(&amp;/%
 
-23:20:10.852 response time in milliseconds: 425,88
+11:43:43.433 response time in milliseconds: 431,83
 1 &lt; 415
 1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
@@ -216,18 +216,16 @@
 1 &lt; Connection: keep-alive
 1 &lt; Content-Length: 102
 1 &lt; Content-Type: application/xml
-1 &lt; Date: Mon, 29 Aug 2022 04:20:10 GMT
+1 &lt; Date: Mon, 29 Aug 2022 16:43:43 GMT
 1 &lt; Server: Jetty(9.2.9.v20150224)
 &lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;&lt;apiResponse&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;</div>
 <div class="step-row">
 <div class="step-container" id="11">
-<div class="step-ref failed">11</div>
-<div class="step-cell failed">Then status 400</div>
+<div class="step-ref passed">11</div>
+<div class="step-cell passed">Then status 415</div>
 </div>
-<div class="time-cell failed">92</div>
+<div class="time-cell passed">0</div>
 </div>
-<div class="preformatted" data-parent="11">23:20:11.013 status code was: 415, expected: 400, response time: 426, url: https://petstore.swagger.io/v2/pet, response: &lt;apiResponse&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;
-post.feature:28 - status code was: 415, expected: 400, response time: 426, url: https://petstore.swagger.io/v2/pet, response: &lt;apiResponse&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;</div>
 </div>
 <div class="scenario">
 <div class="scenario-heading" id="[2.2:33]">
@@ -235,9 +233,9 @@ post.feature:28 - status code was: 415, expected: 400, response time: 426, url: 
 <div class="scenario-tags">
 <a class="badge badge-primary" href="karate-tags.html">VariablePath</a>
 </div>
-<span class="scenario-keyword">Scenario Outline: [2.2:33]</span><span class="scenario-name">Add a pet using a valid status </span>
+<span class="scenario-keyword">Scenario Outline: [2.2:33]</span><span class="scenario-name">Add a pet using a invalid status </span>
 </div>
-<div class="scenario-time failed">ms: 432</div>
+<div class="scenario-time passed">ms: 395</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="[2.2:33]bg">
@@ -265,16 +263,16 @@ post.feature:28 - status code was: 415, expected: 400, response time: 426, url: 
 <div class="step-ref passed">14</div>
 <div class="step-cell passed">And request "squirtle"</div>
 </div>
-<div class="time-cell passed">8</div>
+<div class="time-cell passed">3</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="15">
 <div class="step-ref passed">15</div>
-<div class="step-cell passed">When method post</div>
+<div class="step-cell passed">When method POST</div>
 </div>
-<div class="time-cell passed">422</div>
+<div class="time-cell passed">392</div>
 </div>
-<div class="preformatted" data-parent="15">23:20:11.053 request:
+<div class="preformatted" data-parent="15">11:43:43.480 request:
 1 &gt; POST https://petstore.swagger.io/v2/pet
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
@@ -284,7 +282,7 @@ post.feature:28 - status code was: 415, expected: 400, response time: 426, url: 
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
 squirtle
 
-23:20:11.467 response time in milliseconds: 413,00
+11:43:43.871 response time in milliseconds: 386,86
 1 &lt; 415
 1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
@@ -292,18 +290,16 @@ squirtle
 1 &lt; Connection: keep-alive
 1 &lt; Content-Length: 102
 1 &lt; Content-Type: application/xml
-1 &lt; Date: Mon, 29 Aug 2022 04:20:10 GMT
+1 &lt; Date: Mon, 29 Aug 2022 16:43:43 GMT
 1 &lt; Server: Jetty(9.2.9.v20150224)
 &lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;&lt;apiResponse&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;</div>
 <div class="step-row">
 <div class="step-container" id="16">
-<div class="step-ref failed">16</div>
-<div class="step-cell failed">Then status 400</div>
+<div class="step-ref passed">16</div>
+<div class="step-cell passed">Then status 415</div>
 </div>
-<div class="time-cell failed">1</div>
+<div class="time-cell passed">0</div>
 </div>
-<div class="preformatted" data-parent="16">23:20:11.471 status code was: 415, expected: 400, response time: 413, url: https://petstore.swagger.io/v2/pet, response: &lt;apiResponse&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;
-post.feature:28 - status code was: 415, expected: 400, response time: 413, url: https://petstore.swagger.io/v2/pet, response: &lt;apiResponse&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;</div>
 </div>
 <div class="scenario">
 <div class="scenario-heading" id="[2.3:34]">
@@ -311,9 +307,9 @@ post.feature:28 - status code was: 415, expected: 400, response time: 413, url: 
 <div class="scenario-tags">
 <a class="badge badge-primary" href="karate-tags.html">VariablePath</a>
 </div>
-<span class="scenario-keyword">Scenario Outline: [2.3:34]</span><span class="scenario-name">Add a pet using a valid status </span>
+<span class="scenario-keyword">Scenario Outline: [2.3:34]</span><span class="scenario-name">Add a pet using a invalid status </span>
 </div>
-<div class="scenario-time failed">ms: 413</div>
+<div class="scenario-time passed">ms: 410</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="[2.3:34]bg">
@@ -341,16 +337,16 @@ post.feature:28 - status code was: 415, expected: 400, response time: 413, url: 
 <div class="step-ref passed">19</div>
 <div class="step-cell passed">And request 123.123</div>
 </div>
-<div class="time-cell passed">9</div>
+<div class="time-cell passed">7</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="20">
 <div class="step-ref passed">20</div>
-<div class="step-cell passed">When method post</div>
+<div class="step-cell passed">When method POST</div>
 </div>
 <div class="time-cell passed">402</div>
 </div>
-<div class="preformatted" data-parent="20">23:20:11.501 request:
+<div class="preformatted" data-parent="20">11:43:43.902 request:
 1 &gt; POST https://petstore.swagger.io/v2/pet
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
@@ -360,7 +356,7 @@ post.feature:28 - status code was: 415, expected: 400, response time: 413, url: 
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
 123.123
 
-23:20:11.896 response time in milliseconds: 395,04
+11:43:44.293 response time in milliseconds: 397,79
 1 &lt; 415
 1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
@@ -368,18 +364,16 @@ post.feature:28 - status code was: 415, expected: 400, response time: 413, url: 
 1 &lt; Connection: keep-alive
 1 &lt; Content-Length: 102
 1 &lt; Content-Type: application/xml
-1 &lt; Date: Mon, 29 Aug 2022 04:20:11 GMT
+1 &lt; Date: Mon, 29 Aug 2022 16:43:44 GMT
 1 &lt; Server: Jetty(9.2.9.v20150224)
 &lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;&lt;apiResponse&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;</div>
 <div class="step-row">
 <div class="step-container" id="21">
-<div class="step-ref failed">21</div>
-<div class="step-cell failed">Then status 400</div>
+<div class="step-ref passed">21</div>
+<div class="step-cell passed">Then status 415</div>
 </div>
-<div class="time-cell failed">1</div>
+<div class="time-cell passed">0</div>
 </div>
-<div class="preformatted" data-parent="21">23:20:11.900 status code was: 415, expected: 400, response time: 395, url: https://petstore.swagger.io/v2/pet, response: &lt;apiResponse&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;
-post.feature:28 - status code was: 415, expected: 400, response time: 395, url: https://petstore.swagger.io/v2/pet, response: &lt;apiResponse&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;</div>
 </div>
 </div>
     

@@ -11,24 +11,24 @@ Feature: Service client GET
   Scenario: Check the service GET
 
 
-    * def responseGet = read('classpath:Karate/request/pet/02_FindPetID/reponseGet.json)
+    * def responseGet = read('classpath:Karate/request/pet/02_FindPetID/responseGet.json')
 
     Given path 'pet', id
     When method GET
     Then status 200
-    And match response == responsesGet
-    And assert response.support.text == "To keep ReqRes free, contribuitions
+    And match response == responseGet
+    And assert response.support.text == "To keep ReqRes free, contribuitions"
 
   @VariablePath
   Scenario Outline: Find a pet by ID incorrect
 
     Given path 'pet', id
     And request <id>
-    When method get
+    When method GET
     Then status 404
 
     Examples:
       | id     |
       | "@#$%" |
-      | "fish" |
+      | "doggie" |
       | 123.123|

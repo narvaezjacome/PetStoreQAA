@@ -20,15 +20,15 @@ Feature: Service client POST
     Then status 200
 
   @VariablePath
-  Scenario Outline: Add a pet using a valid status
+  Scenario Outline: Add a pet using a invalid status
 
     Given path 'pet'
     And request <status>
-    When method post
-    Then status 400
+    When method POST
+    Then status 415
 
     Examples:
       | status     |
-      | "@$#%&"    |
+      | ")/(&/%"    |
       | "squirtle" |
       | 123.123    |

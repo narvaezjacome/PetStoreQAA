@@ -1,5 +1,5 @@
-<testsuite failures="3" name="karate/request/pet/01_AddPet/post.feature" skipped="0" tests="4" time="3.699025">
-  <testcase classname="karate.request.pet.01_AddPet.post" name="check the service POST" time="2.259582">
+<testsuite failures="0" name="karate/request/pet/01_AddPet/post.feature" skipped="0" tests="4" time="3.662293">
+  <testcase classname="karate.request.pet.01_AddPet.post" name="check the service POST" time="2.38179">
     <system-out>* url url ................................................................. passed
 * def CreatePet = {"id": '#(id)',"category": {"id": 1,"name": '#(nameCategory)'},"name": "doggie","photoUrls": ["string"],"tags": [{"id": 1,"name": '#(tagsName)'}],"status": "available"} . passed
 Given path 'pet' .......................................................... passed
@@ -7,8 +7,8 @@ And request CreatePet ..................................................... pass
 When method POST .......................................................... passed
 Then status 200 ........................................................... passed</system-out>
   </testcase>
-  <testcase classname="karate.request.pet.01_AddPet.post" name="Add a pet using a valid status" time="0.595234">
-    <failure message="post.feature:28 - status code was: 415, expected: 400, response time: 426, url: https://petstore.swagger.io/v2/pet, response: &lt;apiResponse&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;">* url url ................................................................. passed
+  <testcase classname="karate.request.pet.01_AddPet.post" name="Add a pet using a invalid status" time="0.475327">
+    <system-out>* url url ................................................................. passed
 * def CreatePet = {"id": '#(id)',"category": {"id": 1,"name": '#(nameCategory)'},"name": "doggie","photoUrls": ["string"],"tags": [{"id": 1,"name": '#(tagsName)'}],"status": "available"} . passed
 Given path 'pet' .......................................................... passed
 And request CreatePet ..................................................... passed
@@ -16,16 +16,12 @@ When method POST .......................................................... pass
 Then status 200 ........................................................... passed
 * url url ................................................................. passed
 Given path 'pet' .......................................................... passed
-And request "@$#%&amp;" ....................................................... passed
-When method post .......................................................... passed
-Then status 400 ........................................................... failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: post.feature:28 - status code was: 415, expected: 400, response time: 426, url: https://petstore.swagger.io/v2/pet, response: &lt;apiResponse&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;&#13;
-	at ✽.Then status 400 (post.feature:28)</failure>
+And request ")/(&amp;/%" ...................................................... passed
+When method POST .......................................................... passed
+Then status 415 ........................................................... passed</system-out>
   </testcase>
-  <testcase classname="karate.request.pet.01_AddPet.post" name="Add a pet using a valid status" time="0.431534">
-    <failure message="post.feature:28 - status code was: 415, expected: 400, response time: 413, url: https://petstore.swagger.io/v2/pet, response: &lt;apiResponse&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;">* url url ................................................................. passed
+  <testcase classname="karate.request.pet.01_AddPet.post" name="Add a pet using a invalid status" time="0.395451">
+    <system-out>* url url ................................................................. passed
 * def CreatePet = {"id": '#(id)',"category": {"id": 1,"name": '#(nameCategory)'},"name": "doggie","photoUrls": ["string"],"tags": [{"id": 1,"name": '#(tagsName)'}],"status": "available"} . passed
 Given path 'pet' .......................................................... passed
 And request CreatePet ..................................................... passed
@@ -33,26 +29,17 @@ When method POST .......................................................... pass
 Then status 200 ........................................................... passed
 * url url ................................................................. passed
 Given path 'pet' .......................................................... passed
-And request "@$#%&amp;" ....................................................... passed
-When method post .......................................................... passed
-Then status 400 ........................................................... failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: post.feature:28 - status code was: 415, expected: 400, response time: 426, url: https://petstore.swagger.io/v2/pet, response: &lt;apiResponse&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;&#13;
-	at ✽.Then status 400 (post.feature:28)&#13;
-
+And request ")/(&amp;/%" ...................................................... passed
+When method POST .......................................................... passed
+Then status 415 ........................................................... passed
 * url url ................................................................. passed
 Given path 'pet' .......................................................... passed
 And request "squirtle" .................................................... passed
-When method post .......................................................... passed
-Then status 400 ........................................................... failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: post.feature:28 - status code was: 415, expected: 400, response time: 413, url: https://petstore.swagger.io/v2/pet, response: &lt;apiResponse&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;&#13;
-	at ✽.Then status 400 (post.feature:28)</failure>
+When method POST .......................................................... passed
+Then status 415 ........................................................... passed</system-out>
   </testcase>
-  <testcase classname="karate.request.pet.01_AddPet.post" name="Add a pet using a valid status" time="0.412674">
-    <failure message="post.feature:28 - status code was: 415, expected: 400, response time: 395, url: https://petstore.swagger.io/v2/pet, response: &lt;apiResponse&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;">* url url ................................................................. passed
+  <testcase classname="karate.request.pet.01_AddPet.post" name="Add a pet using a invalid status" time="0.409725">
+    <system-out>* url url ................................................................. passed
 * def CreatePet = {"id": '#(id)',"category": {"id": 1,"name": '#(nameCategory)'},"name": "doggie","photoUrls": ["string"],"tags": [{"id": 1,"name": '#(tagsName)'}],"status": "available"} . passed
 Given path 'pet' .......................................................... passed
 And request CreatePet ..................................................... passed
@@ -60,32 +47,18 @@ When method POST .......................................................... pass
 Then status 200 ........................................................... passed
 * url url ................................................................. passed
 Given path 'pet' .......................................................... passed
-And request "@$#%&amp;" ....................................................... passed
-When method post .......................................................... passed
-Then status 400 ........................................................... failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: post.feature:28 - status code was: 415, expected: 400, response time: 426, url: https://petstore.swagger.io/v2/pet, response: &lt;apiResponse&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;&#13;
-	at ✽.Then status 400 (post.feature:28)&#13;
-
+And request ")/(&amp;/%" ...................................................... passed
+When method POST .......................................................... passed
+Then status 415 ........................................................... passed
 * url url ................................................................. passed
 Given path 'pet' .......................................................... passed
 And request "squirtle" .................................................... passed
-When method post .......................................................... passed
-Then status 400 ........................................................... failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: post.feature:28 - status code was: 415, expected: 400, response time: 413, url: https://petstore.swagger.io/v2/pet, response: &lt;apiResponse&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;&#13;
-	at ✽.Then status 400 (post.feature:28)&#13;
-
+When method POST .......................................................... passed
+Then status 415 ........................................................... passed
 * url url ................................................................. passed
 Given path 'pet' .......................................................... passed
 And request 123.123 ....................................................... passed
-When method post .......................................................... passed
-Then status 400 ........................................................... failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: post.feature:28 - status code was: 415, expected: 400, response time: 395, url: https://petstore.swagger.io/v2/pet, response: &lt;apiResponse&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;&#13;
-	at ✽.Then status 400 (post.feature:28)</failure>
+When method POST .......................................................... passed
+Then status 415 ........................................................... passed</system-out>
   </testcase>
 </testsuite>

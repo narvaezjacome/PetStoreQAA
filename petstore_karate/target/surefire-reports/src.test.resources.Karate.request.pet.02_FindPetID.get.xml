@@ -1,6 +1,6 @@
-<testsuite failures="1" name="karate/request/pet/02_FindPetID/get.feature" skipped="0" tests="4" time="1.58938">
-  <testcase classname="karate.request.pet.02_FindPetID.get" name="Check the service GET" time="0.393692">
-    <failure message="get.feature:19 - path: $, actual: {&quot;photoUrls&quot;:[&quot;string&quot;],&quot;name&quot;:&quot;doggie&quot;,&quot;id&quot;:2,&quot;category&quot;:{&quot;name&quot;:&quot;#(nameCategory)&quot;,&quot;id&quot;:1},&quot;tags&quot;:[{&quot;name&quot;:&quot;#(tagsName)&quot;,&quot;id&quot;:1}],&quot;status&quot;:&quot;available&quot;}, expected: {id=#number, category={id=#number, name=#string}, name=#string, photoUrls=[&quot;#string&quot;], s&#13;&#10;  &quot;tags&quot;=[{&quot;id&quot;:&quot;#number&quot;,&quot;name&quot;:&quot;#string&quot;}], status=#string}, reason: all key-values did not match, expected has un-matched keys: [s&#13;&#10;  &quot;tags&quot;]">* url url ................................................................. passed
+<testsuite failures="1" name="src/test/resources/Karate/request/pet/02_FindPetID/get.feature" skipped="0" tests="4" time="2.75521">
+  <testcase classname="src.test.resources.Karate.request.pet.02_FindPetID.get" name="Check the service GET" time="1.60578">
+    <failure message="get.feature:19 - path: $, actual: {&quot;photoUrls&quot;:[&quot;#(faker.creature.animal.avatar.image)&quot;],&quot;name&quot;:&quot;#(faker.creature.animal.name)&quot;,&quot;id&quot;:2,&quot;category&quot;:{&quot;name&quot;:&quot;#(faker.creature.animal.breed)&quot;,&quot;id&quot;:2},&quot;tags&quot;:[{&quot;name&quot;:&quot;#(faker.creature.animal.tag.name)&quot;,&quot;id&quot;:2}],&quot;status&quot;:&quot;#(faker.creature.animal.status)&quot;}, expected: {id=#number, category={id=#number, name=#string}, name=#string, photoUrls=[&quot;#string&quot;], s&#13;&#10;  &quot;tags&quot;=[{&quot;id&quot;:&quot;#number&quot;,&quot;name&quot;:&quot;#string&quot;}], status=#string}, reason: all key-values did not match, expected has un-matched keys: [s&#13;&#10;  &quot;tags&quot;]">* url url ................................................................. passed
 * def responseGet = read('classpath:Karate/request/pet/02_FindPetID/responseGet.json') . passed
 Given path 'pet', id ...................................................... passed
 When method GET ........................................................... passed
@@ -8,14 +8,14 @@ Then status 200 ........................................................... pass
 And match response == responseGet ......................................... failed
 
 Stack Trace:
-com.intuit.karate.exception.KarateException: get.feature:19 - path: $, actual: {"photoUrls":["string"],"name":"doggie","id":2,"category":{"name":"#(nameCategory)","id":1},"tags":[{"name":"#(tagsName)","id":1}],"status":"available"}, expected: {id=#number, category={id=#number, name=#string}, name=#string, photoUrls=["#string"], s&#13;
+com.intuit.karate.exception.KarateException: get.feature:19 - path: $, actual: {"photoUrls":["#(faker.creature.animal.avatar.image)"],"name":"#(faker.creature.animal.name)","id":2,"category":{"name":"#(faker.creature.animal.breed)","id":2},"tags":[{"name":"#(faker.creature.animal.tag.name)","id":2}],"status":"#(faker.creature.animal.status)"}, expected: {id=#number, category={id=#number, name=#string}, name=#string, photoUrls=["#string"], s&#13;
   "tags"=[{"id":"#number","name":"#string"}], status=#string}, reason: all key-values did not match, expected has un-matched keys: [s&#13;
   "tags"]&#13;
 	at ✽.And match response == responseGet (get.feature:19)&#13;
 
 And assert response.support.text == "To keep ReqRes free, contribuitions" . skipped</failure>
   </testcase>
-  <testcase classname="karate.request.pet.02_FindPetID.get" name="Find a pet by ID incorrect" time="0.395458">
+  <testcase classname="src.test.resources.Karate.request.pet.02_FindPetID.get" name="Find a pet by ID incorrect" time="0.389579">
     <system-out>* url url ................................................................. passed
 * def responseGet = read('classpath:Karate/request/pet/02_FindPetID/responseGet.json') . passed
 Given path 'pet', id ...................................................... passed
@@ -24,7 +24,7 @@ Then status 200 ........................................................... pass
 And match response == responseGet ......................................... failed
 
 Stack Trace:
-com.intuit.karate.exception.KarateException: get.feature:19 - path: $, actual: {"photoUrls":["string"],"name":"doggie","id":2,"category":{"name":"#(nameCategory)","id":1},"tags":[{"name":"#(tagsName)","id":1}],"status":"available"}, expected: {id=#number, category={id=#number, name=#string}, name=#string, photoUrls=["#string"], s&#13;
+com.intuit.karate.exception.KarateException: get.feature:19 - path: $, actual: {"photoUrls":["#(faker.creature.animal.avatar.image)"],"name":"#(faker.creature.animal.name)","id":2,"category":{"name":"#(faker.creature.animal.breed)","id":2},"tags":[{"name":"#(faker.creature.animal.tag.name)","id":2}],"status":"#(faker.creature.animal.status)"}, expected: {id=#number, category={id=#number, name=#string}, name=#string, photoUrls=["#string"], s&#13;
   "tags"=[{"id":"#number","name":"#string"}], status=#string}, reason: all key-values did not match, expected has un-matched keys: [s&#13;
   "tags"]&#13;
 	at ✽.And match response == responseGet (get.feature:19)&#13;
@@ -36,7 +36,7 @@ And request "@#$%" ........................................................ pass
 When method GET ........................................................... passed
 Then status 404 ........................................................... passed</system-out>
   </testcase>
-  <testcase classname="karate.request.pet.02_FindPetID.get" name="Find a pet by ID incorrect" time="0.419459">
+  <testcase classname="src.test.resources.Karate.request.pet.02_FindPetID.get" name="Find a pet by ID incorrect" time="0.377429">
     <system-out>* url url ................................................................. passed
 * def responseGet = read('classpath:Karate/request/pet/02_FindPetID/responseGet.json') . passed
 Given path 'pet', id ...................................................... passed
@@ -45,7 +45,7 @@ Then status 200 ........................................................... pass
 And match response == responseGet ......................................... failed
 
 Stack Trace:
-com.intuit.karate.exception.KarateException: get.feature:19 - path: $, actual: {"photoUrls":["string"],"name":"doggie","id":2,"category":{"name":"#(nameCategory)","id":1},"tags":[{"name":"#(tagsName)","id":1}],"status":"available"}, expected: {id=#number, category={id=#number, name=#string}, name=#string, photoUrls=["#string"], s&#13;
+com.intuit.karate.exception.KarateException: get.feature:19 - path: $, actual: {"photoUrls":["#(faker.creature.animal.avatar.image)"],"name":"#(faker.creature.animal.name)","id":2,"category":{"name":"#(faker.creature.animal.breed)","id":2},"tags":[{"name":"#(faker.creature.animal.tag.name)","id":2}],"status":"#(faker.creature.animal.status)"}, expected: {id=#number, category={id=#number, name=#string}, name=#string, photoUrls=["#string"], s&#13;
   "tags"=[{"id":"#number","name":"#string"}], status=#string}, reason: all key-values did not match, expected has un-matched keys: [s&#13;
   "tags"]&#13;
 	at ✽.And match response == responseGet (get.feature:19)&#13;
@@ -62,7 +62,7 @@ And request "doggie" ...................................................... pass
 When method GET ........................................................... passed
 Then status 404 ........................................................... passed</system-out>
   </testcase>
-  <testcase classname="karate.request.pet.02_FindPetID.get" name="Find a pet by ID incorrect" time="0.380771">
+  <testcase classname="src.test.resources.Karate.request.pet.02_FindPetID.get" name="Find a pet by ID incorrect" time="0.382421">
     <system-out>* url url ................................................................. passed
 * def responseGet = read('classpath:Karate/request/pet/02_FindPetID/responseGet.json') . passed
 Given path 'pet', id ...................................................... passed
@@ -71,7 +71,7 @@ Then status 200 ........................................................... pass
 And match response == responseGet ......................................... failed
 
 Stack Trace:
-com.intuit.karate.exception.KarateException: get.feature:19 - path: $, actual: {"photoUrls":["string"],"name":"doggie","id":2,"category":{"name":"#(nameCategory)","id":1},"tags":[{"name":"#(tagsName)","id":1}],"status":"available"}, expected: {id=#number, category={id=#number, name=#string}, name=#string, photoUrls=["#string"], s&#13;
+com.intuit.karate.exception.KarateException: get.feature:19 - path: $, actual: {"photoUrls":["#(faker.creature.animal.avatar.image)"],"name":"#(faker.creature.animal.name)","id":2,"category":{"name":"#(faker.creature.animal.breed)","id":2},"tags":[{"name":"#(faker.creature.animal.tag.name)","id":2}],"status":"#(faker.creature.animal.status)"}, expected: {id=#number, category={id=#number, name=#string}, name=#string, photoUrls=["#string"], s&#13;
   "tags"=[{"id":"#number","name":"#string"}], status=#string}, reason: all key-values did not match, expected has un-matched keys: [s&#13;
   "tags"]&#13;
 	at ✽.And match response == responseGet (get.feature:19)&#13;

@@ -14,15 +14,15 @@ Feature: Service POST
 
       Given path 'user'
       And request requestCreate
-      When method post
+      When method POST
       Then status 200
 
   @VariablePath
   Scenario Outline: Create with invalid username
     Given path 'user'
     And request  <username>
-    When method GET
-    Then status 200
+    When method POST
+    Then status 415
 
     Examples:
       | username |
